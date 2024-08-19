@@ -1,0 +1,86 @@
+
+% Nuevo en la versión 5.0 (2013)
+% Incompatible con versiones antiguas
+\begin{algorithm}[H] % H = forzar está posición
+    \caption{}\label{Alg:AlgorithmELV}
+    \SetAlgoLined
+    \Datos{$presion, modelo \leftarrow 0, compuesto1,  compuesto2$}
+    leerPropCritics(presion, compuesto1,  compuesto2)\\
+    validarCompuesto(compuesto1,  compuesto2)\\
+    $ {c1, c2} \leftarrow seleccionarCompuesto(compuesto1,  compuesto2) $\\
+    ${isValid} \leftarrow validarMezcla()$
+    \Resultado{$H, \V$}
+    \LinesNumbered
+    \SetAlgoVlined
+    $presion \leftarrow 101.325$\;
+    \eIf{modelo == 0}{
+        $z \leftarrow 1$\;
+        applyIdealModel(args)
+    }{
+        {readVirialCoeffs(compuesto)}\\
+        {calcMixedVirialCoeffs(cCoeff1, cCoeff2)}\\
+        $z \leftarrow \zVirial{\Vm} $\;
+        applyVirialModel(model, vars)
+    }
+    \Return PsychrometicsVariables;
+\end{algorithm}
+
+
+
+\begin{algorithm}[H] % H = forzar está posición
+    \caption{}\label{Alg:Psychrometry}
+    \SetAlgoLined
+    \Datos{$presion, modelo \leftarrow 0 $}
+    \Resultado{$H, \V$}
+    \LinesNumbered
+    \SetAlgoVlined
+    $presion \leftarrow 101.325$\;
+    \eIf{modelo == 0}{
+
+        $z \leftarrow 1$\;
+        applyIdealModel(args)
+    }{
+        $z \leftarrow \zVirial{\Vm} $\;
+        applyVirialModel(model, vars)
+    }
+    \Return PsychrometicsVariables;
+\end{algorithm}
+
+
+
+\Fn(\tcc*[h]{algorithm as a recursive function}) {\FRecurs{some args}}{
+    \Datos{Some input data\\these inputs can be displayed on several lines and one
+    input can be wider than line’s width.}
+    \KwResult{Same for output data}
+    \tcc{this is a comment to tell you that we will now really start code}
+    \If(\tcc*[h]{a simple if but with a comment on the same line}){this is true}{
+    we do that, else nothing\;
+    \tcc{we will include other if so you can see this is possible}
+    \eIf{we agree that}{
+    we do that\;
+    }{
+    else we will do a more complicated if using else if\;
+    \uIf{this first condition is true}{
+    we do that\;
+    }
+    \uElseIf{this other condition is true}{
+    this is done\tcc*[r]{else if}
+    }
+    \Else{
+    in other case, we do this\tcc*[r]{else}
+    }
+    }
+    }
+    \tcc{now loops}
+    \For{\forcond}{
+    a for loop\;
+    }
+    \While{$i<n$}{
+    a while loop including a repeat--until loop\;
+    \Repeat{this end condition}{
+    do this things\;
+    }
+    }
+    They are many other possibilities and customization possible that you have to
+    discover by reading the documentation.
+}

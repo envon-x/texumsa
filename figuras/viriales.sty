@@ -1,0 +1,29 @@
+% \NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{figuras/viriales}
+\RequirePackage{graphicx}
+\RequirePackage{caption}
+
+
+\def\figVirialBCBehavior{
+  \begin{figure}[!tbp]
+    \centering
+    \begin{minipage}[b]{0.49\textwidth}
+      \includegraphics[width=\textwidth]{resources/images/bitmap/behaviorBCoeffVirial.png}
+      \caption{Comportamiento del segundo coeficiente Virial para el metano.}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.49\textwidth}
+      \includegraphics[width=\textwidth]{resources/images/bitmap/behaviorCCoeffVirial.png}
+      \caption{Comportamiento del tercer coeficiente virial. \textit{Nota} Tomado de \parencite{Dymond2002} }
+    \end{minipage}
+  \end{figure}
+}
+
+\newcommand\miFigura{
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{resources/images/bitmap/behaviorBCoeffVirial.png}
+    \caption{Una descripción de la figura.}
+    \label{fig:mi-figura}
+  \end{figure}
+}

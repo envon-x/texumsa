@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 297 210"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="secuence.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:snap-global="true"
+     inkscape:snap-intersection-paths="false"
+     inkscape:snap-midpoints="false"
+     inkscape:snap-bbox="true"
+     showguides="true"
+     inkscape:zoom="1.4311968"
+     inkscape:cx="431.10772"
+     inkscape:cy="443.68461"
+     inkscape:window-width="1366"
+     inkscape:window-height="748"
+     inkscape:window-x="0"
+     inkscape:window-y="20"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid19081" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:14.1111px;line-height:1;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="74.894974"
+       y="51.969158"
+       id="text2784"><tspan
+         sodipodi:role="line"
+         id="tspan2782"
+         style="font-size:14.1111px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="74.894974"
+         y="51.969158">General</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:14.1111px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="74.894974"
+         y="66.080254"
+         id="tspan17723">laws</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14.1111px;line-height:1;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="227.23537"
+       y="52.690403"
+       id="text5472"><tspan
+         sodipodi:role="line"
+         id="tspan5470"
+         style="font-size:14.1111px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="227.23537"
+         y="52.690403">constitutive</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:14.1111px;text-align:center;direction:ltr;text-anchor:middle;stroke-width:0.264583"
+         x="227.23537"
+         y="66.801506"
+         id="tspan15713"
+         rotate="0 0 0 0 0 0 0 0 0 0">relations</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14.1111px;line-height:1;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="143.53227"
+       y="148.52388"
+       id="text8576"><tspan
+         sodipodi:role="line"
+         style="font-size:14.1111px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="143.53227"
+         y="148.52388"
+         id="tspan8578">partial diﬀerential equation</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:14.1111px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="143.53227"
+         y="162.63498"
+         id="tspan11158">or a system of them</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="349.25"
+       y="63.5"
+       id="text24167"><tspan
+         sodipodi:role="line"
+         id="tspan24165"
+         style="stroke-width:0.264583"
+         x="349.25"
+         y="63.5">l</tspan></text>
+    <path
+       id="rect26210"
+       style="opacity:0.983;stroke-width:1.02027;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:3.0608, 3.0608;paint-order:stroke fill markers"
+       d="m 141.5417,77.988286 h 11.47572 c 1.58938,0 3.1915,1.815821 2.86892,3.96875 l -4.72633,31.544754 c -0.32257,2.15294 4.72633,0.20524 4.72633,0.20524 l -8.60678,11.90625 -8.60679,-11.90625 c 0,0 4.30339,1.98438 4.20223,0.0638 l -4.20222,-31.813854 c -0.28569,-2.162847 1.27954,-3.96872 2.86892,-3.96872 z"
+       sodipodi:nodetypes="ssssccccss" />
+  </g>
+</svg>

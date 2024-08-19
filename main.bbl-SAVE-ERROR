@@ -1,0 +1,1697 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/apasortcite//global/global}
+    \entry{beattie1942second}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3ec0f4bd12bf95d6fbc431f54cbfc24f}{%
+           family={Beattie},
+           familyi={B\bibinitperiod},
+           given={James\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9dc84e1f6003cc07bede850c6e7422c7}{%
+           family={Stockmayer},
+           familyi={S\bibinitperiod},
+           given={Walter\bibnamedelima H},
+           giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Institute of Physics}%
+      }
+      \strng{namehash}{dcea16b26fa8fe175ead88e9b7339471}
+      \strng{fullhash}{dcea16b26fa8fe175ead88e9b7339471}
+      \strng{bibnamehash}{dcea16b26fa8fe175ead88e9b7339471}
+      \strng{authorbibnamehash}{dcea16b26fa8fe175ead88e9b7339471}
+      \strng{authornamehash}{dcea16b26fa8fe175ead88e9b7339471}
+      \strng{authorfullhash}{dcea16b26fa8fe175ead88e9b7339471}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Chemical Physics}
+      \field{number}{7}
+      \field{title}{{The second virial coefficient for gas mixtures}}
+      \field{volume}{10}
+      \field{year}{1942}
+      \field{pages}{473\bibrangedash 476}
+      \range{pages}{4}
+    \endentry
+    \entry{Bell2017}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=acd8fa9f0e06c0d3faaa32606f2eb8f1}{%
+           family={Bell},
+           familyi={B\bibinitperiod},
+           given={Ian\bibnamedelima H},
+           giveni={I\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=813e75e54260463028a1b953e8b45dcb}{%
+           family={Lemmon},
+           familyi={L\bibinitperiod},
+           given={Eric\bibnamedelima W},
+           giveni={E\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cd1a0af4a03e8b0a148e767ed7ada459}{%
+           family={Harvey},
+           familyi={H\bibinitperiod},
+           given={Allan\bibnamedelima H},
+           giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{67ace39b483ad9ed980df981d4ec6d70}
+      \strng{fullhash}{f58b430f5b1327f8a4e8e2caddb8ea3c}
+      \strng{bibnamehash}{f58b430f5b1327f8a4e8e2caddb8ea3c}
+      \strng{authorbibnamehash}{f58b430f5b1327f8a4e8e2caddb8ea3c}
+      \strng{authornamehash}{67ace39b483ad9ed980df981d4ec6d70}
+      \strng{authorfullhash}{f58b430f5b1327f8a4e8e2caddb8ea3c}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{October}
+      \field{title}{{Algorithms for the calculation of psychrometric properties from multi-fluid Helmholtz-energy-explicit models Algorithms for the calculation of psychrometric properties from multi-fluid}}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.1016/j.ijrefrig.2017.10.001
+      \endverb
+      \verb{file}
+      \verb :media/bon/HelpStore/Tesis/App Termodinamica/BooksPsychrometrics/Algorithms Psychrometry.pdf:pdf
+      \endverb
+    \endentry
+    \entry{castellan1998fisicoquimica}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=354f9dd7f2d6de29920d1fddc17c02e5}{%
+           family={Castellan},
+           familyi={C\bibinitperiod},
+           given={Gilbert\bibnamedelima W},
+           giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Pearson educación}%
+      }
+      \strng{namehash}{354f9dd7f2d6de29920d1fddc17c02e5}
+      \strng{fullhash}{354f9dd7f2d6de29920d1fddc17c02e5}
+      \strng{bibnamehash}{354f9dd7f2d6de29920d1fddc17c02e5}
+      \strng{authorbibnamehash}{354f9dd7f2d6de29920d1fddc17c02e5}
+      \strng{authornamehash}{354f9dd7f2d6de29920d1fddc17c02e5}
+      \strng{authorfullhash}{354f9dd7f2d6de29920d1fddc17c02e5}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Fisicoquímica}
+      \field{year}{1998}
+    \endentry
+    \entry{ChangQmc2010}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4c412be8d64b0fe2b2b78f18de77d11a}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=c847af4ca84a2fd07c2f551d3b399d08}{%
+           family={Doig},
+           familyi={D\bibinitperiod},
+           given={P.\bibnamedelimi E.},
+           giveni={P\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {McGraw Hill}%
+      }
+      \strng{namehash}{4c412be8d64b0fe2b2b78f18de77d11a}
+      \strng{fullhash}{4c412be8d64b0fe2b2b78f18de77d11a}
+      \strng{bibnamehash}{4c412be8d64b0fe2b2b78f18de77d11a}
+      \strng{authorbibnamehash}{4c412be8d64b0fe2b2b78f18de77d11a}
+      \strng{authornamehash}{4c412be8d64b0fe2b2b78f18de77d11a}
+      \strng{authorfullhash}{4c412be8d64b0fe2b2b78f18de77d11a}
+      \strng{editorbibnamehash}{c847af4ca84a2fd07c2f551d3b399d08}
+      \strng{editornamehash}{c847af4ca84a2fd07c2f551d3b399d08}
+      \strng{editorfullhash}{c847af4ca84a2fd07c2f551d3b399d08}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{10}
+      \field{title}{Química}
+      \field{year}{2010}
+    \endentry
+    \entry{thirdVirialTing}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=56c6f5eaa68dda4de8a242ce24a64d84}{%
+           family={Chen-Hanson\bibnamedelima Ting},
+           familyi={C\bibinithyphendelim H\bibinitperiod\bibinitdelim T\bibinitperiod},
+           given={Cheng\bibnamedelima Chen},
+           giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0,
+           suffix={Suan\bibnamedelima Chen},
+           suffixi={S\bibinitperiod\bibinitdelim C\bibinitperiod},
+           suffixun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=c5553c43903829375f60049412d9e007}{%
+           family={FIG},
+           familyi={F\bibinitperiod},
+           given={Silicon\bibnamedelima Valley},
+           giveni={S\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{56c6f5eaa68dda4de8a242ce24a64d84}
+      \strng{fullhash}{56c6f5eaa68dda4de8a242ce24a64d84}
+      \strng{bibnamehash}{56c6f5eaa68dda4de8a242ce24a64d84}
+      \strng{authorbibnamehash}{56c6f5eaa68dda4de8a242ce24a64d84}
+      \strng{authornamehash}{56c6f5eaa68dda4de8a242ce24a64d84}
+      \strng{authorfullhash}{56c6f5eaa68dda4de8a242ce24a64d84}
+      \strng{editorbibnamehash}{c5553c43903829375f60049412d9e007}
+      \strng{editornamehash}{c5553c43903829375f60049412d9e007}
+      \strng{editorfullhash}{c5553c43903829375f60049412d9e007}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{The Gas-Liquid-Solid Equilibrium Studied By a Simple Equation of State}
+      \field{title}{Third Virial Coefficients}
+      \field{year}{2017}
+    \endentry
+    \entry{ReyesChumacero2012}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ae2d99e88038e337178f29fe051fa25f}{%
+           family={Chumacero},
+           familyi={C\bibinitperiod},
+           given={L.\bibnamedelimi Reyes},
+           giveni={L\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ae2d99e88038e337178f29fe051fa25f}
+      \strng{fullhash}{ae2d99e88038e337178f29fe051fa25f}
+      \strng{bibnamehash}{ae2d99e88038e337178f29fe051fa25f}
+      \strng{authorbibnamehash}{ae2d99e88038e337178f29fe051fa25f}
+      \strng{authornamehash}{ae2d99e88038e337178f29fe051fa25f}
+      \strng{authorfullhash}{ae2d99e88038e337178f29fe051fa25f}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Fisicoquímica}
+      \field{year}{2012}
+      \verb{file}
+      \verb :/media/bon/MainStore/Biblioteca/Fisicoquímica/Fisicoquímica - Antonio Reyes Chumacero ( etc.) (z-lib.org).pdf:PDF
+      \endverb
+    \endentry
+    \entry{Dymond2002}{book}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=6e7774aae38a250fe45d36760fa73245}{%
+           family={Dymond},
+           familyi={D\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=466217962d7496f69b08484a8084a585}{%
+           family={Marsh},
+           familyi={M\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c8ca9093412559a8c8c3c91aad625e5f}{%
+           family={Wilhoit},
+           familyi={W\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4ca9149da1cca394d0c10bd920fbe055}{%
+           family={Wong},
+           familyi={W\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=33ffd6922f6e83f365396cfdf3bad323}{%
+           family={M.\bibnamedelimi Frenkel},
+           familyi={M\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={K.\bibnamedelimi Marsh},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{ca9376264ecb6a7777c8a24d18493072}
+      \strng{fullhash}{a8d240e622b7ec588f2b7088c86edd41}
+      \strng{bibnamehash}{a8d240e622b7ec588f2b7088c86edd41}
+      \strng{authorbibnamehash}{a8d240e622b7ec588f2b7088c86edd41}
+      \strng{authornamehash}{ca9376264ecb6a7777c8a24d18493072}
+      \strng{authorfullhash}{a8d240e622b7ec588f2b7088c86edd41}
+      \strng{editorbibnamehash}{33ffd6922f6e83f365396cfdf3bad323}
+      \strng{editornamehash}{33ffd6922f6e83f365396cfdf3bad323}
+      \strng{editorfullhash}{33ffd6922f6e83f365396cfdf3bad323}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{3540433457}
+      \field{journaltitle}{Landolt-Bornstein-Numerical Data and Functional Relationships in Science and Technology}
+      \field{title}{{Virial Coefficients of Pure Gases and Mixtures}}
+      \field{volume}{21}
+      \field{year}{2002}
+    \endentry
+    \entry{Wilhelm2010}{book}{}
+      \name{editor}{1}{}{%
+        {{un=0,uniquepart=base,hash=21c2c6edc29425bf5efe6c6d397dcd5f}{%
+           family={{Emmerich Wilhelm and Trevor Letcher}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Royal Society of Chemistry}%
+      }
+      \strng{namehash}{21c2c6edc29425bf5efe6c6d397dcd5f}
+      \strng{fullhash}{21c2c6edc29425bf5efe6c6d397dcd5f}
+      \strng{bibnamehash}{21c2c6edc29425bf5efe6c6d397dcd5f}
+      \strng{editorbibnamehash}{21c2c6edc29425bf5efe6c6d397dcd5f}
+      \strng{editornamehash}{21c2c6edc29425bf5efe6c6d397dcd5f}
+      \strng{editorfullhash}{21c2c6edc29425bf5efe6c6d397dcd5f}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780854041763}
+      \field{title}{{Heat Capacities: Liquid Solutions and Vapours}}
+      \field{year}{2010}
+      \verb{file}
+      \verb :media/bon/MainStore/Biblioteca/Thermodynamics/Equilibrium & Non Equilibrium Thermodynamics/Heat Capacities Liquids, Solutions and Vapours by Emmerich Wilhelm, Trevor Letcher (z-lib.org).pdf:pdf
+      \endverb
+    \endentry
+    \entry{Engel2019}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=36282e29e42fcc162832ff91eb9a945d}{%
+           family={Engel},
+           familyi={E\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{36282e29e42fcc162832ff91eb9a945d}
+      \strng{fullhash}{36282e29e42fcc162832ff91eb9a945d}
+      \strng{bibnamehash}{36282e29e42fcc162832ff91eb9a945d}
+      \strng{authorbibnamehash}{36282e29e42fcc162832ff91eb9a945d}
+      \strng{authornamehash}{36282e29e42fcc162832ff91eb9a945d}
+      \strng{authorfullhash}{36282e29e42fcc162832ff91eb9a945d}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780134804583}
+      \field{title}{{Thermodynamics, Statistical Thermodynamics and Kinetics}}
+      \field{year}{2019}
+      \verb{file}
+      \verb :media/bon/MainStore/Biblioteca/Thermodynamics/Chem/Physical chemistry thermodynamics, statistical thermodynamics, and kinetics (Engel, Thomas Reid, Philip J) (Z-Library).pdf:pdf;:Engel2019 - Thermodynamics, Statistical Thermodynamics and Kinetics.pdf:PDF
+      \endverb
+    \endentry
+    \entry{klotz1985improved}{thesis}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d882b7dd97ba3ae2c977bb69dcfe3dae}{%
+           family={Klotz},
+           familyi={K\bibinitperiod},
+           given={Herbert\bibnamedelima C},
+           giveni={H\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Lehigh University}%
+      }
+      \strng{namehash}{d882b7dd97ba3ae2c977bb69dcfe3dae}
+      \strng{fullhash}{d882b7dd97ba3ae2c977bb69dcfe3dae}
+      \strng{bibnamehash}{d882b7dd97ba3ae2c977bb69dcfe3dae}
+      \strng{authorbibnamehash}{d882b7dd97ba3ae2c977bb69dcfe3dae}
+      \strng{authornamehash}{d882b7dd97ba3ae2c977bb69dcfe3dae}
+      \strng{authorfullhash}{d882b7dd97ba3ae2c977bb69dcfe3dae}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An Improved Second-virial-coefficient Correlation}
+      \field{type}{phdthesis}
+      \field{year}{1985}
+      \verb{urlraw}
+      \verb https://core.ac.uk/reader/228679820
+      \endverb
+      \verb{url}
+      \verb https://core.ac.uk/reader/228679820
+      \endverb
+    \endentry
+    \entry{maris1985interaction}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a94e86505924cc6bed485cba71a5b664}{%
+           family={Maris},
+           familyi={M\bibinitperiod},
+           given={Nikos\bibnamedelima JP},
+           giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=56dea5d69e152becb8feb1ca542b1ce6}{%
+           family={Stiel},
+           familyi={S\bibinitperiod},
+           given={Leonard\bibnamedelima I},
+           giveni={L\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {ACS Publications}%
+      }
+      \strng{namehash}{c0051bb26c6d5a2aca206ef7c3efb971}
+      \strng{fullhash}{c0051bb26c6d5a2aca206ef7c3efb971}
+      \strng{bibnamehash}{c0051bb26c6d5a2aca206ef7c3efb971}
+      \strng{authorbibnamehash}{c0051bb26c6d5a2aca206ef7c3efb971}
+      \strng{authornamehash}{c0051bb26c6d5a2aca206ef7c3efb971}
+      \strng{authorfullhash}{c0051bb26c6d5a2aca206ef7c3efb971}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Industrial \& Engineering Chemistry Process Design and Development}
+      \field{number}{1}
+      \field{title}{Interaction second virial coefficients of polar mixtures from parameters of the components}
+      \field{volume}{24}
+      \field{year}{1985}
+      \field{pages}{183\bibrangedash 187}
+      \range{pages}{5}
+    \endentry
+    \entry{Trusler10.1039/9781782627043-00152}{inbook}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a61b81722214148b237a388ba222bfbb}{%
+           family={Martin\bibnamedelima Trusler},
+           familyi={M\bibinitperiod\bibinitdelim T\bibinitperiod},
+           given={J.\bibnamedelimi P.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {The Royal Society of Chemistry}%
+      }
+      \strng{namehash}{a61b81722214148b237a388ba222bfbb}
+      \strng{fullhash}{a61b81722214148b237a388ba222bfbb}
+      \strng{bibnamehash}{a61b81722214148b237a388ba222bfbb}
+      \strng{authorbibnamehash}{a61b81722214148b237a388ba222bfbb}
+      \strng{authornamehash}{a61b81722214148b237a388ba222bfbb}
+      \strng{authorfullhash}{a61b81722214148b237a388ba222bfbb}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{The virial equation of state of a gas is a series expansion of the pressure in powers of inverse molar volume, the mth coefficient of which is given by a set of exact cluster integrals involving m molecules. For mixtures, the composition dependence of the virial coefficients can be expressed exactly in terms of interaction virial coefficients and the corresponding unlike cluster integrals. The series converges rapidly for gas-like states and expressions for all thermodynamic properties of the gas can be developed in terms of the virial coefficients. Numerous experimental techniques have been developed for the measurement of second and third virial coefficients and these may be categorised into direct and indirect methods. Among the direct techniques, the Burnet apparatus and the two-sinker magnetically-coupled densimeter are perhaps the most powerful. Excellent indirect determinations of virial coefficients have been made by means of both flow calorimetry and sound-speed measurements. Databases of critically-evaluated second and third virial coefficients of pure gases and mixtures are available. Finally, for less-well studied compounds, correlation methods based on the principle of corresponding states can be used to estimate pure-component and interaction virial coefficients.}}
+      \field{booktitle}{{Volume Properties: Liquids, Solutions and Vapours}}
+      \field{isbn}{978-1-84973-899-6}
+      \field{month}{12}
+      \field{title}{{Virial Coefficients}}
+      \field{year}{2014}
+      \verb{doi}
+      \verb 10.1039/9781782627043-00152
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1039/9781782627043-00152
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1039/9781782627043-00152
+      \endverb
+    \endentry
+    \entry{Mortimer2008}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0e106529f0533524e590327e3ca103c8}{%
+           family={Mortimer},
+           familyi={M\bibinitperiod},
+           given={Robert\bibnamedelima G.},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0e106529f0533524e590327e3ca103c8}
+      \strng{fullhash}{0e106529f0533524e590327e3ca103c8}
+      \strng{bibnamehash}{0e106529f0533524e590327e3ca103c8}
+      \strng{authorbibnamehash}{0e106529f0533524e590327e3ca103c8}
+      \strng{authornamehash}{0e106529f0533524e590327e3ca103c8}
+      \strng{authorfullhash}{0e106529f0533524e590327e3ca103c8}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Physical Chemistry}
+      \field{year}{2008}
+      \verb{file}
+      \verb :/media/bon/MainStore/Biblioteca/Fisicoquímica/Physical Chemistry, Mortimer (2008).pdf:PDF
+      \endverb
+    \endentry
+    \entry{pitzer1990second}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=38f16dd0076d1169b1bc03993c8a2bc0}{%
+           family={Pitzer},
+           familyi={P\bibinitperiod},
+           given={Kenneth\bibnamedelima S},
+           giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{38f16dd0076d1169b1bc03993c8a2bc0}
+      \strng{fullhash}{38f16dd0076d1169b1bc03993c8a2bc0}
+      \strng{bibnamehash}{38f16dd0076d1169b1bc03993c8a2bc0}
+      \strng{authorbibnamehash}{38f16dd0076d1169b1bc03993c8a2bc0}
+      \strng{authornamehash}{38f16dd0076d1169b1bc03993c8a2bc0}
+      \strng{authorfullhash}{38f16dd0076d1169b1bc03993c8a2bc0}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Fluid phase equilibria}
+      \field{number}{1}
+      \field{title}{Second virial coefficients for mixed gases of low polarity}
+      \field{volume}{59}
+      \field{year}{1990}
+      \field{pages}{109\bibrangedash 113}
+      \range{pages}{5}
+    \endentry
+    \entry{Poling2001}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=db6dafc286465e1a46b33ecb78c114b6}{%
+           family={Poling},
+           familyi={P\bibinitperiod},
+           given={O'Connell},
+           giveni={O\bibinitperiod},
+           givenun=0,
+           suffix={Prausnitz},
+           suffixi={P\bibinitperiod},
+           suffixun=0}}%
+      }
+      \strng{namehash}{db6dafc286465e1a46b33ecb78c114b6}
+      \strng{fullhash}{db6dafc286465e1a46b33ecb78c114b6}
+      \strng{bibnamehash}{db6dafc286465e1a46b33ecb78c114b6}
+      \strng{authorbibnamehash}{db6dafc286465e1a46b33ecb78c114b6}
+      \strng{authornamehash}{db6dafc286465e1a46b33ecb78c114b6}
+      \strng{authorfullhash}{db6dafc286465e1a46b33ecb78c114b6}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{The Properties of Gases and Liquids}}
+      \verb{doi}
+      \verb 10.1036/0070116822
+      \endverb
+      \verb{file}
+      \verb /media/bon/HelpStore/Tesis/App Termodinamica/BooksPsychrometrics/thermo
+      \endverb
+    \endentry
+    \entry{Reisel2021}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=dcf066c195096c591dac5f5caa3a4365}{%
+           family={Reisel},
+           familyi={R\bibinitperiod},
+           given={John\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{dcf066c195096c591dac5f5caa3a4365}
+      \strng{fullhash}{dcf066c195096c591dac5f5caa3a4365}
+      \strng{bibnamehash}{dcf066c195096c591dac5f5caa3a4365}
+      \strng{authorbibnamehash}{dcf066c195096c591dac5f5caa3a4365}
+      \strng{authornamehash}{dcf066c195096c591dac5f5caa3a4365}
+      \strng{authorfullhash}{dcf066c195096c591dac5f5caa3a4365}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780357111796}
+      \field{title}{Principles of Engineering Thermodynamics}
+      \field{year}{2021}
+      \verb{file}
+      \verb :F\:/Tesis/BooksPsychrometrics/thermo/Principles of Engineering Thermodynamics, Si Edition (John R. Reisel) (Z-Library).pdf:PDF
+      \endverb
+    \endentry
+    \entry{Sengers1987equations}{book}{}
+      \name{editor}{4}{}{%
+        {{un=0,uniquepart=base,hash=f24c21cb1d4a238ba87837005c46af39}{%
+           family={Sengers},
+           familyi={S\bibinitperiod},
+           given={J.V.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7a46213f1ac7a4ccca9e1f5a494be654}{%
+           family={Kayser},
+           familyi={K\bibinitperiod},
+           given={R.F.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c8c78af117259e2af39b1c63351bbc98}{%
+           family={Peters},
+           familyi={P\bibinitperiod},
+           given={C.J.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9c414e825121cdc972a806395107b05c}{%
+           family={Jr.},
+           familyi={J\bibinitperiod},
+           given={H.J.\bibnamedelimi White},
+           giveni={H\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Amsterdam, The Netherlands}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{292a2a6bc65cc79cb63e1cd35513e25f}
+      \strng{fullhash}{ece558c9bdd51b7ecb9124f036d05603}
+      \strng{bibnamehash}{ece558c9bdd51b7ecb9124f036d05603}
+      \strng{editorbibnamehash}{ece558c9bdd51b7ecb9124f036d05603}
+      \strng{editornamehash}{292a2a6bc65cc79cb63e1cd35513e25f}
+      \strng{editorfullhash}{ece558c9bdd51b7ecb9124f036d05603}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780444417612}
+      \field{series}{Experimental Thermodynamics}
+      \field{title}{Equations of State for Fluids and Fluid Mixtures}
+      \field{volume}{V}
+      \field{year}{1987}
+    \endentry
+    \entry{SilberberglQmcGeneral}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a3e121f6532116b62ca341e1d1403c36}{%
+           family={Silberbergl},
+           familyi={S\bibinitperiod},
+           given={Martin\bibnamedelima S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=bc9189406be84ec297464a514221406d}{%
+           family={XXX},
+           familyi={X\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {McGraw Hill Interamericana editores}%
+      }
+      \strng{namehash}{a3e121f6532116b62ca341e1d1403c36}
+      \strng{fullhash}{a3e121f6532116b62ca341e1d1403c36}
+      \strng{bibnamehash}{a3e121f6532116b62ca341e1d1403c36}
+      \strng{authorbibnamehash}{a3e121f6532116b62ca341e1d1403c36}
+      \strng{authornamehash}{a3e121f6532116b62ca341e1d1403c36}
+      \strng{authorfullhash}{a3e121f6532116b62ca341e1d1403c36}
+      \strng{editorbibnamehash}{bc9189406be84ec297464a514221406d}
+      \strng{editornamehash}{bc9189406be84ec297464a514221406d}
+      \strng{editorfullhash}{bc9189406be84ec297464a514221406d}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{segunda edición}
+      \field{title}{Quimica General}
+      \field{year}{2002}
+    \endentry
+    \entry{Smith.VanNess.Abbott2007}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d2d804b3660b35de7ede8284896aa0f8}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Abbott},
+           giveni={A\bibinitperiod},
+           givenun=0,
+           suffix={Van\bibnamedelima Ness},
+           suffixi={V\bibinitperiod\bibinitdelim N\bibinitperiod},
+           suffixun=0}}%
+      }
+      \strng{namehash}{d2d804b3660b35de7ede8284896aa0f8}
+      \strng{fullhash}{d2d804b3660b35de7ede8284896aa0f8}
+      \strng{bibnamehash}{d2d804b3660b35de7ede8284896aa0f8}
+      \strng{authorbibnamehash}{d2d804b3660b35de7ede8284896aa0f8}
+      \strng{authornamehash}{d2d804b3660b35de7ede8284896aa0f8}
+      \strng{authorfullhash}{d2d804b3660b35de7ede8284896aa0f8}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781259696527}
+      \field{title}{{Introducción a la Termodinámica en Ingeniería Química}}
+      \field{year}{2007}
+      \verb{file}
+      \verb :media/bon/MainStore/Biblioteca/Thermodynamics/Smith, Van Ness, Abbott/Introduction to Chemical Engineering Thermodynamics by J.M. Smith, Hendrick Van Ness, Michael Abbott, Mark Swihart (z-lib.org) 8th Ed..pdf:pdf
+      \endverb
+    \endentry
+    \entry{tarakad1977improved}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d1a3b601a35653bb951b0ef4771b07eb}{%
+           family={Tarakad},
+           familyi={T\bibinitperiod},
+           given={Ramanathan\bibnamedelima R},
+           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ddd5a51140b4ef5c00959f15fc7b7756}{%
+           family={Danner},
+           familyi={D\bibinitperiod},
+           given={Ronald\bibnamedelima P},
+           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{f54d84dc6aaf0b297a9c36aeb3b13f73}
+      \strng{fullhash}{f54d84dc6aaf0b297a9c36aeb3b13f73}
+      \strng{bibnamehash}{f54d84dc6aaf0b297a9c36aeb3b13f73}
+      \strng{authorbibnamehash}{f54d84dc6aaf0b297a9c36aeb3b13f73}
+      \strng{authornamehash}{f54d84dc6aaf0b297a9c36aeb3b13f73}
+      \strng{authorfullhash}{f54d84dc6aaf0b297a9c36aeb3b13f73}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{AIChE Journal}
+      \field{number}{5}
+      \field{title}{An improved corresponding states method for polar fluids: correlation of second virial coefficients}
+      \field{volume}{23}
+      \field{year}{1977}
+      \field{pages}{685\bibrangedash 695}
+      \range{pages}{11}
+    \endentry
+    \entry{vetere2007simple}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d9e87ab2c2c096fbfbf0da2c5abf9149}{%
+           family={Vetere},
+           familyi={V\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{d9e87ab2c2c096fbfbf0da2c5abf9149}
+      \strng{fullhash}{d9e87ab2c2c096fbfbf0da2c5abf9149}
+      \strng{bibnamehash}{d9e87ab2c2c096fbfbf0da2c5abf9149}
+      \strng{authorbibnamehash}{d9e87ab2c2c096fbfbf0da2c5abf9149}
+      \strng{authornamehash}{d9e87ab2c2c096fbfbf0da2c5abf9149}
+      \strng{authorfullhash}{d9e87ab2c2c096fbfbf0da2c5abf9149}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Canadian Journal of Chemical Engineering}
+      \field{number}{1}
+      \field{title}{A simple modification of the Pitzer method to predict second virial coefficients}
+      \field{volume}{85}
+      \field{year}{2007}
+      \field{pages}{118\bibrangedash 121}
+      \range{pages}{4}
+    \endentry
+    \entry{woolley1969second}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4881c034cf6db9d4b2c112b8aed4db3c}{%
+           family={Woolley},
+           familyi={W\bibinitperiod},
+           given={Harold\bibnamedelima W},
+           giveni={H\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {National Institute of Standards}%
+        {Technology}%
+      }
+      \strng{namehash}{4881c034cf6db9d4b2c112b8aed4db3c}
+      \strng{fullhash}{4881c034cf6db9d4b2c112b8aed4db3c}
+      \strng{bibnamehash}{4881c034cf6db9d4b2c112b8aed4db3c}
+      \strng{authorbibnamehash}{4881c034cf6db9d4b2c112b8aed4db3c}
+      \strng{authornamehash}{4881c034cf6db9d4b2c112b8aed4db3c}
+      \strng{authorfullhash}{4881c034cf6db9d4b2c112b8aed4db3c}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Research of the National Bureau of Standards. Section A, Physics and Chemistry}
+      \field{number}{4}
+      \field{title}{The Second Virial Coefficient for the Realistic Pair Potential}
+      \field{volume}{73}
+      \field{year}{1969}
+      \field{pages}{421}
+      \range{pages}{1}
+    \endentry
+    \entry{YunusA.Cengel2015}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=90e8f2cec74e7f1a599579e61ead1daf}{%
+           family={{Y. A. Çengel}},
+           familyi={Y\bibinitperiod},
+           given={M.\bibnamedelimi Boles},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=0ab808aa2ca46605baf2a9fe9edfa251}{%
+           family={McGRAW-HILL/INTERAMERICANA},
+           familyi={M\bibinithyphendelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill Education}%
+      }
+      \strng{namehash}{90e8f2cec74e7f1a599579e61ead1daf}
+      \strng{fullhash}{90e8f2cec74e7f1a599579e61ead1daf}
+      \strng{bibnamehash}{90e8f2cec74e7f1a599579e61ead1daf}
+      \strng{authorbibnamehash}{90e8f2cec74e7f1a599579e61ead1daf}
+      \strng{authornamehash}{90e8f2cec74e7f1a599579e61ead1daf}
+      \strng{authorfullhash}{90e8f2cec74e7f1a599579e61ead1daf}
+      \strng{editorbibnamehash}{0ab808aa2ca46605baf2a9fe9edfa251}
+      \strng{editornamehash}{0ab808aa2ca46605baf2a9fe9edfa251}
+      \strng{editorfullhash}{0ab808aa2ca46605baf2a9fe9edfa251}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9786071512819}
+      \field{title}{{Termodinámica}}
+      \field{year}{2015}
+      \verb{file}
+      \verb :media/bon/MainStore/Biblioteca/Thermodynamics/Yunus Cengel/Termodinamica - Yunus Cengel 8va Ed.pdf:pdf;:E\:/Biblioteca/Thermodynamics/Yunus Cengel/Termodinamica - Yunus Cengel 8va Ed.pdf:PDF
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{nyt/global//global/global}
+    \entry{beattie1942second}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3ec0f4bd12bf95d6fbc431f54cbfc24f}{%
+           family={Beattie},
+           familyi={B\bibinitperiod},
+           given={James\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9dc84e1f6003cc07bede850c6e7422c7}{%
+           family={Stockmayer},
+           familyi={S\bibinitperiod},
+           given={Walter\bibnamedelima H},
+           giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Institute of Physics}%
+      }
+      \strng{namehash}{dcea16b26fa8fe175ead88e9b7339471}
+      \strng{fullhash}{dcea16b26fa8fe175ead88e9b7339471}
+      \strng{bibnamehash}{dcea16b26fa8fe175ead88e9b7339471}
+      \strng{authorbibnamehash}{dcea16b26fa8fe175ead88e9b7339471}
+      \strng{authornamehash}{dcea16b26fa8fe175ead88e9b7339471}
+      \strng{authorfullhash}{dcea16b26fa8fe175ead88e9b7339471}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Chemical Physics}
+      \field{number}{7}
+      \field{title}{{The second virial coefficient for gas mixtures}}
+      \field{volume}{10}
+      \field{year}{1942}
+      \field{pages}{473\bibrangedash 476}
+      \range{pages}{4}
+    \endentry
+    \entry{Bell2017}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=acd8fa9f0e06c0d3faaa32606f2eb8f1}{%
+           family={Bell},
+           familyi={B\bibinitperiod},
+           given={Ian\bibnamedelima H},
+           giveni={I\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=813e75e54260463028a1b953e8b45dcb}{%
+           family={Lemmon},
+           familyi={L\bibinitperiod},
+           given={Eric\bibnamedelima W},
+           giveni={E\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cd1a0af4a03e8b0a148e767ed7ada459}{%
+           family={Harvey},
+           familyi={H\bibinitperiod},
+           given={Allan\bibnamedelima H},
+           giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{67ace39b483ad9ed980df981d4ec6d70}
+      \strng{fullhash}{f58b430f5b1327f8a4e8e2caddb8ea3c}
+      \strng{bibnamehash}{f58b430f5b1327f8a4e8e2caddb8ea3c}
+      \strng{authorbibnamehash}{f58b430f5b1327f8a4e8e2caddb8ea3c}
+      \strng{authornamehash}{67ace39b483ad9ed980df981d4ec6d70}
+      \strng{authorfullhash}{f58b430f5b1327f8a4e8e2caddb8ea3c}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{October}
+      \field{title}{{Algorithms for the calculation of psychrometric properties from multi-fluid Helmholtz-energy-explicit models Algorithms for the calculation of psychrometric properties from multi-fluid}}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.1016/j.ijrefrig.2017.10.001
+      \endverb
+      \verb{file}
+      \verb :media/bon/HelpStore/Tesis/App Termodinamica/BooksPsychrometrics/Algorithms Psychrometry.pdf:pdf
+      \endverb
+    \endentry
+    \entry{castellan1998fisicoquimica}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=354f9dd7f2d6de29920d1fddc17c02e5}{%
+           family={Castellan},
+           familyi={C\bibinitperiod},
+           given={Gilbert\bibnamedelima W},
+           giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Pearson educación}%
+      }
+      \strng{namehash}{354f9dd7f2d6de29920d1fddc17c02e5}
+      \strng{fullhash}{354f9dd7f2d6de29920d1fddc17c02e5}
+      \strng{bibnamehash}{354f9dd7f2d6de29920d1fddc17c02e5}
+      \strng{authorbibnamehash}{354f9dd7f2d6de29920d1fddc17c02e5}
+      \strng{authornamehash}{354f9dd7f2d6de29920d1fddc17c02e5}
+      \strng{authorfullhash}{354f9dd7f2d6de29920d1fddc17c02e5}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Fisicoquímica}
+      \field{year}{1998}
+    \endentry
+    \entry{ChangQmc2010}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4c412be8d64b0fe2b2b78f18de77d11a}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=c847af4ca84a2fd07c2f551d3b399d08}{%
+           family={Doig},
+           familyi={D\bibinitperiod},
+           given={P.\bibnamedelimi E.},
+           giveni={P\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {McGraw Hill}%
+      }
+      \strng{namehash}{4c412be8d64b0fe2b2b78f18de77d11a}
+      \strng{fullhash}{4c412be8d64b0fe2b2b78f18de77d11a}
+      \strng{bibnamehash}{4c412be8d64b0fe2b2b78f18de77d11a}
+      \strng{authorbibnamehash}{4c412be8d64b0fe2b2b78f18de77d11a}
+      \strng{authornamehash}{4c412be8d64b0fe2b2b78f18de77d11a}
+      \strng{authorfullhash}{4c412be8d64b0fe2b2b78f18de77d11a}
+      \strng{editorbibnamehash}{c847af4ca84a2fd07c2f551d3b399d08}
+      \strng{editornamehash}{c847af4ca84a2fd07c2f551d3b399d08}
+      \strng{editorfullhash}{c847af4ca84a2fd07c2f551d3b399d08}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{10}
+      \field{title}{Química}
+      \field{year}{2010}
+    \endentry
+    \entry{thirdVirialTing}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=56c6f5eaa68dda4de8a242ce24a64d84}{%
+           family={Chen-Hanson\bibnamedelima Ting},
+           familyi={C\bibinithyphendelim H\bibinitperiod\bibinitdelim T\bibinitperiod},
+           given={Cheng\bibnamedelima Chen},
+           giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0,
+           suffix={Suan\bibnamedelima Chen},
+           suffixi={S\bibinitperiod\bibinitdelim C\bibinitperiod},
+           suffixun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=c5553c43903829375f60049412d9e007}{%
+           family={FIG},
+           familyi={F\bibinitperiod},
+           given={Silicon\bibnamedelima Valley},
+           giveni={S\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{56c6f5eaa68dda4de8a242ce24a64d84}
+      \strng{fullhash}{56c6f5eaa68dda4de8a242ce24a64d84}
+      \strng{bibnamehash}{56c6f5eaa68dda4de8a242ce24a64d84}
+      \strng{authorbibnamehash}{56c6f5eaa68dda4de8a242ce24a64d84}
+      \strng{authornamehash}{56c6f5eaa68dda4de8a242ce24a64d84}
+      \strng{authorfullhash}{56c6f5eaa68dda4de8a242ce24a64d84}
+      \strng{editorbibnamehash}{c5553c43903829375f60049412d9e007}
+      \strng{editornamehash}{c5553c43903829375f60049412d9e007}
+      \strng{editorfullhash}{c5553c43903829375f60049412d9e007}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{The Gas-Liquid-Solid Equilibrium Studied By a Simple Equation of State}
+      \field{title}{Third Virial Coefficients}
+      \field{year}{2017}
+    \endentry
+    \entry{ReyesChumacero2012}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ae2d99e88038e337178f29fe051fa25f}{%
+           family={Chumacero},
+           familyi={C\bibinitperiod},
+           given={L.\bibnamedelimi Reyes},
+           giveni={L\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ae2d99e88038e337178f29fe051fa25f}
+      \strng{fullhash}{ae2d99e88038e337178f29fe051fa25f}
+      \strng{bibnamehash}{ae2d99e88038e337178f29fe051fa25f}
+      \strng{authorbibnamehash}{ae2d99e88038e337178f29fe051fa25f}
+      \strng{authornamehash}{ae2d99e88038e337178f29fe051fa25f}
+      \strng{authorfullhash}{ae2d99e88038e337178f29fe051fa25f}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Fisicoquímica}
+      \field{year}{2012}
+      \verb{file}
+      \verb :/media/bon/MainStore/Biblioteca/Fisicoquímica/Fisicoquímica - Antonio Reyes Chumacero ( etc.) (z-lib.org).pdf:PDF
+      \endverb
+    \endentry
+    \entry{Dymond2002}{book}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=6e7774aae38a250fe45d36760fa73245}{%
+           family={Dymond},
+           familyi={D\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=466217962d7496f69b08484a8084a585}{%
+           family={Marsh},
+           familyi={M\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c8ca9093412559a8c8c3c91aad625e5f}{%
+           family={Wilhoit},
+           familyi={W\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4ca9149da1cca394d0c10bd920fbe055}{%
+           family={Wong},
+           familyi={W\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=33ffd6922f6e83f365396cfdf3bad323}{%
+           family={M.\bibnamedelimi Frenkel},
+           familyi={M\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={K.\bibnamedelimi Marsh},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{ca9376264ecb6a7777c8a24d18493072}
+      \strng{fullhash}{a8d240e622b7ec588f2b7088c86edd41}
+      \strng{bibnamehash}{a8d240e622b7ec588f2b7088c86edd41}
+      \strng{authorbibnamehash}{a8d240e622b7ec588f2b7088c86edd41}
+      \strng{authornamehash}{ca9376264ecb6a7777c8a24d18493072}
+      \strng{authorfullhash}{a8d240e622b7ec588f2b7088c86edd41}
+      \strng{editorbibnamehash}{33ffd6922f6e83f365396cfdf3bad323}
+      \strng{editornamehash}{33ffd6922f6e83f365396cfdf3bad323}
+      \strng{editorfullhash}{33ffd6922f6e83f365396cfdf3bad323}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{3540433457}
+      \field{journaltitle}{Landolt-Bornstein-Numerical Data and Functional Relationships in Science and Technology}
+      \field{title}{{Virial Coefficients of Pure Gases and Mixtures}}
+      \field{volume}{21}
+      \field{year}{2002}
+    \endentry
+    \entry{Wilhelm2010}{book}{}
+      \name{editor}{1}{}{%
+        {{un=0,uniquepart=base,hash=21c2c6edc29425bf5efe6c6d397dcd5f}{%
+           family={{Emmerich Wilhelm and Trevor Letcher}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Royal Society of Chemistry}%
+      }
+      \strng{namehash}{21c2c6edc29425bf5efe6c6d397dcd5f}
+      \strng{fullhash}{21c2c6edc29425bf5efe6c6d397dcd5f}
+      \strng{bibnamehash}{21c2c6edc29425bf5efe6c6d397dcd5f}
+      \strng{editorbibnamehash}{21c2c6edc29425bf5efe6c6d397dcd5f}
+      \strng{editornamehash}{21c2c6edc29425bf5efe6c6d397dcd5f}
+      \strng{editorfullhash}{21c2c6edc29425bf5efe6c6d397dcd5f}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780854041763}
+      \field{title}{{Heat Capacities: Liquid Solutions and Vapours}}
+      \field{year}{2010}
+      \verb{file}
+      \verb :media/bon/MainStore/Biblioteca/Thermodynamics/Equilibrium & Non Equilibrium Thermodynamics/Heat Capacities Liquids, Solutions and Vapours by Emmerich Wilhelm, Trevor Letcher (z-lib.org).pdf:pdf
+      \endverb
+    \endentry
+    \entry{Engel2019}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=36282e29e42fcc162832ff91eb9a945d}{%
+           family={Engel},
+           familyi={E\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{36282e29e42fcc162832ff91eb9a945d}
+      \strng{fullhash}{36282e29e42fcc162832ff91eb9a945d}
+      \strng{bibnamehash}{36282e29e42fcc162832ff91eb9a945d}
+      \strng{authorbibnamehash}{36282e29e42fcc162832ff91eb9a945d}
+      \strng{authornamehash}{36282e29e42fcc162832ff91eb9a945d}
+      \strng{authorfullhash}{36282e29e42fcc162832ff91eb9a945d}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780134804583}
+      \field{title}{{Thermodynamics, Statistical Thermodynamics and Kinetics}}
+      \field{year}{2019}
+      \verb{file}
+      \verb :media/bon/MainStore/Biblioteca/Thermodynamics/Chem/Physical chemistry thermodynamics, statistical thermodynamics, and kinetics (Engel, Thomas Reid, Philip J) (Z-Library).pdf:pdf;:Engel2019 - Thermodynamics, Statistical Thermodynamics and Kinetics.pdf:PDF
+      \endverb
+    \endentry
+    \entry{klotz1985improved}{thesis}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d882b7dd97ba3ae2c977bb69dcfe3dae}{%
+           family={Klotz},
+           familyi={K\bibinitperiod},
+           given={Herbert\bibnamedelima C},
+           giveni={H\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Lehigh University}%
+      }
+      \strng{namehash}{d882b7dd97ba3ae2c977bb69dcfe3dae}
+      \strng{fullhash}{d882b7dd97ba3ae2c977bb69dcfe3dae}
+      \strng{bibnamehash}{d882b7dd97ba3ae2c977bb69dcfe3dae}
+      \strng{authorbibnamehash}{d882b7dd97ba3ae2c977bb69dcfe3dae}
+      \strng{authornamehash}{d882b7dd97ba3ae2c977bb69dcfe3dae}
+      \strng{authorfullhash}{d882b7dd97ba3ae2c977bb69dcfe3dae}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An Improved Second-virial-coefficient Correlation}
+      \field{type}{phdthesis}
+      \field{year}{1985}
+      \verb{urlraw}
+      \verb https://core.ac.uk/reader/228679820
+      \endverb
+      \verb{url}
+      \verb https://core.ac.uk/reader/228679820
+      \endverb
+    \endentry
+    \entry{maris1985interaction}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a94e86505924cc6bed485cba71a5b664}{%
+           family={Maris},
+           familyi={M\bibinitperiod},
+           given={Nikos\bibnamedelima JP},
+           giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=56dea5d69e152becb8feb1ca542b1ce6}{%
+           family={Stiel},
+           familyi={S\bibinitperiod},
+           given={Leonard\bibnamedelima I},
+           giveni={L\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {ACS Publications}%
+      }
+      \strng{namehash}{c0051bb26c6d5a2aca206ef7c3efb971}
+      \strng{fullhash}{c0051bb26c6d5a2aca206ef7c3efb971}
+      \strng{bibnamehash}{c0051bb26c6d5a2aca206ef7c3efb971}
+      \strng{authorbibnamehash}{c0051bb26c6d5a2aca206ef7c3efb971}
+      \strng{authornamehash}{c0051bb26c6d5a2aca206ef7c3efb971}
+      \strng{authorfullhash}{c0051bb26c6d5a2aca206ef7c3efb971}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Industrial \& Engineering Chemistry Process Design and Development}
+      \field{number}{1}
+      \field{title}{Interaction second virial coefficients of polar mixtures from parameters of the components}
+      \field{volume}{24}
+      \field{year}{1985}
+      \field{pages}{183\bibrangedash 187}
+      \range{pages}{5}
+    \endentry
+    \entry{Trusler10.1039/9781782627043-00152}{inbook}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a61b81722214148b237a388ba222bfbb}{%
+           family={Martin\bibnamedelima Trusler},
+           familyi={M\bibinitperiod\bibinitdelim T\bibinitperiod},
+           given={J.\bibnamedelimi P.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {The Royal Society of Chemistry}%
+      }
+      \strng{namehash}{a61b81722214148b237a388ba222bfbb}
+      \strng{fullhash}{a61b81722214148b237a388ba222bfbb}
+      \strng{bibnamehash}{a61b81722214148b237a388ba222bfbb}
+      \strng{authorbibnamehash}{a61b81722214148b237a388ba222bfbb}
+      \strng{authornamehash}{a61b81722214148b237a388ba222bfbb}
+      \strng{authorfullhash}{a61b81722214148b237a388ba222bfbb}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{The virial equation of state of a gas is a series expansion of the pressure in powers of inverse molar volume, the mth coefficient of which is given by a set of exact cluster integrals involving m molecules. For mixtures, the composition dependence of the virial coefficients can be expressed exactly in terms of interaction virial coefficients and the corresponding unlike cluster integrals. The series converges rapidly for gas-like states and expressions for all thermodynamic properties of the gas can be developed in terms of the virial coefficients. Numerous experimental techniques have been developed for the measurement of second and third virial coefficients and these may be categorised into direct and indirect methods. Among the direct techniques, the Burnet apparatus and the two-sinker magnetically-coupled densimeter are perhaps the most powerful. Excellent indirect determinations of virial coefficients have been made by means of both flow calorimetry and sound-speed measurements. Databases of critically-evaluated second and third virial coefficients of pure gases and mixtures are available. Finally, for less-well studied compounds, correlation methods based on the principle of corresponding states can be used to estimate pure-component and interaction virial coefficients.}}
+      \field{booktitle}{{Volume Properties: Liquids, Solutions and Vapours}}
+      \field{isbn}{978-1-84973-899-6}
+      \field{month}{12}
+      \field{title}{{Virial Coefficients}}
+      \field{year}{2014}
+      \verb{doi}
+      \verb 10.1039/9781782627043-00152
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1039/9781782627043-00152
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1039/9781782627043-00152
+      \endverb
+    \endentry
+    \entry{Mortimer2008}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0e106529f0533524e590327e3ca103c8}{%
+           family={Mortimer},
+           familyi={M\bibinitperiod},
+           given={Robert\bibnamedelima G.},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0e106529f0533524e590327e3ca103c8}
+      \strng{fullhash}{0e106529f0533524e590327e3ca103c8}
+      \strng{bibnamehash}{0e106529f0533524e590327e3ca103c8}
+      \strng{authorbibnamehash}{0e106529f0533524e590327e3ca103c8}
+      \strng{authornamehash}{0e106529f0533524e590327e3ca103c8}
+      \strng{authorfullhash}{0e106529f0533524e590327e3ca103c8}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Physical Chemistry}
+      \field{year}{2008}
+      \verb{file}
+      \verb :/media/bon/MainStore/Biblioteca/Fisicoquímica/Physical Chemistry, Mortimer (2008).pdf:PDF
+      \endverb
+    \endentry
+    \entry{pitzer1990second}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=38f16dd0076d1169b1bc03993c8a2bc0}{%
+           family={Pitzer},
+           familyi={P\bibinitperiod},
+           given={Kenneth\bibnamedelima S},
+           giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{38f16dd0076d1169b1bc03993c8a2bc0}
+      \strng{fullhash}{38f16dd0076d1169b1bc03993c8a2bc0}
+      \strng{bibnamehash}{38f16dd0076d1169b1bc03993c8a2bc0}
+      \strng{authorbibnamehash}{38f16dd0076d1169b1bc03993c8a2bc0}
+      \strng{authornamehash}{38f16dd0076d1169b1bc03993c8a2bc0}
+      \strng{authorfullhash}{38f16dd0076d1169b1bc03993c8a2bc0}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Fluid phase equilibria}
+      \field{number}{1}
+      \field{title}{Second virial coefficients for mixed gases of low polarity}
+      \field{volume}{59}
+      \field{year}{1990}
+      \field{pages}{109\bibrangedash 113}
+      \range{pages}{5}
+    \endentry
+    \entry{Poling2001}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=db6dafc286465e1a46b33ecb78c114b6}{%
+           family={Poling},
+           familyi={P\bibinitperiod},
+           given={O'Connell},
+           giveni={O\bibinitperiod},
+           givenun=0,
+           suffix={Prausnitz},
+           suffixi={P\bibinitperiod},
+           suffixun=0}}%
+      }
+      \strng{namehash}{db6dafc286465e1a46b33ecb78c114b6}
+      \strng{fullhash}{db6dafc286465e1a46b33ecb78c114b6}
+      \strng{bibnamehash}{db6dafc286465e1a46b33ecb78c114b6}
+      \strng{authorbibnamehash}{db6dafc286465e1a46b33ecb78c114b6}
+      \strng{authornamehash}{db6dafc286465e1a46b33ecb78c114b6}
+      \strng{authorfullhash}{db6dafc286465e1a46b33ecb78c114b6}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{The Properties of Gases and Liquids}}
+      \verb{doi}
+      \verb 10.1036/0070116822
+      \endverb
+      \verb{file}
+      \verb /media/bon/HelpStore/Tesis/App Termodinamica/BooksPsychrometrics/thermo
+      \endverb
+    \endentry
+    \entry{Reisel2021}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=dcf066c195096c591dac5f5caa3a4365}{%
+           family={Reisel},
+           familyi={R\bibinitperiod},
+           given={John\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{dcf066c195096c591dac5f5caa3a4365}
+      \strng{fullhash}{dcf066c195096c591dac5f5caa3a4365}
+      \strng{bibnamehash}{dcf066c195096c591dac5f5caa3a4365}
+      \strng{authorbibnamehash}{dcf066c195096c591dac5f5caa3a4365}
+      \strng{authornamehash}{dcf066c195096c591dac5f5caa3a4365}
+      \strng{authorfullhash}{dcf066c195096c591dac5f5caa3a4365}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780357111796}
+      \field{title}{Principles of Engineering Thermodynamics}
+      \field{year}{2021}
+      \verb{file}
+      \verb :F\:/Tesis/BooksPsychrometrics/thermo/Principles of Engineering Thermodynamics, Si Edition (John R. Reisel) (Z-Library).pdf:PDF
+      \endverb
+    \endentry
+    \entry{Sengers1987equations}{book}{}
+      \name{editor}{4}{}{%
+        {{un=0,uniquepart=base,hash=f24c21cb1d4a238ba87837005c46af39}{%
+           family={Sengers},
+           familyi={S\bibinitperiod},
+           given={J.V.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7a46213f1ac7a4ccca9e1f5a494be654}{%
+           family={Kayser},
+           familyi={K\bibinitperiod},
+           given={R.F.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c8c78af117259e2af39b1c63351bbc98}{%
+           family={Peters},
+           familyi={P\bibinitperiod},
+           given={C.J.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9c414e825121cdc972a806395107b05c}{%
+           family={Jr.},
+           familyi={J\bibinitperiod},
+           given={H.J.\bibnamedelimi White},
+           giveni={H\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Amsterdam, The Netherlands}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{292a2a6bc65cc79cb63e1cd35513e25f}
+      \strng{fullhash}{ece558c9bdd51b7ecb9124f036d05603}
+      \strng{bibnamehash}{ece558c9bdd51b7ecb9124f036d05603}
+      \strng{editorbibnamehash}{ece558c9bdd51b7ecb9124f036d05603}
+      \strng{editornamehash}{292a2a6bc65cc79cb63e1cd35513e25f}
+      \strng{editorfullhash}{ece558c9bdd51b7ecb9124f036d05603}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780444417612}
+      \field{series}{Experimental Thermodynamics}
+      \field{title}{Equations of State for Fluids and Fluid Mixtures}
+      \field{volume}{V}
+      \field{year}{1987}
+    \endentry
+    \entry{SilberberglQmcGeneral}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a3e121f6532116b62ca341e1d1403c36}{%
+           family={Silberbergl},
+           familyi={S\bibinitperiod},
+           given={Martin\bibnamedelima S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=bc9189406be84ec297464a514221406d}{%
+           family={XXX},
+           familyi={X\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {McGraw Hill Interamericana editores}%
+      }
+      \strng{namehash}{a3e121f6532116b62ca341e1d1403c36}
+      \strng{fullhash}{a3e121f6532116b62ca341e1d1403c36}
+      \strng{bibnamehash}{a3e121f6532116b62ca341e1d1403c36}
+      \strng{authorbibnamehash}{a3e121f6532116b62ca341e1d1403c36}
+      \strng{authornamehash}{a3e121f6532116b62ca341e1d1403c36}
+      \strng{authorfullhash}{a3e121f6532116b62ca341e1d1403c36}
+      \strng{editorbibnamehash}{bc9189406be84ec297464a514221406d}
+      \strng{editornamehash}{bc9189406be84ec297464a514221406d}
+      \strng{editorfullhash}{bc9189406be84ec297464a514221406d}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{segunda edición}
+      \field{title}{Quimica General}
+      \field{year}{2002}
+    \endentry
+    \entry{Smith.VanNess.Abbott2007}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d2d804b3660b35de7ede8284896aa0f8}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Abbott},
+           giveni={A\bibinitperiod},
+           givenun=0,
+           suffix={Van\bibnamedelima Ness},
+           suffixi={V\bibinitperiod\bibinitdelim N\bibinitperiod},
+           suffixun=0}}%
+      }
+      \strng{namehash}{d2d804b3660b35de7ede8284896aa0f8}
+      \strng{fullhash}{d2d804b3660b35de7ede8284896aa0f8}
+      \strng{bibnamehash}{d2d804b3660b35de7ede8284896aa0f8}
+      \strng{authorbibnamehash}{d2d804b3660b35de7ede8284896aa0f8}
+      \strng{authornamehash}{d2d804b3660b35de7ede8284896aa0f8}
+      \strng{authorfullhash}{d2d804b3660b35de7ede8284896aa0f8}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781259696527}
+      \field{title}{{Introducción a la Termodinámica en Ingeniería Química}}
+      \field{year}{2007}
+      \verb{file}
+      \verb :media/bon/MainStore/Biblioteca/Thermodynamics/Smith, Van Ness, Abbott/Introduction to Chemical Engineering Thermodynamics by J.M. Smith, Hendrick Van Ness, Michael Abbott, Mark Swihart (z-lib.org) 8th Ed..pdf:pdf
+      \endverb
+    \endentry
+    \entry{tarakad1977improved}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d1a3b601a35653bb951b0ef4771b07eb}{%
+           family={Tarakad},
+           familyi={T\bibinitperiod},
+           given={Ramanathan\bibnamedelima R},
+           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ddd5a51140b4ef5c00959f15fc7b7756}{%
+           family={Danner},
+           familyi={D\bibinitperiod},
+           given={Ronald\bibnamedelima P},
+           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{f54d84dc6aaf0b297a9c36aeb3b13f73}
+      \strng{fullhash}{f54d84dc6aaf0b297a9c36aeb3b13f73}
+      \strng{bibnamehash}{f54d84dc6aaf0b297a9c36aeb3b13f73}
+      \strng{authorbibnamehash}{f54d84dc6aaf0b297a9c36aeb3b13f73}
+      \strng{authornamehash}{f54d84dc6aaf0b297a9c36aeb3b13f73}
+      \strng{authorfullhash}{f54d84dc6aaf0b297a9c36aeb3b13f73}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{AIChE Journal}
+      \field{number}{5}
+      \field{title}{An improved corresponding states method for polar fluids: correlation of second virial coefficients}
+      \field{volume}{23}
+      \field{year}{1977}
+      \field{pages}{685\bibrangedash 695}
+      \range{pages}{11}
+    \endentry
+    \entry{vetere2007simple}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d9e87ab2c2c096fbfbf0da2c5abf9149}{%
+           family={Vetere},
+           familyi={V\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{d9e87ab2c2c096fbfbf0da2c5abf9149}
+      \strng{fullhash}{d9e87ab2c2c096fbfbf0da2c5abf9149}
+      \strng{bibnamehash}{d9e87ab2c2c096fbfbf0da2c5abf9149}
+      \strng{authorbibnamehash}{d9e87ab2c2c096fbfbf0da2c5abf9149}
+      \strng{authornamehash}{d9e87ab2c2c096fbfbf0da2c5abf9149}
+      \strng{authorfullhash}{d9e87ab2c2c096fbfbf0da2c5abf9149}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Canadian Journal of Chemical Engineering}
+      \field{number}{1}
+      \field{title}{A simple modification of the Pitzer method to predict second virial coefficients}
+      \field{volume}{85}
+      \field{year}{2007}
+      \field{pages}{118\bibrangedash 121}
+      \range{pages}{4}
+    \endentry
+    \entry{woolley1969second}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4881c034cf6db9d4b2c112b8aed4db3c}{%
+           family={Woolley},
+           familyi={W\bibinitperiod},
+           given={Harold\bibnamedelima W},
+           giveni={H\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {National Institute of Standards}%
+        {Technology}%
+      }
+      \strng{namehash}{4881c034cf6db9d4b2c112b8aed4db3c}
+      \strng{fullhash}{4881c034cf6db9d4b2c112b8aed4db3c}
+      \strng{bibnamehash}{4881c034cf6db9d4b2c112b8aed4db3c}
+      \strng{authorbibnamehash}{4881c034cf6db9d4b2c112b8aed4db3c}
+      \strng{authornamehash}{4881c034cf6db9d4b2c112b8aed4db3c}
+      \strng{authorfullhash}{4881c034cf6db9d4b2c112b8aed4db3c}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Research of the National Bureau of Standards. Section A, Physics and Chemistry}
+      \field{number}{4}
+      \field{title}{The Second Virial Coefficient for the Realistic Pair Potential}
+      \field{volume}{73}
+      \field{year}{1969}
+      \field{pages}{421}
+      \range{pages}{1}
+    \endentry
+    \entry{YunusA.Cengel2015}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=90e8f2cec74e7f1a599579e61ead1daf}{%
+           family={{Y. A. Çengel}},
+           familyi={Y\bibinitperiod},
+           given={M.\bibnamedelimi Boles},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=0ab808aa2ca46605baf2a9fe9edfa251}{%
+           family={McGRAW-HILL/INTERAMERICANA},
+           familyi={M\bibinithyphendelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill Education}%
+      }
+      \strng{namehash}{90e8f2cec74e7f1a599579e61ead1daf}
+      \strng{fullhash}{90e8f2cec74e7f1a599579e61ead1daf}
+      \strng{bibnamehash}{90e8f2cec74e7f1a599579e61ead1daf}
+      \strng{authorbibnamehash}{90e8f2cec74e7f1a599579e61ead1daf}
+      \strng{authornamehash}{90e8f2cec74e7f1a599579e61ead1daf}
+      \strng{authorfullhash}{90e8f2cec74e7f1a599579e61ead1daf}
+      \strng{editorbibnamehash}{0ab808aa2ca46605baf2a9fe9edfa251}
+      \strng{editornamehash}{0ab808aa2ca46605baf2a9fe9edfa251}
+      \strng{editorfullhash}{0ab808aa2ca46605baf2a9fe9edfa251}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9786071512819}
+      \field{title}{{Termodinámica}}
+      \field{year}{2015}
+      \verb{file}
+      \verb :media/bon/MainStore/Biblioteca/Thermodynamics/Yunus Cengel/Termodinamica - Yunus Cengel 8va Ed.pdf:pdf;:E\:/Biblioteca/Thermodynamics/Yunus Cengel/Termodinamica - Yunus Cengel 8va Ed.pdf:PDF
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

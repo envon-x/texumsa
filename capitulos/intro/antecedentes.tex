@@ -1,0 +1,143 @@
+\section{ANTECEDENTES}
+\label{cap1:sec:antecedente}
+
+
+
+
+El comienzo de la psicrometría se remonta al año 1825, cuando Ernest Ferdinand August usa la palabra latina \textit{psychro} para nombrar su invento, un termómetro de bulbo húmedo \parencite[ p. 9]{Gatley2013}; sin embargo, existen autores que señalan, que la palabra \textit{psicrometría} proviene de las palabras griegas $\psi \upsilon \chi \rho \acute{o} \upsilon $ que significa frio, y la palabra $\mu \acute{\varepsilon} \tau  \rho o \upsilon$ que significa medida \parencite{Shallcross1997}. 
+
+% (traducido del término inglés, coldness, acuñado en el siglo XVIII)
+
+A principios del siglo IXX, recién se ha hace uso el término psicrometría para describir a un dispositivo muy semejante al que se conoce en la actualidad, un termómetro con bulbo húmedo y otro seco, arreglado de lado a lado. Hoy en día, el psicrómetro, como instrumento, se refiere a cualquier dispositivo que permite medir, por cualquier medio, el contenido de vapor en una mezcla gas-vapor; el caso más común de su uso es en la medida del contenido de humedad o vapor de agua en el aire seco \parencite{Shallcross1997}. Todo ello, fue posible gracias al invento del termómetro, el cual se atribuye a Galileo Galilei (1564-1642), en el siglo XVI.
+
+En vista de las complejidades en el cálculo de las variables psicrométricas, se han desarrollado diagramas o cartas para realizar las lecturas de las propiedades de tales variables. 
+El primer diagrama psicrométrico fue desarrollado por Willis Carrier, alrededor del año 1900 (Brandt, 2016); por aquel entonces, se  conocía como cartas higrométricas. En 1911 definitívamente se ha renombrado a diagramas o cartas psicrométricas \parencite[ p. 10]{Gatley2013}.% (Gatley, 2013, p. 10).
+
+% En latinoamérica, en los años 1970 fue de uso común las tablas psicrométricas en el area de meteorología, muy similar a la tabla de logaritmos; tal como se evidencia en los archivos encontrados en las páginas del Instituto de Hidrología, Meteorología y Estudios Ambientales (antes conocido como, Servicio Colombiano de Meteorología e Hidrología). Estas tablas permiten determinar la humedad relativa, la tensión de vapor (en milibares, mb), el Punto de Rocío (en grados Celsius), tomando como variables de entrada la temperatura de bulbo seco y la temperatura de bulbo húmedo.
+En latinoamérica, en los años 70, fue de uso común las tablas psicrométricas en el area de meteorología, muy similar a la tabla de logaritmos; tal como se evidencia en los archivos encontrados en las páginas del Instituto de Hidrología, Meteorología y Estudios Ambientales (antes conocido como, Servicio Colombiano de Meteorología e Hidrología). Estas tablas permiten determinar la humedad relativa, la tensión de vapor (en milibares, mbar), el Punto de Rocío (en grados Celsius), tomando como variables de entrada la temperatura de bulbo seco y la temperatura de bulbo húmedo. Actualmente las instituciones del estado boliviano, se usa unas reglas manuales para determinar la humedad relativa, llamadas regla psicrométrica.
+
+La \glsxtrfull{ashrae}, quien desde 1984 ha desarrollado directrices para Sistemas de Calefacción, Ventilación, Acondicionamiento\footnote[1]{En las traducciones españolas erroneamente llamado, climatización. Ver en el anexo de definiciones.} y Refrigeración (HVAC $\&$ R); recién en 1996, introduce el término \textit{psicrometría} dentro de su glosario.
+
+% En 1997, Shallcross, profesor de Ingeniería Mecánica en la Universidad de Melbourne, publica los principios para la construcción de los diagramas psicrométricos donde menciona que pueden ser generados a partir de las ecuaciones viriales para diversas mezclas de vapor-gas.
+
+
+\subsection*{CONCEPTOS}
+
+Principio de los estados correspondientes.
+El estudio de la psicrometría se fundamenta en los principios de la termodinámica clásica.
+
+
+
+% Son diversas las definiciones que se le han dado al estudio de la psicrometría; a continuación se mencionan algunos de ellos.
+Son diversas los conceptos que se han manejado en el estudio de la psicrometría; a continuación se mencionan algunos de ellos.
+
+Para \parencite[ p. 25]{SamuelC.Sugarman2007} la psicrometría es la ciencia de la termodinámica del aire húmedo aplicado a los sistemas \glsxtrshort{hvac}. 
+% Enfriamento: Disminución de la temperature de aire.
+% Teoría de procesos de humidifcación y deshumidificación
+
+
+% \textcite{Rajput2007}, hace una distición entre los términos, psicrometría y psicrométrica; donde la psicrometría conceptualiza como el arte   
+
+% Los diagramas que se han revisado 
+
+% De acuerdo a  \href{www.wikipedia.org}{wikipedia} 
+Para \textcite[]{Himmelblau2004}, un diagrama de humedad o carta psicrométrica, no es mas que una representación gráfica del balance de materia y energía de la mezcla vapor de agua y aire seco; evidententemente asociados a las variables psicrométricas.
+
+
+Según \textcite[]{Martinez1992}, la psicrometría es el estudio del aire húmedo. Mientras que \textcite[]{YunusA.Cengel2015} evita usar el término psicrometría y solamente refiere como mezclas de gas-vapor y acondicionamiento de aire.    
+
+
+
+
+% Para () señala que diversos autores definen la psicrometría como la ciencia que estudia las propiedades de la mezcla de aire (se entiende aire por aire seco) y vapor de agua; en el ámbito de procesos ()
+
+Para la elaboración de este proyecto, se tomará la definición de \parencite[]{Perry2000}, donde la psicrometría se refiere a la determinación de las propiedades de la mezcla de gas-vapor, donde la mezcla aire seco-vapor de agua es el sistema más representativo.
+
+
+
+% La psicrometría es una rama de la ciencias físicas que se ocupa de estudiar las propiedades termodinámicas de mezclas de gas-vapor; en particular, el aire húmedo; sin embargo, puede extenderse a mezclas de otros compuestos.
+
+% Dentro del area de ingeniería (HVAC) su uso está bastante extendido, el cual se ocupa en dar soluciones de un entorno confortable el cual consiste en:
+
+
+
+
+% se ha estudiado los griegos como la medición de frio. 
+
+\subsection*{IMPLEMENTACIONES INFORMÁTICAS}
+
+Las primeras implementaciones informáticas se han dado en el lenguaje de programación FORTRAN-70; desde entonces, se han desarrollado diversos programas para PC's de los cuales se pueden listar a continuación:
+\begin{itemize}
+    \item Psicro (2009),  desarrollado por \parencite{Compagnon2010}
+    % \item Interfaz gráfica del diagrama psicrométrico Aplicado en problemas de humidificación y secado \parencite{Zamario1000}
+    \item Simulación de los procesos psicrométricos utilizando el lenguaje de programación java \parencite{Cardoso2016}
+    \item PsychroLib, es una biblioteca de funciones psicrométricas para calcular las propiedades termodinámicas del aire \parencite{Meyer2019}
+    % \item Entre otras que se pueden encontran en diversos libros de transferencia de masa.
+\end{itemize}
+
+El trabajo más destacado de los mencionados previamente es de \textcite[]{Meyer2019} que, al no encontrar implementaciones numéricas apropiadas para los cálculos de las propiedades psicrométricas de manera libre, publica un conjunto de bibliotecas en el repositorio de software \href{https://github.com/psychrometrics/psychrolib}{Github}, para la mezcla de vapor de agua y aire seco; escrito para los lenguajes de programación, C/C++, C\#, Javascript, Python, R y Visual Basic para Aplicaciones (VBA); los cuales fueron publicados bajo la licencia \href{https://github.com/psychrometrics/psychrolib/blob/master/LICENSE.txt}{MIT}. %Sin embargo respecto a otros sistemas gas-vapor, no se encuentra mucha información.
+
+Los softwares especializados en el area de procesos, tales como: ASPEN ONE, Chemcad y DWSIM, disponen de la capacidad para generar estas cartas o diagramas. Este conjunto de softwares unicamente generan imágenes estáticas; inmediatamente se percibe la falta dinamismo y capacidad de mostrar resultados de los resultados de manera interactiva. Estos softwares, también requiere de una PC para su instalación y funcionamiento y generar tales diagramas; por lo cual, se hace necesario el desarrollo de una \glsxtrfull{apk}\footnote{También llamado, aplicación.}  para este propósito. % \footcite{A partir de ahora unicamente, \glsxtrshort{apk}. %; a menos que se indique lo contrario.} para esta propósito. 
+
+
+
+
+
+
+% \subsection*{Xxxxxxxxx}
+% En nuestra sociedad, dada la dificultad de y un conocimiento empírico de los técnicos hace que acceder a un PC sea ligeramente complejo.
+
+% Además de ello, en virtud del uso de las cartas psicrométricas (cada vez que ocurre una variación de temperatura, siempre) se necesita acceder a ello para realizar un nuevo cálculo.
+Hoy en dia, la mayoría de las personas disponen de teléfonos inteligentes; por lo cual, es más que razonable disponer de una aplicación para el cálculos de las propiedades psicrométricas.
+
+La ASHRAE recientemente ha publicado su aplicación del diagrama psicrométrico  del aire húmedo en la tienda AppStore, para telefonos IOS; mas no en la tienda PlayStore, para para teléfonos Android.
+
+Todo los diagramas que se han revisado unicamente presentan diagramas para el aire húmedo. Los diagramas psicrométricos represntado mediante ecuaciones viriales, pueden extenderse para mezclas vapor-gas de otras sustancias.
+
+
+\subsection*{APLICACIONES DE LA PSICROMETRÍA} 
+
+Las aplicaciones de la psicrometría se extiende por diversas areas de la ingeniería; desde la térmica, meteorología, agricultura, hasta la industria textil.
+
+En el area de agricultura, puede contribuir a reducir la pérdida de agua por evaporación durante el riego  por aspersión o goteo de los campos de cultivo; mejorando de esta manera el uso del agua en la agricultura.
+
+También puede ayudar a desarrollar nuevas nuevas formas de cultivo en espacios reducidos; tales como el cultivo de hongos comestibles de la especie \textit{Suillus luteusy} en el altiplano, cuando este se cultiva generalmente en hectareas de pinos de la especie: \textit{Pinus radiata} o \textit{Pinus patula}.
+
+En la meteorología, ayuda con el pronóstico del tiempo, en cuanto a las precipitaciones, o el grado de saturación de la humedad en la atmósfera.
+
+Un diagrama psicrométrico para el vapor de $\ch{CO2}$ y aire seco, puede ayudar a estudiara y desarrollar nuevas formas reducción del $\ch{CO2}$ de la atmosfera.
+
+
+% la búsqueda de diagramas implica tiempo
+% Conforme el avance de la tecnología; también se hace necesario
+
+
+% Se ha implementado en diversas plataformas para PC y teléfonos móviles; sin embargo, ninguna de ellas cuenta con con la flexibilidad que se desea para realizar las lecturas sin recurrir a lecturas erroneas. En la tienda PlayStore para telefonos android, se puede encontrar diversas aplicaciones informáticas, pero únicamente para la mezcla de aire húmedo.
+
+% Una forma simple de mostrar
+% Una carta psicrométrica es una representación gráfica de las propiedades termodinámicas, generalmente de la mezcla aire-vapor de agua
+
+% Diferencias entre gas y vapor.
+% El vapor puede condensarse
+% El gas permanece 
+
+% Diagrama carta o índice
+
+% Diseño de los Diagramas psicrométricos
+
+% Los primeros algoritmos para calcular las variables psicrométricas fueron escritos en el lenguaje de programación FORTRAN 77 (1978)
+
+
+
+
+
+
+% puede que se vaya a la seccion de estado del arte
+% la disponibilidad de diagramas psicrométricos para mezclas no convencionales es bastante limitado.
+
+
+
+
+% En la actualidad es una ciencia completamente desarrollada, alejado de su pasado empírico
+
+% Diversos autores han sintetizado la representación de las propiedades 

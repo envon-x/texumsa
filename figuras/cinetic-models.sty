@@ -1,0 +1,40 @@
+\ProvidesPackage{figuras/cinetic-models}
+\RequirePackage{graphicx}
+\RequirePackage{caption}
+\RequirePackage{svg}
+
+\def\figMolecularColissions{
+  \begin{figure}[!tbp]
+    \centering
+  \begin{minipage}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{resources/images/bitmap/Colision_pared_particula_gas.png}
+    \caption{Antes y después de la colisión de la partícula con la pared, muestra la conservación de la cantidad de movimiento.}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{resources/images/bitmap/Elemento_Volumen_numero_colisiones.png}
+    \caption{Elemento de volumen que permite determinar el número total de colisiones con la pared. \textit{Nota} Tomado de Chemistry }
+  \end{minipage}
+\end{figure}}
+
+
+\def\figPhaseDiagram{
+  \begin{figure}[!bht]
+    \centering
+    \caption{\label{fig:diag_phase}\textit{Diagrama de fases o curva de coexistencia para una sustancia pura}}
+    \includesvg[width=4.0in]{resources/images/vectorial/thermo/phase_diagram.svg}
+    \\
+    \emph{Nota:} Realizado con el editor de gráficos Vectoriales \href{https://inkscape.org/}{inkscape}. Fuente: An introduction to Atmospheric Thermodynamics, Tsonis. % pp 83
+  \end{figure}
+}
+
+\def\figCoordinatePV {
+  \begin{figure}[!bht]
+    \centering
+    \caption{\label{fig:diag_AA}\textit{Diagrama de Amagat-Andrews}}
+    \includesvg[width=4.0in]{resources/images/vectorial/thermo/coord_P_V.svg}
+    \\
+    \emph{Nota:} Realizado con el editor de gráficos Vectoriales \href{https://inkscape.org/}{inkscape}. Fuente: An introduction to Atmospheric Thermodynamics, Tsonis. % pp 83
+  \end{figure}
+
+}

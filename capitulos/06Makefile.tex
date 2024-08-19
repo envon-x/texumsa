@@ -1,0 +1,186 @@
+%---------------------------------------------------------------------
+%
+%                          Capítulo 6
+%
+%---------------------------------------------------------------------
+%
+% 06Makefile.tex
+% Copyright 2009 Marco Antonio Gomez-Martin, Pedro Pablo Gomez-Martin
+%
+% This file belongs to the TeXiS manual, a LaTeX template for writting
+% Thesis and other documents. The complete last TeXiS package can
+% be obtained from http://gaia.fdi.ucm.es/projects/texis/
+%
+% Although the TeXiS template itself is distributed under the 
+% conditions of the LaTeX Project Public License
+% (http://www.latex-project.org/lppl.txt), the manual content
+% uses the CC-BY-SA license that stays that you are free:
+%
+%    - to share & to copy, distribute and transmit the work
+%    - to remix and to adapt the work
+%
+% under the following conditions:
+%
+%    - Attribution: you must attribute the work in the manner
+%      specified by the author or licensor (but not in any way that
+%      suggests that they endorse you or your use of the work).
+%    - Share Alike: if you alter, transform, or build upon this
+%      work, you may distribute the resulting work only under the
+%      same, similar or a compatible license.
+%
+% The complete license is available in
+% http://creativecommons.org/licenses/by-sa/3.0/legalcode
+%
+%---------------------------------------------------------------------
+
+\chapter{Makefile}
+\label{cap6}
+\label{cap:makefile}
+
+\begin{FraseCelebre}
+\begin{Frase}
+A fuerza de construir bien, se llega a buen arquitecto.
+\end{Frase}
+\begin{Fuente}
+Aristóteles
+\end{Fuente}
+\end{FraseCelebre}
+
+\begin{resumen}
+Este capítulo describe la infraestructura de creación del
+documento final, apoyada en la herramienta \texttt{make}
+de GNU.
+\end{resumen}
+
+%-------------------------------------------------------------------
+\section{Introducción}
+%-------------------------------------------------------------------
+\label{cap6:sec:intro}
+
+Ya se ha esbozado a lo largo de este manual que la generación del
+documento final requiere varias etapas, algo que es de hecho inherente
+al propio \LaTeX\ (o Pdf\LaTeX). En la
+sección~\ref{cap2:sec:compilacion} vimos que era necesario la
+invocación a \texttt{pdflatex} tres veces, junto con el uso de
+\texttt{bibtex}. En la sección~\ref{cap5:sec:glosstex} se añadió la
+necesidad de invocar a \texttt{glosstex} y a \texttt{makeindex} para
+añadir el listado de acrónimos. El resultado es una generación
+bastante laboriosa que requiere dar varios pasos en un orden concreto.
+
+El mundo del desarrollo del software ha lidiado con un problema
+similar (más complejo, de hecho) desde hace décadas, y que se ha ido
+resolviendo con diferentes herramientas, siendo \texttt{make} una de
+las más extendidas. \texis\ proporciona un fichero \texttt{Makefile}
+para ser utilizado con ella, y simplificar la generación del
+documento, así como otras labores rutinarias. Dado que la
+infraestructura \texttt{make} no está disponible nativamente en
+plataformas Windows, sólo podrá utilizarse sobre GNU/Linux y otras
+variantes de Unix\footnote{Windows dispone de Cygwin que proporciona
+  muchas de las herramientas habituales en Unix. \emph{No} hemos
+  probado \texis\ sobre él; si lo haces, ¡no dudes en contarnos la
+  experiencia!}. Incluso aunque se utilizara \texttt{nmake}, una
+herramienta similar a \texttt{make} proporcionada con Visual Studio,
+el \texttt{Makefile} de \texis\ no funcionaría dado que hace uso de
+comandos que sólo están disponibles en Unix/Linux. Es por ello que en
+el primer capítulo recomendábamos el uso de dicho sistema.
+
+En la sección siguiente, se describen los diferentes \emph{objetivos}
+que este \texttt{Makefile} proporciona. La
+sección~\ref{cap6:sec:funcionamiento} describe brevemente el
+funcionamiento de algunas de sus partes.
+
+%-------------------------------------------------------------------
+\section{Objetivos del \texttt{Makefile}}
+%-------------------------------------------------------------------
+\label{cap6:sec:objetivos}
+
+En la terminología de \texttt{make}, un objetivo es un \emph{grupo de
+  tareas} que se ejecutan en conjunto. En el entorno del desarrollo
+del software, esas tareas suelen estar enfocadas a la compilación del
+proyecto, aunque también se incluyen objetivos para, por ejemplo,
+borrar los ficheros intermedios, o instalar el programa recién
+compilado.
+Como se recordará de la sección~\ref{cap5:sec:glosstex}, cuando se
+utilizan acrónimos, tras varias etapas termina consiguiéndose un
+fichero con extensión \texttt{.glx} con la descripción de aquéllos que
+se usaron. En la siguiente compilación del documento, el comando
+\verb+\printglosstex+ se encargará de recoger el contenido de dicho
+fichero e incrustarlo en esa posición.
+
+Ten en cuenta que la primera vez que se compila el documento,
+\emph{no} existirá ningún fichero \texttt{.glx}; esto es perfectamente
+legal, dado que \verb+\printglosstex+ no se quejará si el fichero
+\emph{no} existe. Por desgracia, sí generará un error si existe
+\emph{pero está vacío}.
+
+Cuando en \texis\ el uso de acrónimos está desactivado (lo que ocurre
+en la generación de depuración), los comandos de Gloss\TeX\ como
+\verb+\acs+, \verb+\acl+ etcétera se puentean y no se tienen en
+cuenta, por lo que en los ficheros intermedios no se informará del uso
+de ningún acrónimo. Sin embargo, durante el proceso de compilación del
+documento, el \texttt{Makefile} insistirá en realizar los pasos
+necesarios para la generación de acrónimos (es decir, invocar al
+ejecutable \texttt{glosstex} y a \texttt{makeindex}). Éstos
+desembocarán en la creación de un fichero \texttt{.glx} vacío, al no
+haber ningún acrónimo usado. En principio, esto significa que
+\verb+\printglosstex+ fallará. Afortunadamente, \texis\ \emph{no}
+añade dicho comando \LaTeX\ al documento cuando los acrónimos están
+desactivados, lo que evita el problema.
+
+Sin embargo, cuando se activa su generación (al pasar a modo de
+compilación \emph{release}), \texis\ comienza a incluir el comando. En
+la primera compilación del documento, por tanto, \verb+\printglosstex+
+se encontrará que el fichero \texttt{.glx} está vacío (de la
+compilación en \emph{debug} anterior), y fallará. Para solucionarlo,
+basta en realidad con eliminar dicho fichero; sin embargo, resulta
+mucho más fácil de recordar (y por tanto práctico) limitarse a
+realizar un \texttt{make clean} que borra, entre otros, el
+\texttt{.glx} por nosotros.
+
+\medskip
+
+Por otro lado, cuando el documento se ha generado correctamente con
+los acrónimos (normalmente en modo \emph{release}) y se vuelve a
+generar sin ellos (en modo \emph{debug}), en la primera compilación
+\LaTeX\ (o Pdf\LaTeX) hará uso tanto de los fuentes del documento como
+de los ficheros auxiliares (\texttt{.aux}) generados en la compilación
+anterior para acelerar el proceso. En esos ficheros se encuentran
+entradas relativas a los acrónimos que se utilizaron en la última
+compilación (en \emph{release}). Al hacer ahora la compilación sin
+acrónimos, no se habrán incluído los paquetes \LaTeX\ que comprenden
+los comandos de Gloss\TeX, por lo que \LaTeX\ fallará al no
+comprenderlos. De nuevo, para solucionar este problema es suficiente
+con borrar los ficheros \texttt{.aux} generados en la compilación
+anterior; sin embargo resulta mucho más simple realizar un
+\texttt{make clean} con la infraestructura de generación proporcionada
+por \texis.
+
+
+%-------------------------------------------------------------------
+%\section*{\ProximoCapitulo}
+%-------------------------------------------------------------------
+%\TocProximoCapitulo
+
+
+%-------------------------------------------------------------------
+\section*{\NotasBibliograficas}
+%-------------------------------------------------------------------
+\TocNotasBibliograficas
+
+Sobre la utilidad \texttt{make} hay una gran cantidad de información
+en Internet. Quizá el lugar de referencia es la página oficial del
+proyecto de GNU (\url{http://www.gnu.org/software/make/}), aunque
+contiene mucha más información de la necesaria para comprender el
+\texttt{Makefile} proporcionado con \texis. Por el mero hecho de
+proporcionar también una referencia impresa, puede consultarse también
+\cite{libroMake}.
+
+
+
+% Variable local para emacs, para  que encuentre el fichero maestro de
+% compilación y funcionen mejor algunas teclas rápidas de AucTeX
+%%%
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../ManualTeXiS.tex"
+%%% End:

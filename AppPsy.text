@@ -1,0 +1,170 @@
+\documentclass[letterpaper, 12pt, oneside]{book}
+    \usepackage{local/umsa-tesis}
+    \usepackage{physics/equations}
+    \usepackage{physics/algorithm}
+    \usepackage{pdfpages}
+    % \usepackage{xcolor} %[dvipsnames]
+    \usepackage{setspace} %espacio entre lineas: http://minisconlatex.blogspot.com/2015/02/como-editar-el-interlineado-en-latex.html  
+    % \renewcommand{\baselinestretch}{1.5}
+    % \doublespacing
+    % \onehalfspace
+    % \singlespace
+    % \spacing{1.5}
+
+    \usepackage[english, spanish,es-noindentfirst,]{babel}
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{csquotes}
+    \usepackage{threeparttable}
+    
+    % \usepackage[style=apa]{biblatex} %Imports biblatex package
+    \usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
+    \DefineBibliographyStrings{spanish}{andothers={et al\adddot}} % Resuelve et col.
+    \DeclareLanguageMapping{spanish}{spanish-apa}
+    \addbibresource{biblio.bib} %Import the bibliography file, with extension
+    \usepackage[labelsep=newline,labelfont=bf]{caption} % black font para el numero de los cuadros y figuras
+    % \usepackage[format=plain, labelfont=it, textfont=it]{caption}                 
+
+    % \usepackage[natbibapa]{apacite} % https://tex.stackexchange.com/questions/390338/footcite-command-generates-errors
+    % \NewDocumentCommand\footcite{ O{} O{} m }{%
+    %   \footnote{\citet[#1][#2]{#3}.}%
+    % }
+    \usepackage{svg}
+    % Para tabla y figuras formato apa
+    \usepackage{multirow,booktabs,setspace,caption}
+    \usepackage{tikz}
+    \usepackage{wrapfig} % Para alinear figuras pequeñas dentro del texto
+    \usepackage{media9} % Para adicionar imagenes GIF
+    \usepackage{qrcode} %QR images
+
+    \usepackage{graphicx}
+
+    % physcla units and values
+    % \usepackage{mandi} % error Luatex
+    % \usepackage{pythontex}
+
+    \usepackage[normalem]{ulem} % para tachar lineas cancela
+    \usepackage{xcolor}
+    \newcommand{\soutthick}[1]{%
+        \renewcommand{\ULthickness}{1.4pt}%
+        \sout{#1}%
+        \renewcommand{\ULthickness}{0.4pt}% Resetting to ulem default
+    }
+
+    % para la corrección al estilo apa de las etiquetas apa7
+    \DeclareCaptionLabelSeparator*{spaced}{\\[2ex]}
+    \captionsetup[table]{textfont=it, format=plain, justification=justified, singlelinecheck=false,labelsep=spaced, skip=0pt}
+    \captionsetup[figure]{labelfont=bf, format=plain, justification=justified, singlelinecheck=false, font=small}
+    % \captionsetup[figure]{labelsep=period,labelfont=it,justification=justified, singlelinecheck=false,font=doublespacing}
+
+    \usepackage{amsmath}
+    \usepackage{amsfonts}
+    \usepackage{amssymb}
+    \usepackage{lipsum}
+    \usepackage{textcomp}
+    \usepackage{gensymb} %degree symbol
+    \usepackage{float}
+
+    \usepackage{graphicx} % el argumento dvips, para incluir graficos eps
+
+    \urlstyle{same}
+
+    % \usepackage[xindy, nonumberlist, toc, nopostdot, style=altlist, nogroupskip]{glossaries} % para gloasarios y acronimos
+    \usepackage[record,acronym,postdot]{glossaries-extra}%para abreviaturas % https://tex.stackexchange.com/questions/473744/manage-multiple-glossaries-in-one-bib-file
+
+    \graphicspath{{images/}}
+
+    \usepackage{blindtext}
+    % \usepackage{subfiles} % Best loaded last in the preamble
+
+    % \usepackage{turnthepage}
+    %\usepackage{pdflscape}
+    \usepackage[paper=portrait,pagesize]{typearea} % Only rotating one PDF page for table
+    \usepackage{colortbl} % color de las celdas para tablas
+
+    \usepackage{threeparttable} % Only rotating one page for table
+    \usepackage{booktabs}
+    \usepackage{appendix}
+    \renewcommand{\appendixpagename}{Apéndices}
+    \renewcommand{\appendixtocname}{Apéndices} % Nombre que aparece para los apendices en el índice
+
+    \usepackage{fancyhdr}
+    \pagestyle{fancy}
+
+    % https://ondiz.github.io/cursoLatex/Contenido/10.DocumentoCientifico.html
+    \usepackage[draft]{listofsymbols} % cambiar 'draft' por 'final' en el definitivo
+
+    %Cambiar Cuadros por Tablas y lista de...
+    \renewcommand{\listtablename}{Índice de cuadros}
+
+    % Para numerar las figuras apropiadamente - no corrige el error de referencias el numero de esas figuras
+    \usepackage{chngcntr}
+    \counterwithin{figure}{section}
+
+  
+
+    % Para cambiar el tamaño de las fuentes del titulo de las secciones
+    % \rmfamily selects a roman (i.e., serifed) font family
+    % \sffamily selects a sans serif font family
+    % \ttfamily selects a monospaced (“typewriter”) font family
+    % \usepackage{sectsty}
+    % \allsectionsfont{\rmfamily} 
+    % \sectionfont{\fontsize{12}{15}\selectfont}
+    
+    \loadglsentries{db_glossary}
+    \loadglsentries{db_acronyms}
+    \GlsXtrLoadResources[src={db_abreviations.
+    }] %ver documentacion glossaries=extra-manual.pdf page 193
+    % \GlsXtrLoadResources[src={db_abreviations.bib, biblio}] %ver documentacion glossaries=extra-manual.pdf page 193
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \input{physics/physical_constants}
+    \begin{document}
+        \frontmatter
+        \include{extras/01_cover}
+        \include{extras/02_dedicatoria}
+        \include{extras/03_agradecimientos}
+        \include{extras/04_resumen}
+        \include{extras/05_abstract}
+
+        \ifx\generatoc\undefined
+        \else
+        \include{local/TexUmsa_toc}
+        \fi
+  
+        % Marcamos el  comienzo de  los capítulos (para  la numeración  de las páginas y ponemos la cabecera normal
+        \mainmatter
+        \restauraCabecera
+
+        % \include{capitulos/01_Introduccion}
+        \include{capitulos/02_MarcoTeorico}
+        \include{capitulos/03_MarcoPractico}
+        % \include{physics/physical_constants.py}
+        Tipo book, Cantó, ingresé, volá, on tesis umsa %\pgls{MO}
+
+        %  \bibliographystyle{alpha}
+        %  \bibliography{biblio} %without extension .bib %--Obsoleto en biblatex
+        % \printbibliography %Prints bibliography
+
+        % \begin{alignat*}{5}
+        %     &\text{(a)}\qquad &\lfloor n/2\rfloor &<{} &p &\leq n                  &\implies &l_{p}(n\wr)=1 \\
+        %     &\text{(b)}\qquad &\lfloor n/3\rfloor &<{} &p &\leq \lfloor n/2\rfloor &\implies &l_{p}(n\wr)=0 \\
+        %     &\text{(c)}\qquad &\sqrt{n}           &<{} &p &\leq \lfloor n/3\rfloor &\implies &l_{p}(n\wr)=\lfloor n/p\rfloor \bmod 2\\
+        %     &\text{(d)}\qquad &2                  &<{} &p &\leq \sqrt{n}           &\implies &l_{p}(n\wr)<\log_2(n)\\
+        %     &\text{(e)}\qquad &                   &    &p &= 2                     &\implies &l_{p}(n\wr)=\sigma_{2}(\lfloor n/2\rfloor)
+        % \end{alignat*}
+\end{document}
+
+% https://tex.meta.stackexchange.com/questions/228/ive-just-been-asked-to-write-a-minimal-working-example-mwe-what-is-that/3225#3225
+% https://tex.stackexchange.com/questions/147502/how-can-i-include-subfiles-in-to-a-subfiles
+% https://github.com/github/gitignore/blob/main/TeX.gitignore
+% https://github.com/tecosaur/LaTeX-Utilities/wiki/Live-Snippets
+
+
+% Bibliografia
+% http://www.khirevich.com/latex/biblatex/
+% https://tex.stackexchange.com/questions/553/what-packages-do-people-load-by-default-in-latex/2974#2974
+% https://tex.stackexchange.com/questions/5091/what-to-do-to-switch-to-biblatex
+% https://tex.stackexchange.com/questions/25701/bibtex-vs-biber-and-biblatex-vs-natbib
+
+% SVG images
+% https://www.baeldung.com/cs/latex-svg-images

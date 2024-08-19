@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created using Karbon, part of Calligra: http://www.calligra.org/karbon -->
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="771.46899" height="619.01819" id="svg2" version="1.1" inkscape:version="0.48.0 r9654" sodipodi:docname="Greenhouse_Effect_rev_es.svg">
+  <metadata id="metadata102">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <dc:title/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1323" inkscape:window-height="821" id="namedview100" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:zoom="0.77066665" inkscape:cx="597.32336" inkscape:cy="409.10677" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="0" inkscape:current-layer="svg2"/>
+  <defs id="defs4"/>
+  <rect style="fill:#c7d7ff" y="6.2841516" x="0.59025574" height="592.03601" width="770.23004" id="rect17097"/>
+  <path style="fill:#b59661;fill-rule:evenodd" inkscape:connector-curvature="0" d="m 520.29532,229.91609 77.78392,0 c 125.3071,6.01475 114.2801,154.379 114.2801,154.379 l -74.683,0 c -8.521,-65.1602 -63.6561,-81.9514 -68.1672,-81.1995 l -49.2568,0" id="path18098"/>
+  <rect style="fill:#d7ba8b" y="480.67889" x="0.59025574" height="138.33928" width="769.52271" id="rect17095"/>
+  <rect style="fill:#999999" y="0.50830686" x="0" height="152.72026" width="771.46899" id="rect17093"/>
+  <path style="fill:#ffff00;fill-rule:evenodd" inkscape:connector-curvature="0" d="M 0.11234105,37.091 C 121.91134,76.6881 191.08034,1.50369 191.08034,1.50369 L 192.08334,0 0.11234105,0 z" id="path16122"/>
+  <text style="font-size:20.41208076px;fill:#000000;font-family:Bitstream Vera Sans" y="530.14819" x="24.495033" font-size="16.32966423035pt" id="text2183">
+    <tspan id="tspan13" y="530.14813" x="24.495033">Superficie de la tierra y del mar</tspan>
+  </text>
+  <text style="fill:#000000" y="554.19238" x="24.614635" id="text2226">
+    <tspan style="font-size:20.41208076px;font-family:Bitstream Vera Sans" id="tspan16" font-size="16.32966423035pt" y="554.19232" x="24.614635"/>
+    <tspan style="font-size:20.41208076px;font-family:Bitstream Vera Sans" id="tspan18" font-size="16.32966423035pt" y="554.19232" x="24.614635">calentadas a 14 °C</tspan>
+  </text>
+  <text style="font-size:20.41208076px;fill:#000000;font-family:Bitstream Vera Sans" y="256.07175" x="273.66635" font-size="16.32966423035pt" id="text2236">
+    <tspan id="tspan21" y="256.07178" x="273.66635">Energía en la</tspan>
+  </text>
+  <text style="font-size:20.41208076px;fill:#000000;font-family:Bitstream Vera Sans" y="280.96475" x="289.45383" font-size="16.32966423035pt" id="text2258">
+    <tspan id="tspan24" y="280.96478" x="289.45383">atmósfera</tspan>
+  </text>
+  <text style="font-size:20.41208076px;fill:#473f2e;font-family:Bitstream Vera Sans" y="183.19542" x="527.69336" font-size="16.32966423035pt" id="text2279">
+    <tspan id="tspan27" y="183.19539" x="527.69336">Gas invernadero</tspan>
+  </text>
+  <text style="font-size:20.99999809px;fill:#473f2e;font-family:Bitstream Vera Sans" y="213.26949" x="529.69836" font-size="16.79999923706pt" id="text2292">
+    <tspan id="tspan30" y="213.26949" x="529.69836">absorción: 350</tspan>
+  </text>
+  <text style="font-size:20.41208076px;fill:#000000;font-family:Bitstream Vera Sans" y="75.932838" x="17.442043" font-size="16.32966423035pt" id="text2305">
+    <tspan id="tspan33" y="75.932884" x="17.442043">Radiación solar</tspan>
+  </text>
+  <text style="font-size:20.41208076px;fill:#000000;font-family:Bitstream Vera Sans" y="105.00412" x="18.444542" font-size="16.32966423035pt" id="text2326">
+    <tspan id="tspan36" y="105.00408" x="18.444542">absorbida por laTierra</tspan>
+  </text>
+  <text style="font-size:20.99999809px;fill:#000000;font-family:Bitstream Vera Sans" y="136.08055" x="103.65334" font-size="16.79999923706pt" id="text2347">
+    <tspan id="tspan39" y="136.08058" x="103.65334">235 W/m²</tspan>
+  </text>
+  <text style="font-size:20.41208076px;fill:#000000;font-family:Bitstream Vera Sans" y="33.829544" x="239.98735" font-size="16.32966423035pt" id="text2368">
+    <tspan id="tspan42" y="33.829586" x="239.98735">Radiación térmica</tspan>
+  </text>
+  <text style="font-size:20.41208076px;fill:#000000;font-family:Bitstream Vera Sans" y="60.424229" x="241.34435" font-size="16.32966423035pt" id="text2389">
+    <tspan id="tspan45" y="60.424187" x="241.34435">que escapa al espacio: 195</tspan>
+  </text>
+  <text style="font-size:20.41208076px;fill:#000000;font-family:Bitstream Vera Sans" y="67.888542" x="550.77936" font-size="16.32966423035pt" id="text2402">
+    <tspan id="tspan48" y="67.888588" x="550.77936">Radiación superficial</tspan>
+  </text>
+  <text style="font-size:20.41208076px;fill:#000000;font-family:Bitstream Vera Sans" y="97.962334" x="548.77435" font-size="16.32966423035pt" id="text2415">
+    <tspan id="tspan51" y="97.96228" x="548.77435">que escapa: 40</tspan>
+  </text>
+  <text style="font-size:20.41208076px;fill:#000000;font-family:Bitstream Vera Sans" y="450.85233" x="94.63134" font-size="16.32966423035pt" id="text2428">
+    <tspan id="tspan54" y="450.85229" x="94.63134">168</tspan>
+  </text>
+  <text style="font-size:20.41208076px;fill:#000000;font-family:Bitstream Vera Sans" y="441.34732" x="256.87735" font-size="16.32966423035pt" id="text2438">
+    <tspan id="tspan57" y="441.34729" x="256.87735">324</tspan>
+  </text>
+  <text style="font-size:20.41208076px;fill:#000000;font-family:Bitstream Vera Sans" y="242.86034" x="132.57236" font-size="16.32966423035pt" id="text2464">
+    <tspan id="tspan60" y="242.86029" x="132.57236">67</tspan>
+  </text>
+  <path style="fill:#846425;fill-rule:evenodd" inkscape:connector-curvature="0" d="m 520.29532,229.91609 77.78392,0 c 125.3071,6.01475 114.2801,140.845 114.2801,140.845 l -53.665,0 c -1.519,-69.4646 -69.6459,-84.7061 -74.1569,-83.9542 l -64.2851,0.2936" id="path17127"/>
+  <text style="font-size:28px;font-weight:bold;fill:#000000;font-family:Bitstream Vera Sans" y="393.87915" x="456.32733" font-weight="bold" font-size="22.39999961853pt" id="text2498">
+    <tspan id="tspan64" y="393.87918" x="456.32733">Efecto</tspan>
+  </text>
+  <text style="font-size:28px;font-weight:bold;fill:#000000;font-family:Bitstream Vera Sans" y="426.02713" x="414.20932" font-weight="bold" font-size="22.39999961853pt" id="text2502">
+    <tspan id="tspan67" y="426.02719" x="414.20932">Invernadero</tspan>
+  </text>
+  <path style="fill:none;stroke:#269931;stroke-width:9.35192108;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:18.7038, 18.7038" inkscape:connector-curvature="0" d="m 426.31364,338.34109 158.0747,0 c 16.39,0 29.584,13.1942 29.584,29.5833 l 0,102.6777 c 0,16.389 -13.194,29.583 -29.584,29.583 l -158.0747,0 c -16.3891,0 -29.5833,-13.194 -29.5833,-29.583 l 0,-102.6777 c 0,-16.3891 13.1942,-29.5833 29.5833,-29.5833 z" stroke-miterlimit="4.00000000000" id="rect2524"/>
+  <path style="fill:none;stroke:#195524;stroke-width:8.39999962;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4" inkscape:connector-curvature="0" d="m 454.49864,323.05909 -16.0393,16.0393 16.0393,16.0394" stroke-miterlimit="4.00000000000" id="path4465"/>
+  <path style="fill:none;stroke:#195524;stroke-width:8.39999962;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4" inkscape:connector-curvature="0" d="m 535.33334,486.33809 16.0393,16.0393 -16.0393,16.0394" stroke-miterlimit="4.00000000000" id="path5436"/>
+  <g style="fill:none" transform="translate(274.90634,298.60109)" id="g17110">
+    <path style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4" inkscape:connector-curvature="0" d="M 0,156.38 0,0 l 54.1296,0 0,156.38" stroke-miterlimit="4.00000000000" transform="translate(30.9577,6)" id="rect5438"/>
+    <path style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4" inkscape:connector-curvature="0" d="M 25.7501,0 0,0 52.6512,52.6729 104.3,0 78.8804,0" stroke-miterlimit="4.00000000000" transform="translate(5.70725,155.512)" id="path2163"/>
+  </g>
+  <g style="fill:none" transform="translate(293.61834,74.668783)" id="g17106">
+    <path style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4" inkscape:connector-curvature="0" d="m 32.048,0 0,117.257 L 0,117.257 0,0" stroke-miterlimit="4.00000000000" transform="translate(23.2861,32.4621)" id="rect6412"/>
+    <path style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4" inkscape:connector-curvature="0" d="M 18.0967,33.9645 0,33.9645 34.0982,0 l 33.4486,33.9645 -18.4347,0" stroke-miterlimit="4.00000000000" transform="translate(5.70572,5.70849)" id="path2173"/>
+  </g>
+  <g style="fill:none" transform="translate(26.781043,117.15509)" id="g17099">
+    <path style="fill:#fff75f;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4" inkscape:connector-curvature="0" d="m 28.0254,0 0,289.667 L 0,289.667 0,0" stroke-miterlimit="4.00000000000" transform="translate(23.4759,69.1766)" id="rect6414"/>
+    <path style="fill:#fff75f;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4" inkscape:connector-curvature="0" d="M 18.2806,0 0,0 32.6179,32.5315 64.6145,0 45.2843,0" stroke-miterlimit="4.00000000000" transform="translate(5.70617,350.341)" id="path2169"/>
+    <path style="fill:#fff75f;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4" inkscape:connector-curvature="0" d="M 0,78.1918 0,0 l 38.0934,0 0,78.1918" stroke-miterlimit="4.00000000000" transform="translate(23.4542,6)" id="rect6416"/>
+    <path style="fill:#fff75f;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4" inkscape:connector-curvature="0" d="m 0.146153,0 c 0,0 -0.397774,5.77988 0.11912,13.8963 C 1.46389,32.7175 10.4396,64.5794 56.8155,68.757 l 34.5848,0 0,-11.5283 -34.0836,0 C 8.1302,53.933 10.2011,0.58984 10.2011,0.58984" stroke-miterlimit="4.00000000000" transform="translate(51.4073,83.6019)" id="path6422"/>
+    <path style="fill:#fff75f;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4" inkscape:connector-curvature="0" d="M 0,16.0552 0,0 22.7895,22.3326 0,44.2398 0,26.5811" stroke-miterlimit="4.00000000000" transform="translate(138.085,125.277)" id="path2167"/>
+  </g>
+  <path style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4" inkscape:connector-curvature="0" d="m 520.29532,229.91709 77.78392,0 c 129.3171,4.00983 114.2801,154.379 114.2801,154.379 l -74.683,0 c -4.01,-62.1528 -63.6561,-81.9514 -68.1672,-81.1995 l -49.2568,0" stroke-miterlimit="4.00000000000" id="path6424"/>
+  <path style="fill:#b59661;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4" inkscape:connector-curvature="0" d="m 711.87634,125.85158 c 2.92399,-4.07586 5.97769,1e-5 5.97769,1e-5 l 0,258.9265 -5.97769,0 z" stroke-miterlimit="4.00000000000" id="rect6420"/>
+  <path style="fill:#b59661;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4" inkscape:connector-curvature="0" d="m 712.38044,126.02929 -16.3021,0 18.797,-20.1942 18.439,20.1942 -15.9216,0" stroke-miterlimit="4.00000000000" id="path2165"/>
+  <path style="fill:#b59661;stroke:#000000;stroke-width:2.01333499;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4" inkscape:connector-curvature="0" d="m 717.88904,381.55009 0,131.577 -80.2297,0 0,-131.577" stroke-miterlimit="4.00000000000" id="rect6418"/>
+  <path style="fill:#e8d162;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4" inkscape:connector-curvature="0" d="m 520.87174,319.33809 -57.6414,-52.6294 57.6414,-51.6266 z" stroke-miterlimit="4.00000000000" id="path2171"/>
+  <text style="font-size:20.41208076px;fill:#000000;font-family:Bitstream Vera Sans" y="465.40634" x="659.86536" font-size="16.32966423035pt" id="text17114">
+    <tspan id="tspan90" y="465.40628" x="659.86536">492</tspan>
+  </text>
+  <text style="font-size:20.41208076px;fill:#000000;font-family:Bitstream Vera Sans" y="272.93433" x="478.36435" font-size="16.32966423035pt" id="text20038">
+    <tspan id="tspan93" y="272.9343" x="478.36435">452</tspan>
+  </text>
+</svg>

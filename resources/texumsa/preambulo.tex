@@ -1,0 +1,331 @@
+\usepackage{titlesec}
+\usepackage{verbatim}
+
+\ifx\generaacronimos\undefined
+  \newcommand{\glosstex}[1]{}
+  \newcommand{\acronym}[1]{}
+  \newcommand{\ac}[1]{#1}
+  \newcommand{\acs}[1]{#1}
+  \newcommand{\acl}[1]{#1}
+  \newcommand{\acf}[1]{#1}
+\else
+  \usepackage{glosstex}
+\fi
+
+
+\usepackage{shortvrb}
+\usepackage[utf8]{inputenc}
+
+\usepackage[english, spanish,es-noindentfirst,activeacute]{babel}
+
+\usepackage{url}
+
+\usepackage{ifpdf}
+
+
+\ifpdf
+   \RequirePackage[pdfborder={0 0 0},colorlinks=true,linkcolor=purple, filecolor=purple, citecolor=purple, urlcolor=purple, hyperindex, pdfpagelabels]{hyperref}
+   \def\pdfBorderAttrs{/Border [0 0 0]}
+\else
+   \usepackage{hyperref}
+\fi
+% \hypersetup{colorlinks=false}
+
+
+
+
+\usepackage{makeidx}
+
+
+\ifpdf
+\else
+  \ifx\release\undefined
+    \usepackage{showidx}
+  \fi
+\fi
+
+\ifx\generaindice\undefined
+\else
+\makeindex
+\fi
+
+
+\ifx\release\undefine
+\fi
+
+\usepackage{multicol}
+\usepackage{subfig}
+\makeatletter                                     %%  Permite que @ sea tratado como una letra, lo que significa que puede ser utilizado en nombres de comandos.
+\newbox\sf@box
+
+\newenvironment{SubFloat}[2][]{                   %% Define el entorno SubFloat que acepta dos argumentos, #1 y #2. El primer argumento es opcional.
+  \def\sf@one{#1}%                                %% Almacena los argumentos en las variables \sf@one.           
+  \def\sf@two{#2}%                                %% Almacena los argumentos en las variables \sf@two.
+  \setbox\sf@box\hbox\bgroup                      %% Crea una nueva caja de almacenamiento (\sf@box) y comienza a almacenar el contenido que se colocará dentro de la subfigura.                                   %% 
+                                                      %% %% hbox: Es una "horizontal box" (caja horizontal) que coloca el contenido en una única línea, alineando todos los elementos horizontalmente.
+                                                      %% %% bgroup: Es un comando que inicia un grupo de instrucciones. En LaTeX, \bgroup se utiliza para agrupar una serie de comandos o contenidos sin afectar a lo que sigue fuera del grupo.
+} {                                               %% caja horizontal - que coloca el contenido en una única línea, alineando todos los elementos horizontalmente.
+\egroup                                           %% Termina la construcción de la caja.
+  \ifx\@empty\sf@two\@empty\relax                 %% Verifica si #2 está vacío. Si lo está, define \sf@two como vacío.
+    \def\sf@two{\@empty}                            
+  \fi                         %% 
+                          %% 
+  \ifx\@empty\sf@one\@empty\relax                 %%  Verifica si #1 está vacío. Si lo está, utiliza solo \sf@two como la etiqueta de la subfigura.
+    \subfloat[\sf@two]{\box\sf@box}%              %%  Si #1 está vacío, utiliza #2 como la etiqueta de la subfigura.
+  \else                         %% 
+    \subfloat[\sf@one][\sf@two]{\box\sf@box}      %%  Si #1 no está vacío, utiliza #1 como la etiqueta superior y #2 como la etiqueta inferior.
+  \fi                         
+}
+\makeatother                                      %% Restaura el comportamiento normal, donde @ no puede ser utilizado en nombres de comandos.
+
+
+
+
+\usepackage{listings}
+\lstset{basicstyle=\small}
+\lstset{showstringspaces=false}
+\lstset{tabsize=3}
+\usepackage{tabularx}
+
+% Definimos  los  nombres para  las  tablas  y  el índice  de  tablas,
+% sobreescribiendo los de babel, que los llama 'cuadros'.
+\addto\captionsspanish{%
+  \def\tablename{Tabla}%
+  \def\listtablename{\'Indice de Tablas}%
+  \def\contentsname{\'Indice}%
+  \def\chaptername{Cap\'itulo}%
+}
+
+\usepackage[T1]{fontenc}
+% Paquete para poder utilizar figuras EPS
+\usepackage{epsfig}
+%\usepackage[dvips]{graphicx}
+%http://www.cidse.itcr.ac.cr/revistamate/HERRAmInternet/Latex/wmlatexrevista/node19.html
+
+% Hacemos que los  párrafos se separen con algo más  de espacio que lo
+% habitual.
+\setlength{\parskip}{0.2ex}
+
+\usepackage{titlesec}
+
+% El paquete  psboxit permite poner  una imagen Post Script  dentro de
+% una  caja de  TeX. La  imagen se  parametriza con  la posición  y el
+% tamaño de la caja TeX.
+
+%\usepackage{psboxit}
+
+% Permite hacer cálculos sencillos dentro  de un documento de LaTeX Lo
+% necesitamos en  la portada, para  poder ajustar los márgenes  con un
+% poco de independencia  del tamaño de la página.  Consulta el fichero
+% portada.tex para más información.
+\usepackage{calc}
+
+% Define el entorno  longtable que sirve para crear  tablas que ocupan
+% más de una página.
+
+%\usepackage{longtable}
+
+% Cuando en una tabla tenemos lineas dobles de separación entre filas
+% y columnas, LaTeX las pinta de manera que dé la sensación de que
+% cada celda es un rectángulo:
+%          | |
+%  [celda] | | [celda]
+%          | |
+% ---------+ +---------
+%                       <- hueco entre lineas
+% ---------+ +---------
+%          | |
+%  [celda] | | [celda]
+%          | |
+%
+% Si queremos que las líneas se corten:
+%          | |
+%  [celda] | | [celda]
+%          | |
+% ---------+-+---------
+%          | |          <- hueco entre lineas
+% ---------+-+---------
+%          | |
+%  [celda] | | [celda]
+%          | |
+%
+% podemos utilizar el paquete hhline, que permite concretar en gran
+% medida cómo queremos que queden los cruces
+% (http://www.cs.wright.edu/~jslater/hhline.pdf)
+%
+% Otro uso interesante de hhline es como sustitutivo de \cline. \cline
+% (nativo de LaTeX) permite poner lineas de separación entre filas que
+% no englobe  a todas las  columnas. El problema  es que \cline  no se
+% lleva bien con celdas con  fondo de color, porque queda _debajo_ del
+% relleno y no se ve. \hhline sin embargo queda por encima, por lo que
+% puede utilizarse para pintar lineas sencillas sin preocuparnos de la
+% interacción  con las líneas  horizontales (quizá  también sencillas)
+% pero aprovechar  que sí van a  verse.  En concreto, en  una tabla de
+% cuatro columnas  \cline{1-3} es  similar a \hhline{----~}  (el guión
+% indica  que  queremos  línea para  esa  columna,  y  el ~  que  no).
+% \usepackage{hhline}
+
+
+%
+% Paquete para  poder ampliar las  opciones de las tablas,  para poder
+% tener párrafos  dentro de una celda  y que nos los  ajuste el propio
+% LaTeX.
+%
+%\usepackage{tabulary}
+% Otras opciones anteriores
+%\usepackage{tabularx}  % Este está incluído por arriba
+%\usepackage{array}
+
+%\usepackage{slashbox}
+% Para poder poner líneas diagonales en una tabla:
+%
+% \ b|  
+%  \ |  ...
+% a \|
+% ---+----------
+%    |
+%    |
+%
+% En la casilla a dividir, \backslashbox{a}{b} & ...
+% Vamos... no queda muy bien... en algún sitio vi que para mejorar un
+% poco el aspecto se podía incluír pict2e también, aunque en cualquier
+% caso el resultado podía seguir siendo discutible.
+
+%
+% Paquete para poder poner celdas de colores en una tabla
+%
+%\usepackage{colortbl}
+%\usepackage{color}
+
+\usepackage{xcolor}
+
+
+
+% Paquete  que permite  cambiar  el formato  en  el que  se ponen  los
+% títulos   de   capítulos,  secciones,   etc.    También  define   el
+% comando \chaptertitlename, que  equivale a \chaptername ("Capítulo")
+% cuando se está  dentro de un capítulo o  a \apendixname ("Apéndice")
+% cuando se  está en un apéndice.  Eso se utiliza en  la definición de
+% las cabeceras.
+\usepackage{titlesec}
+
+% \titleformat{\section}[frame]{\normalfont} %
+% {\filright\footnotesize\enspace SECCIÓN \thesection\enspace} %
+% {8pt}{\Large\bfseries\filcenter} %
+% %-
+% \titleformat{\chapter}[display]{\normalfont\Large\filcenter\sffamily} %
+% {\titlerule[1pt] %\vspace{1pt} %
+% \titlerule
+% %\vspace{1pc} %
+% \LARGE\MakeUppercase{\chaptertitlename} \thechapter}
+% {1pc}
+% {\titlerule
+% %\vspace{1pc} %
+% \Huge}
+% %--
+
+
+% \titleformat{\chapter}[display]
+% {\bfseries\Large}
+% {\filleft\MakeUppercase{\chaptertitlename} \Huge\thechapter}
+% {4ex}
+% {\titlerule \vspace{2ex} \filright}
+% [\vspace{2ex}%
+% \titlerule]
+
+
+% Para la personalizacion de los capitulos (Version A)
+% \definecolor{verdep}{RGB}{166,206,58}
+% \newcommand{\hsp}{\hspace{15pt}}
+% \titleformat{\chapter}[hang]{\huge\bfseries}{{
+%   % \filleft\MakeUppercase{ \fontsize{2.5em}{2.5em}\selectfont \chaptertitlename} %por corregir esta linea
+%   \fontsize{6em}{6em}\selectfont
+%   \thechapter}\hsp\textcolor{verdep} %
+% {\vrule height 4em width 2pt}\hsp}{0pt}{\huge\bfseries}
+
+% Para la personalizacion de los capitulos (Version B)
+%fuente: https://tex.stackexchange.com/questions/193520/how-to-get-the-chapter-title-in-a-single-page-titlesec
+\titleformat{\chapter}[display]
+{\vfill\filcenter}
+{{%
+  %  \filcenter\fontsize{48pt}{48pt}\usefont{T1}{phv}{m}{n}\MakeUppercase{\chaptername}
+   \filcenter\fontsize{48pt}{48pt}\usefont{T1}{phv}{m}{n}\MakeUppercase{\chaptername}
+   \fontsize{48pt}{48pt}\selectfont\thechapter % number of chapter
+ }%
+}
+{5pt}
+{\Huge\usefont{T1}{phv}{b}{n}%
+ \parbox{\textwidth-\widthof{\LARGE\sffamily\MakeUppercase{\chaptername}}}%
+}[\vfill\clearpage]
+\titlespacing*{\chapter}{0pt}{0pt}{0pt}
+
+
+
+
+
+
+% para la personalizacion de las secciones
+\usepackage{tikz}\usetikzlibrary{shapes.misc}
+\newcommand\titlebar{ %
+  \tikz[baseline,trim left=3.1cm,trim right=3cm] {
+    \fill [cyan!25] (2.5cm,-1ex) rectangle(\textwidth+3.1cm,2.5ex);
+    \node [
+      fill=cyan!60!white,
+      anchor= base east,
+      rounded rectangle,
+      minimum height =3.5ex] at (3cm,0) {
+        \textbf{\thesection.}
+        % \textbf{\arabic{chapter}.\thesection.}
+    };
+  }%
+}
+
+% Define the subtitle bar command
+\newcommand{\subtitlebar}{%
+  \tikz[  %%  Inicia un entorno TikZ para dibujar gráficos Vectoriales.
+    baseline, %% Establece el ancla de la base para la alineación vertical del contenido de TikZ.
+    trim left=3.1cm, trim right=3cm %% Ajusta los márgenes izquierdo y derecho para el contenido de TikZ, afectando cómo se coloca en la página.
+    ] {
+    \fill [cyan!25] (
+      2.5cm, %% La distancia desde el margen izquierdo del área de dibujo (o del área de texto) hasta la esquina del rectángulo. En otras palabras, el rectángulo comienza 2.5 cm a la derecha del margen izquierdo.
+      -0.5ex %% La distancia desde la línea de base del texto hasta la esquina inferior del rectángulo. -1ex es un valor negativo que sitúa el rectángulo ligeramente por debajo de la línea de base del texto, lo que puede ser útil para ajustar el posicionamiento vertical.
+      ) rectangle(
+      \textwidth
+      +3.1cm, %% Aumenta el ancho del rectángulo en 3.1 cm más allá del \textwidth. Esto asegura que el rectángulo se extienda un poco más allá del área de texto.
+      -0.3ex %%  La distancia desde la línea de base del texto hasta la esquina superior del rectángulo. 0.1ex es un valor pequeño positivo que sitúa la parte superior del rectángulo justo por encima de la línea de base del texto.
+    );
+    \node [ %% Crea un nodo de texto dentro del entorno TikZ.
+      fill=cyan!60!white, %% Establece el color de fondo del nodo como magenta al 60% mezclado con blanco.
+      anchor= base east,  %% Ancla el nodo en la base y en el extremo derecho.
+      rounded rectangle,  %% Dibuja el nodo con bordes redondeados.
+      minimum height =3.5ex]  %% Establece la altura mínima del nodo.
+      at (3cm,0)  %% Posiciona el nodo en las coordenadas (3cm, 0).
+      {
+        \textbf{\thesubsection.}
+        % \textbf{\arabic{chapter}.\thesubsection.}
+    };
+  }%
+}
+
+\titleformat{\section}{\large}{\titlebar}{0.1cm}{}
+
+
+% Redefine subsection command to include subtitle bar
+\titleformat{\subsection}[block]
+  {\normalfont\normalsize\bfseries}
+  {}
+  {0em}
+  {\subtitlebar\vspace{0.5ex}
+  % \newline
+  }
+
+% Configura el formato de subsección en APA 7
+% \titleformat{\subsection}[block]
+%   {\normalfont\normalsize\bfseries} % Tamaño y estilo de la fuente para subsecciones (APA 7 sugiere una fuente de tamaño 12 pt en negrita)
+%   {}
+%   {0em} %%: Espacio entre el número de la subsección y el título. Este ajuste se puede personalizar según tus necesidades.
+%   {\hspace{0em}} % Aquí puedes ajustar el espacio antes del contenido de la subsección si lo necesitas
+
+
+
+% \titleformat{\subsection}{\large}{\subtitlebar}{0.1cm}{}

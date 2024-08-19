@@ -1,0 +1,132 @@
+
+\usepackage{fancyhdr}
+\usepackage[letterpaper, 
+    paperheight=11.5in,
+    paperwidth=8.5in,
+    top=1in,
+    bottom=1in,
+    left=1in,
+    right=1in
+  ]{geometry} % Configura los márgenes y el margen inferior
+
+\usepackage{printlen} % Paquete para imprimir longitudes
+\usepackage{layout}    % Para mostrar las dimensiones de la página
+
+\usepackage{showframe} % Cargar el paquete showframe
+
+
+
+\pagestyle{fancy}
+
+
+\addtolength{\headheight}{2pt}
+
+% Establecemos el resto de parámetros de apariencia
+\newcommand{\restauraCabecera}{
+  \fancyhead[L]{\rightmark}
+  \fancyhead[R]{\leftmark}
+% \fancyhead[RE]{\leftmark} % habilitar y desabilitar la linea que le precede para un diseño de ambas caras
+}
+
+\renewcommand{\headrulewidth}{0.2pt}
+
+\renewcommand{\chaptermark}[1]{%
+  \markboth{\textsc{\chaptertitlename\ \thechapter.}\ #1}{}%
+}
+
+\renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}
+
+\fancyhf{}
+
+\restauraCabecera
+\fancyhead[R,L]{\thepage}
+% \fancyhead[RO,LE]{\thepage} % habilitar y desabilitar la linea que le precede para un diseño de ambas caras
+
+% Para los capítulos que no tienen numeración en el índice ni tienen
+% secciones, se debe cambiar la cabecera, para que no aparezca algo
+% como "Capítulo 0. Agradecimientos". En esos capítulos, la cabecera
+% es "especial", porque en las páginas impares, tampoco aparece el
+% nombre de la sección, sino también el nombre del "capítulo". Para
+% esos casos, se puede utilizar el comando siguiente.  
+
+% IMPORTANTE: este comando _sobreescribe_ el funcionamiento de la
+% cabecera, hasta que se llame al comando \restauraCabecera, por lo
+% después del "capítulo especial", debe invocarse a
+% \restauraCabecera. Y decir _después_ significa _después_, es decir
+% cuando el capítulo YA HA TERMINADO, y se ha empezado el siguiente, o
+% forzando final de página con \newpage (\newpage\restauracabecera).
+\newcommand{\cabeceraEspecial}[1]{
+  \fancyhead[L]{\textsc{#1}}
+  \fancyhead[R]{\textsc{#1}}
+}
+
+\newcommand{\Resumen}{Resumen\markright{Resumen}}
+
+\newcommand{\TocResumen}{\addcontentsline{toc}{section}{Resumen}}
+
+\newcommand{\NotasBibliograficas}{Notas bibliográficas\markright{Notas bibliográficas}}
+
+\newcommand{\TocNotasBibliograficas}{\addcontentsline{toc}{section}{Notas bibliográficas}}
+
+\newcommand{\ProximoCapitulo}{En el próximo capítulo\ldots\markright{En el próximo capítulo\ldots}}
+
+\newcommand{\TocProximoCapitulo}{\addcontentsline{toc}{section}{En el próximo capítulo}}
+
+\newcommand{\Conclusiones}{Conclusiones\markright{Conclusiones\ldots}}
+
+\newcommand{\TocConclusiones}{\addcontentsline{toc}{section}{Conclusiones}}
+
+% Para el apéndice, hay que indicar que queremos que ponga "Apéndice
+% X", y no "Capítulo X" como hace normalmente.
+
+% Si estamos en modo Debug, ponemos en el pie de página una indicación.
+
+% Configuración del pie de página
+\ifx\release\undefined
+  \fancyfoot[L]{\small Borrador} 
+  \fancyfoot[R]{- \thepage -}
+\else
+  \fancyfoot[C]{}
+  \fancyfoot[R]{\thepage}
+\fi
+
+
+% Definición del estilo en la  página de inicio de capítulo: N\'umero de
+% la página abajo a la derecha, y sin línea en la zona superior.
+\fancypagestyle{plain}{%
+  \fancyhf{}  
+  \fancyfoot[R]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+% Cuando   se   cambia   de    capítulo,   se   ejecuta   el   comando
+% \cleardoublepage.  Si queremos que  la posible  página que  se queda
+% completamente en blanco NO tenga cabeceras, tenemos que redefinir el
+% comando. (Cogido de la documentación del fancyhdr)
+\def\cleardoublepage{
+  \clearpage
+  \if@twoside %%  Comprueba si el documento está configurado para impresión a dos caras
+    \ifodd\c@page %% Verifica si el número de la página actual es impar. Esto es importante porque en impresión a dos caras, quieres asegurarte de que las nuevas secciones comiencen en la página impar (derecha) para que los capítulos o secciones comiencen en la cara derecha del papel.
+    \else %% Si el número de la página actual es par (es decir, está en el lado izquierdo del papel), el siguiente bloque de código se ejecutará.
+      \hbox{} %% Inserta una caja horizontal vacía. Esto es un truco para forzar una nueva página sin contenido en la página actual.
+      \thispagestyle{empty} %% Establece el estilo de la página actual como empty, lo que significa que no tendrá cabeceras ni pies de página.
+      \newpage %%  Forza un salto de página para que la siguiente página esté en blanco y comience en la nueva página.
+      \if@twocolumn %% Verifica si el documento está en modo de dos columnas (twocolumn). Si es así, se ejecuta el siguiente bloque de código para manejar correctamente el salto de página en el diseño de dos columnas.
+        \hbox{}\newpage %% Inserta una caja horizontal vacía y luego fuerza un salto de página adicional. Esto asegura que haya una página en blanco completa si se está utilizando el diseño de dos columnas.
+      \fi
+    \fi
+  \fi
+}
+
+\makeatother
+
+
+% Variable local para emacs, para  que encuentre el fichero maestro de
+% compilación y funcionen mejor algunas teclas rápidas de AucTeX
+
+%%%
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../Tesis.tex"
+%%% End:

@@ -1,0 +1,373 @@
+@article{Cardoso2016,
+  author   = {Cardoso, Gustavo and Puzhi, Milton and Zhin{\'{i}}n, Sa{\'{u}}l},
+  journal  = {Facultad de Ciencias Qu{\'{i}}micas},
+  title    = {{Simulaci{\'{o}}n de los Procesos Psicrom{\'{e}}tricos Simulation of Psychrometric Processes}},
+  year     = {2016},
+  issn     = {1390-1869},
+  pages    = {25--39},
+  volume   = {13},
+  abstract = {Resumen. Los procesos f{\'{i}}sicos de evaporaci{\'{o}}n y de condensaci{\'{o}}n del agua y viceversa establecen mecanismos de adici{\'{o}}n y eliminaci{\'{o}}n de humedad, provocando cambios en los diferentes sistemas ecol{\'{o}}gicos, habitacionales e industriales. M{\'{u}}ltiples procesos de acondicionamiento de aire son necesarios en la industria. Estos procesos han sido modelados matem{\'{a}}ticamente como operaciones unitarias de humidificaci{\'{o}}n, deshumidificaci{\'{o}}n y secado, los mismos que est{\'{a}}n en funci{\'{o}}n de varios par{\'{a}}metros psicrom{\'{e}}tricos como temperatura, humedad relativa, humedad absoluta, presi{\'{o}}n, y otros. Su c{\'{a}}lculo por ecuaciones resulta m{\'{a}}s o menos complejo, las soluciones gr{\'{a}}ficas son m{\'{a}}s pr{\'{a}}cticas, pero menos precisas, software y simuladores en psicrometr{\'{i}}a son escasos. Este estudio desarrolla la creaci{\'{o}}n de un modelo computarizado, creado en funci{\'{o}}n de un algoritmo que puede disminuir la complejidad, acelerar la secuencia de operaciones y mejorar la precisi{\'{o}}n de los c{\'{a}}lculos, {\'{u}}til tanto en la industria como en la docencia. El software es basado en el lenguaje Java{\textregistered} para simular casos y m{\'{e}}todos de c{\'{a}}lculo de procesos de humidificaci{\'{o}}n, deshumidificaci{\'{o}}n, secado y mezclas de aire basado en las ecuaciones b{\'{a}}sicas de la psicrometr{\'{i}}a, para un amplio rango de temperaturas y a diferentes alturas sobre el nivel del mar. El modelo ha sido validado para las condiciones Ecuador, mostrando buena correlaci{\'{o}}n entre los resultados calculados manualmente frente a los obtenidos por la simulaci{\'{o}}n. Abstract. The physical processes of water evaporation and condensation and the corresponding reverse processes, establish mechanisms of addition and/or removal of moisture, causing changes in different ecological, housing and industrial systems. Multiple air conditioning processes are needed in the industry, these have been modeled mathematically as unit operations of humidification, dehumidification and drying, in turn, they depend on several psychrometric parameters such as temperature, relative humidity, absolute humidity, pressure, etc. Its calculation by equations is more or less complex; graphic solutions are more convenient, but less precise; software and simulation packages in psychrometry are scarce. This paper develops the creation of a computerized model based on an algorithmic tool that can reduce complexity and improve the accuracy of these calculations, useful both for industrial and teaching applications. This software is based on the {\textregistered}Java language to simulate cases and calculation methods of humidification, dehumidification, drying and mixtures of air based on psychrometric equations. The software can be used for a wide range of temperatures and at different altitudes above sea level. The validation of the model has been performed in Ecuador´s environmental conditions. Results showed good correlation between the results obtained via manual computation and those obtained using the model.},
+  file     = {:media/bon/HelpStore/Tesis/Latex Book/Psicro/3. 1612-4892-1-PB.pdf:pdf},
+  keywords = {Drying, Java, Palabras Claves: Humidificaci{\'{o}}n, Psicrometr{\'{i}}a, Psychrometrics, Secado, Software, Software Key Words: Humidification},
+  url      = {http://www.vpclima.upv.es/psicro.htm}
+}
+
+@article{Compagnon2010,
+  author   = {Compagnon, Ariel Muncio and Gava, Ricardo and Dalpasquale, Valdecir Antoninho and Martins, Carlos Humberto},
+  journal  = {Revista em Agronegocio e Meio Ambiente},
+  title    = {{Psicro 2009 -programa computacional para determina{\c{c}}{\~{a}}o das propriedades psicrom{\'{e}}tricas do AR}},
+  year     = {2010},
+  issn     = {19819951},
+  number   = {3},
+  pages    = {251--269},
+  volume   = {3},
+  abstract = {A computer program which calculates air psychometric properties is provided. The determination of air psychometric properties is a frequent task for many professionals who project systems for the environmental control of plants, animals and humans. Air psychometric properties may be taken on psychometric graphs and charts whose use, albeit practical, requires much time and many visual interpolations with data imprecision. Since air psychometric properties are undertaken by formulas with several data, a computer program has been developed for their analytic calculation. Current computer program makes use of the software Visual Basic with simple graphic interface, easily operated by professionals.},
+  file     = {:media/bon/HelpStore/Tesis/Latex Book/Psicro/02-RAMA-PSICRO.pdf:pdf},
+  keywords = {Air Psychometric Properties, Computer Program, Visual Basic}
+}
+
+@article{Meyer2019,
+  author = {Meyer, D and Thevenard, D},
+  doi    = {10.21105/joss.01137},
+  file   = {:media/bon/HelpStore/Tesis/Latex Book/Psicro/10.21105.joss.01137.pdf:pdf},
+  pages  = {10--11},
+  title  = {{PsychroLib: a library of psychrometric functions to calculate thermodynamic properties of air}},
+  volume = {4},
+  year   = {2019},
+  url    = {https://github.com/psychrometrics/psychrolib}
+}
+
+@article{Hedrick2013,
+  file    = {:media/bon/HelpStore/Tesis/Latex Book/ASHRAE/ANSI-ASHRAE Standard 62.1-2013 Ventilation for Acceptable Indoor Air Quality (ASHRAE) (z-lib.org).pdf:pdf},
+  issn    = {10412336},
+  journal = {ASHRAE Standard},
+  number  = {62.1-2013},
+  title   = {{Ventilation for acceptable indoor air quality}},
+  volume  = {2013},
+  year    = {2013}
+}
+
+
+@book{Jimenez2004,
+  abstract = {La Meteorolog{\'{i}}a es la ciencia encargada del estudio de la atm{\'{o}}sfera, de sus propiedades y de los fen{\'{o}}menos que en ella tienen lugar, los llamados meteoros. El estudio de la atm{\'{o}}sfera se basa en el conocimiento de una serie de magnitudes, o variables meteorol{\'{o}}gicas, como la temperatura, la presi{\'{o}}n atmosf{\'{e}}rica o la humedad, las cuales var{\'{i}}an tanto en el espacio como en el tiempo.},
+  author   = {Jim{\'{e}}nez, Rosa Mar{\'{i}}a Rodr{\'{i}}guez and Capa, {\'{A}}gueda Benito and Lozano, Adelaida Portela},
+  file     = {:media/bon/MainStore/Biblioteca/Atmosphere/meteorologia Y climatologia.pdf:pdf},
+  isbn     = {8468885355},
+  title    = {{Meteorolog{\'{i}}a Y Climatolog{\'{i}}a}},
+  url      = {https://cab.inta-csic.es/uploads/culturacientifica/adjuntos/20130121115236.pdf},
+  year     = {2004}
+}
+
+
+@inproceedings{Morales2014SimulacinDL,
+  title  = {Simulaci{\'o}n de los procesos psicrom{\'e}tricos utilizando el lenguaje de programaci{\'o}n JAVA},
+  author = {Milton Vinicio Puzhi Morales, Sa{\'u}l Marcelo Zhinin Lazo},
+  year   = {2014},
+  url    = {https://rraae.cedia.edu.ec/Record/UCUENCA_b75bd6ca06058c02228207160aba8eac}
+}
+
+
+@book{YunusA.Cengel2015,
+  author    = {{Y. A. {\c{C}}engel}, M. Boles},
+  editor    = {McGRAW-HILL/INTERAMERICANA},
+  publisher = {McGraw-Hill Education},
+  title     = {{Termodin{\'{a}}mica}},
+  year      = {2015},
+  isbn      = {9786071512819},
+  file      = {:media/bon/MainStore/Biblioteca/Thermodynamics/Yunus Cengel/Termodinamica - Yunus Cengel 8va Ed.pdf:pdf;:E\:/Biblioteca/Thermodynamics/Yunus Cengel/Termodinamica - Yunus Cengel 8va Ed.pdf:PDF}
+}
+
+
+@article{Martinez1992,
+  author = {Martinez, Isidoro},
+  file   = {:media/bon/MainStore/Biblioteca/Thermodynamics/Isidoro Martinez- Termodinamica Basica y Aplicada.pdf:pdf},
+  title  = {Termodinamica Básica y Aplicada},
+  year   = {1992}
+}
+
+
+@book{Rajput2007,
+  author    = {Rajput, R K},
+  file      = {:media/bon/MainStore/Biblioteca/Thermodynamics/engineering thermodynamics-3rd-ed-r.k. rajput-by-ronaldplus.pdf:pdf},
+  isbn      = {9780763782726},
+  title     = {Engineering Thermodynamics},
+  publisher = {LAXMI PUBLICATIONS (P) LTD},
+  editor    = {R.K. RAJPUT},
+  year      = {2007}
+}
+
+@book{Negus2015,
+  author    = {Negus, Christopher},
+  editor    = {R. Blum},
+  publisher = {John Wiley \& Sons, Inc.},
+  title     = {{Linux Bible}},
+  year      = {2015},
+  isbn      = {9781118999875},
+  file      = {:media/bon/MainStore/Biblioteca/Computer Sciences/Linux/Linux Bible, 9th Edition(2015).pdf:pdf}
+}
+
+@book{VianOcon1976,
+  abstract  = {},
+  author    = {A. Vian, J. Ocon},
+  booktitle = {},
+  file      = {},
+  isbn      = {84-03-20153-2},
+  issn      = {},
+  number    = {},
+  pages     = {812},
+  title     = {Elementos de ingeniería química},
+  volume    = {},
+  year      = {1976}
+}
+
+
+@book{Perry2000,
+  abstract  = {8th ed. Conversion factors and mathematical symbols / James O. Maloney -- Physical and chemical data / Bruce E. Poling [and others] -- Mathematics / Bruce A. Finlayson, Lorenz T. Biegler -- Thermodynamics / Hendrick C. Van Ness, Michael M. Abbott -- Heat and mass transfer / Hoyt C. Hottel [and others] -- Fluid and particle dynamics / James N. Tilton -- Reaction kinetics / Tiberiu M. Leib, Carmo J. Pereira -- Process control / Thomas F. Edgar [and others] -- Process economics / James R. Couper, Darryl W. Hertz, (Francis) Lee Smith -- Transport and storage of fluids / Meherwan P. Boyce [and others] -- Heat-transfer equipment / Richard L. Shilling [and others] -- Psychrometry, evaporative cooling, and solids drying / Larry R. Genskow [and others] -- Distillation / M.F. Doherty [and others] -- Equipment for distillation, gas absorption, phase dispersion, and phase separation / Henry Z. Kister [and others] -- Liquid-liquid extraction and other liquid-liquid operations and equipment / Timothy C. Frank [and others] -- Adsorption and ion exchange / M. Douglas LeVan, Giorgio Carta -- Gas-solid operations and equipment / Mel Pell, James B. Dunson, Ted M. Knowlton -- Liquid-solid operations and equipment / Wayne J. Genck [and others] -- Reactors / Carmo J. Pereira, Tiberiu M. Leib -- Alternative separation processes / Michael E. Prudich [and others] -- Solid-solid operations and processing / Bryan J. Ennis [and others] -- Waste management / Louis Theodore [and others] -- Process safety / Daniel A. Crowl [and others] -- Energy resources, conversion, and utilization / Walter F. Podolski [and others] -- Materials of construction / Oliver W. Siebert [and others].},
+  author    = {Perry, Robert H and Green, Don W and Maloney, James O},
+  booktitle = {Choice Reviews Online},
+  file      = {:media/bon/MainStore/Biblioteca/Engineering/Chemistry/Perry Handbook/Perrys-Chemical-Engineers-handbook-1999.pdf:pdf},
+  isbn      = {0070498415},
+  issn      = {0009-4978},
+  number    = {02},
+  pages     = {38--0966--38--0966},
+  title     = {{Perry's chemical engineers' handbook Seventh Edition}},
+  volume    = {38},
+  year      = {2000}
+}
+
+
+@book{Himmelblau2004,
+  author    = {Himmelblau, Riggs},
+  editor    = {Amundson},
+  publisher = {Prentice-Hall, Inc.},
+  title     = {{Basic Principles and Calculations in Chemical Engineering}},
+  year      = {2004},
+  file      = {:media/bon/MainStore/Biblioteca/Balance de Materia/- HIMMELBLAU - 6ta edicion/Basic Principles and Calculations in Chemical Engineering by David M. Himmelblau, James B. Riggs (z-lib.org).pdf:pdf}
+}
+
+
+@article{Gombiner2011,
+  title    = {{Carbon Footprinting the Internet}},
+  author   = {Gombiner, Joel},
+  journal  = {Consilience: The Journal of Sustainable Development},
+  year     = {2011},
+  number   = {1},
+  pages    = {119--124},
+  volume   = {5},
+  abstract = {Recent analysis suggests that global IT, a rapidly expanding sector, is responsible for two to four percent of global greenhouse gas (GHG) emissions. How is the use of computers and networks affecting our planet"s atmosphere? Through the example of Google, the world"s most visited website, this article explores the ways in which the Internet generates GHGs, the difficulties in quantifying these emissions, and the possible mitigation of negative planetary impacts.},
+  file     = {:media/bon/HelpStore/Tesis/Latex Book/Internet footprint/26167805.pdf:pdf},
+  keywords = {Carbon footprint, Climate change, Global IT}
+}
+
+
+@book{SamuelC.Sugarman2007,
+  author    = {Samuel C. Sugarman},
+  publisher = {The Fairmont Press, Inc.},
+  title     = {HVAC Fundamentals},
+  year      = {2007},
+  isbn      = {0881735590},
+  file      = {:media/bon/HelpStore/Tesis/Latex Book/ASHRAE/HVAC Fundamentals (Samuel C. Sugarman) (z-lib.org).pdf:pdf}
+}
+
+@article{RodriguezExample2012,
+  title     = {A study on the effect of the asymmetry on real capacitated vehicle routing problems},
+  doi       = {10.1016/j.cor.2011.10.023},
+  url       = {http://dx.doi.org/10.1016/j.cor.2011.10.023},
+  year      = {2012},
+  month     = {Sep},
+  publisher = {Elsevier BV},
+  volume    = {39},
+  number    = {9},
+  pages     = {2142-2151},
+  author    = {Alejandro Rodr\'iguez and Rub\'en Ruiz},
+  journal   = {Computers \& Operations Research}
+}
+
+@book{Tejeda-Martinez2018,
+  author    = {Tejeda-Mart{\'{i}}nez, Adalberto and M{\'{e}}ndez, Irving and Rodr{\'{i}}guez, Norma Catalina and Tejeda-Zacar{\'{i}}as, Elisa.},
+  publisher = {Univerdidad de Colima},
+  title     = {{La humedad en la atm{\'{o}}sfera: Bases f{\'{i}}sicas, instrumentos y aplicaciones}},
+  year      = {2018},
+  isbn      = {9786078549504},
+  abstract  = {Cap. 5 Humedad en la atm{\'{o}}sfera Juan Inzunza Meteorolog{\'{i}}a descriptiva 113 CAP{\'{I}}TULO 5. HUMEDAD EN LA ATM{\'{O}}SFERA. 5.1 EL AGUA. Los antiguos fil{\'{o}}sofos consideraban el agua como uno de los elementos b{\'{a}}sicos que representaba a todas las sustancias l{\'{i}}quidas. Los cient{\'{i}}ficos no descartaron esta idea hasta la {\'{u}}ltima mitad del siglo XVIII. Agua es el nombre com{\'{u}}n que se le da al estado l{\'{i}}quido del compuesto de hidr{\'{o}}geno (H) y ox{\'{i}}geno (O), H 2 O. El agua pura es un l{\'{i}}quido inodoro e ins{\'{i}}pido. Tiene un matiz azul, que s{\'{o}}lo puede detectarse en capas de gran profun-didad. A la presi{\'{o}}n atmosf{\'{e}}rica normal, el punto de congelaci{\'{o}}n del agua es 0° C y su punto de ebullici{\'{o}}n es 100° C. El agua alcanza su densidad m{\'{a}}xima de 1000 kg/m 3 a una temperatura de 4° C y se expande al conge-larse. En la figura 5.1 se muestra un esquema de la mol{\'{e}}cula de agua. Figura 5.1 Esquema de la mol{\'{e}}cula de agua. Como muchos otros l{\'{i}}quidos, el agua puede existir en estado sobreenfria-do, es decir, que puede permanecer en estado l{\'{i}}quido aunque su tempera-tura est{\'{e}} por debajo de su punto de congelaci{\'{o}}n; se puede enfriar hasta unos-25° C sin que se congele. El agua sobreenfriada se puede congelar descendiendo m{\'{a}}s su temperatura, agit{\'{a}}ndola o agreg{\'{a}}ndole part{\'{i}}culas de hielo o de alg{\'{u}}n cristal como yoduro de plata.},
+  file      = {:media/bon/HelpStore/Tesis/App Termodinamica/BooksPsychrometrics/Psichrometric/La-humedad-en-la-atmosfera{_}466-1.pdf:pdf;:F\:/Tesis/App Termodinamica/BooksPsychrometrics/Psichrometric/La-humedad-en-la-atmosfera_466-1.pdf:PDF},
+  pages     = {1--263}
+}
+
+@book{Shallcross1997,
+  abstract  = {Humidity Diagrams for Engineers},
+  author    = {Shallcross, D. C.},
+  booktitle = {Handbook of Psychrometric Charts},
+  doi       = {10.1007/978-94-009-0027-1},
+  file      = {:media/bon/HelpStore/Tesis/Psichrometric/Handbook of Psychrometric Charts Humidity diagrams for engineers (D. C. Shallcross (auth.)) (z-lib.org).pdf:pdf},
+  isbn      = {9789401065009},
+  title     = {{Handbook of Psychrometric Charts}},
+  year      = {1997}
+}
+
+@book{Brandt,
+  abstract = {HVAC designers. Second edition. First edition by James Kamm. "SDL number: 00099"--Title page verso. "A course book for self-directed or group learning." "Includes skill development exercises for PDH, CEU, or LU credits"--Cover.},
+  author   = {Brandt, Don and {ASHRAE (Firm)}},
+  file     = {:media/bon/HelpStore/Tesis/Psichrometric/Fundamentals of psychrometrics (Brandt, Don) (z-lib.org).pdf:pdf},
+  isbn     = {9781939200099},
+  title    = {{Fundamentals of Psychrometrics}}
+}
+
+@article{Rodrigues2003,
+  author  = {Rodrigues, Miguel Trefaut},
+  file    = {:media/bon/HelpStore/Tesis/Psichrometric/i-unidad3 Psicrometria.pdf:pdf},
+  isbn    = {9788521101437},
+  journal = {2003},
+  pages   = {351--366},
+  title   = {{Cap{\'{i}}tulo 13 Psicrometr{\'{i}}a}},
+  year    = {2003}
+}
+
+@book{Gatley2013,
+  author    = {Gatley, D. P.},
+  editor    = {Handbook and Special Publications},
+  publisher = {American Society of Heating, Refrigerating and Air-Conditioning Engineers},
+  title     = {{Understanding Psychrometrics}},
+  year      = {2013},
+  edition   = {3},
+  isbn      = {9781936504312},
+  month     = {3},
+  abstract  = {This book serves as a lifetime reference manual and basic refresher course for those who use psychrometrics on a recurring basis and provides a four- to six-hour psychrometrics learning module to students; air-conditioning designers; agricultural, food process, and industrial process engineers; meteorologists and others. New in the Third EditionRevised chapters for wet-bulb temperature and relative humidity and a revised Appendix V that includes a summary of ASHRAE Research Project RP-1485.New constants for the universal gas constant based on CODATA and a revised molar mass of dry air to account for the increase of CO2 in Earth's atmosphere.New IAPWS models for the calculation of water properties above and below freezing.New tables based on the ASHRAE RP-1485 real moist-air numerical model using the ASHRAE LibHuAirProp add-ins for Excel{\textregistered}, MATLAB{\textregistered}, Mathcad{\textregistered}, and EES{\textregistered}.},
+  file      = {:media/bon/HelpStore/Tesis/Psichrometric/Understanding psychrometrics (D P Gatley American Society of Heating etc.) (z-lib.org).pdf:pdf},
+  pages     = {310}
+}
+
+@article{greenwade93,
+  author  = {Diego Almeida},
+  journal = {Linkedin},
+  title   = {Psicrometría Aplicada en la Refrigeraci\'on},
+  year    = {2017},
+  url     = {https://www.linkedin.com/pulse/psicrometr%C3%ADa-aplicada-la-refrigeraci%C3%B3n-diego-almeida-kalume}
+}
+
+@article{Gombiner,
+  doi       = {10.7916//CONSILIENCE.V0I5.4521},
+  url       = {https://journals.library.columbia.edu/index.php/consilience/article/view/4521},
+  author    = {Gombiner,  Joel},
+  language  = {en},
+  title     = {Carbon Footprinting the Internet},
+  journal   = {Consilience},
+  pages     = {No 5 (2011): Issue Five: 2011},
+  publisher = {Consilience},
+  year      = {2020}
+}
+
+@book{Crow1983,
+  author    = {Crow, Frank W. and Tomer, Kenneth B. and Gross, Michael L.},
+  booktitle = {Mass Spectrometry Reviews},
+  doi       = {10.1002/mas.1280020103},
+  file      = {:media/bon/MainStore/Biblioteca/Transfer Process/Mass Transfer/Mass transfer principles and applications by Diran Basmadjian (z-lib.org).pdf:pdf},
+  isbn      = {0849322391},
+  issn      = {10982787},
+  number    = {1},
+  pages     = {47--76},
+  title     = {{Mass resolution in mass spectrometry/mass spectrometry}},
+  volume    = {2},
+  year      = {1983}
+}
+
+@book{Gerlach2019,
+abstract = {The book provides the reader with a profound knowledge of basic principles, properties and preferred applications of diverse kinds of CO2 measurement. It shows the advantages, disadvantages and limitations of several methods and gives a comprehensive overview of both possible applications and corresponding boundary conditions. Applications reach from environmental monitoring to safety control to biotechnology and food control and finally to medicine.},
+address = {Weinheim, Germany},
+author = {Gerlach, Gerald and Guth, Ulrich and Oel{\ss}ner, Wolfram},
+edition = {1st},
+editor = {Gerlach, Gerald and Guth, Ulrich and Oel{\ss}ner, Wolfram},
+isbn = {9783527411825},
+pages = {429},
+publisher = {Wiley-VCH},
+title = {Carbon Dioxide Sensing - Fundamentals, Principles, and Applications},
+year = {2019},
+}
+
+@book{Dymond2002,
+journal = {Landolt-Bornstein-Numerical Data and Functional Relationships in Science and Technology},
+author = {J. Dymond and K. Marsh and R. Wilhoit and K. Wong},
+volume = {21},
+editor = {M. Frenkel, K. Marsh},
+isbn = {3540433457},
+title = {{Virial Coefficients of Pure Gases and Mixtures}},
+year = {2002}
+}
+
+@article{Bell2017,
+author = {Bell, Ian H and Lemmon, Eric W and Harvey, Allan H},
+doi = {10.1016/j.ijrefrig.2017.10.001},
+file = {:media/bon/HelpStore/Tesis/App Termodinamica/BooksPsychrometrics/Algorithms Psychrometry.pdf:pdf},
+number = {October},
+title = {{Algorithms for the calculation of psychrometric properties from multi-fluid Helmholtz-energy-explicit models Algorithms for the calculation of psychrometric properties from multi-fluid}},
+year = {2017}
+}
+
+@book{Wilhelm2010,
+editor = {{Emmerich Wilhelm and Trevor Letcher}},
+file = {:media/bon/MainStore/Biblioteca/Thermodynamics/Equilibrium & Non Equilibrium Thermodynamics/Heat Capacities Liquids, Solutions and Vapours by Emmerich Wilhelm, Trevor Letcher (z-lib.org).pdf:pdf},
+isbn = {9780854041763},
+publisher = {Royal Society of Chemistry},
+title = {{Heat Capacities: Liquid Solutions and Vapours}},
+year = {2010}
+}
+
+@article{beattie1942second,
+  title={{The second virial coefficient for gas mixtures}},
+  author={Beattie, James A and Stockmayer, Walter H},
+  journal={The Journal of Chemical Physics},
+  volume={10},
+  number={7},
+  pages={473--476},
+  year={1942},
+  publisher={American Institute of Physics}
+}
+
+@book{Poling2001,
+  title={{The Properties of Gases and Liquids}},
+  author={Poling, Prausnitz, O'Connell},
+  editor={},
+  file={/media/bon/HelpStore/Tesis/App Termodinamica/BooksPsychrometrics/thermo},
+  doi={10.1036/0070116822}
+}
+
+@article{woolley1969second,
+  title={The Second Virial Coefficient for the Realistic Pair Potential},
+  author={Woolley, Harold W},
+  journal={Journal of Research of the National Bureau of Standards. Section A, Physics and Chemistry},
+  volume={73},
+  number={4},
+  pages={421},
+  year={1969},
+  publisher={National Institute of Standards and Technology}
+}
+
+@article{pitzer1990second,
+  title={Second virial coefficients for mixed gases of low polarity},
+  author={Pitzer, Kenneth S},
+  journal={Fluid phase equilibria},
+  volume={59},
+  number={1},
+  pages={109--113},
+  year={1990},
+  publisher={Elsevier}
+}
+
+
+
+@article{XU2021113032,
+title = {Empirical correlations for second virial coefficients of nonpolar and polar fluids covering a wide temperature range},
+journal = {Fluid Phase Equilibria},
+volume = {539},
+pages = {113032},
+year = {2021},
+issn = {0378-3812},
+doi = {https://doi.org/10.1016/j.fluid.2021.113032},
+url = {https://www.sciencedirect.com/science/article/pii/S0378381221000947},
+author = {Liu Xu and Yuan-Yuan Duan and Hang-Tao Liu and Zhen Yang},
+keywords = {Virial coefficients, Corresponding-state principle, Simple fluids, Nonpolar fluids, Polar fluids},
+abstract = {Being of great value in calculating the effect of the vapor-phase nonideality, second virial coefficients can be accurately described by the corresponding-state principle. Based on the corresponding-state principle, the new generalized second-virial-coefficient correlations of simple, nonpolar and non-associated polar fluids were proposed in this work. Four mathematical criterions for second-virial-coefficient models were summarized on the basis of the temperature-dependent characteristics of molecular interactions and macroscopic properties. Covering a wide temperature range which had never been reached before, the new-form correlations met the four mathematical criterions strictly. Ab initio values, together with the carefully selected high-quality experimental data, were used to define the “perfect” simple fluid and fitted satisfactory with the present simple spherical and nonpolar terms. More experimental data of second virial coefficients for non-associated polar fluids were collected and the refitted polar term yielded more reliable and physically-reasonable results.}
+}
+
+@article{tarakad1977improved,
+  title={An improved corresponding states method for polar fluids: correlation of second virial coefficie

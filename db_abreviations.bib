@@ -1,0 +1,56 @@
+@abbreviation {MO,
+  long = {\itshape modus operandi},
+  short = {M.O.},
+  prefixfirst = {a~},
+  prefix = {an\space}
+}
+
+@entry{bird,
+name={bird},
+description = {feathered animal},
+see={[see also]{duck,goose}}
+}
+@entry{duck,
+name={duck},
+description = {a waterbird with short legs}
+}
+@entry{goose,
+name="goose",
+plural="geese",
+description={a waterbird with a long neck}
+}
+
+@string{html={hypertext markup language}}
+@abbreviation{shtml,
+short="shtml",
+long= ssi # " enabled " # html,
+description={a combination of \gls{html} and \gls{ssi}}
+}
+@abbreviation{html,
+short ="html",
+long = html,
+description={a markup language for creating web pages}
+}
+@abbreviation{ssi,
+short="ssi",
+long = ssi,
+description={a simple interpreted server-side scripting language}
+}
+% Here are some symbols:
+% preamble{"\providecommand{\mtx}[1]{\boldsymbol{#1}}"}
+@symbol{M,
+name={$\mtx{M}$},
+text={\mtx{M}},
+description={a matrix}
+}
+@symbol{v,
+name={$\vec{v}$},
+text={\vec{v}},
+description={a vector}
+}
+@symbol{S,
+name={$\mathcal{S}$},
+text={\mathcal{S}},
+description={a set}
+}
+To ensure that bib2gls can find out which entries have been used in the document, you

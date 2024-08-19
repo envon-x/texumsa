@@ -1,0 +1,129 @@
+\ProvidesPackage{resources/physics/styles/impl-equations}
+\RequirePackage{resources/physics/styles/variables}
+\RequirePackage{resources/physics/styles/abs-equations}
+% \RequirePackage{verbatim}  % Se necesita para el comando "example".
+% \RequirePackage{layouts}
+% \RequirePackage{pslatex}
+% \RequirePackage{mathpazo}
+\RequirePackage{mathptmx} % This package defines Adobe Times Roman (or equivalent)
+\RequirePackage{accents}
+\RequirePackage{amssymb}  %% barras sobre las letras o variables
+
+% \RequirePackage{bookman}
+% \RequirePackage{newcent}
+% \RequirePackage{tgbonum}
+% \RequirePackage{tgadventor}
+% \usepackage[none]{hyphenat} % para no corte las palabras. trabaja con \sloppy
+
+
+
+% phase rule of Lewis gibbs
+\def\eqPhaseRule{\ensuremath{ \freeDegree = \componentNumber + 2 - \phaseNumber}}
+
+% Expresion de doble sumatoria del segundo coeficiente virial
+\def\eqSecondVirialCoeffSum{\ensuremath{ \bCoeffVirialMixture{} = \sum_{i=1}^{\symNumOfCmpnts} \sum_{j=1}^{\symNumOfCmpnts} x_i x_j \cCoeffVirial{ij}  }}
+
+% Desarrollo del segundo Coeficiente virial
+\def\eqSecondVirialCoeffDevelop{\ensuremath{  \bCoeffVirialMixture{} = {\symCompGV{\nameG}}^2 \bCoeffVirial{\nameG \nameG} + 2 {\symCompGV{\nameG}} \symCompGV{}_{\nameV} \bCoeffVirial{\nameG \nameV} + {\symCompGV{}_\nameV}^2 \bCoeffVirial{\nameV \nameV}}}
+
+\def\eqSecondVirialCoeffNaming{
+    Donde:\newline
+  \bCoeffVirial{\nameG \nameG}: es el coeficiente virial para el componente puro de {\nameG} y  \newline
+  \bCoeffVirial{\nameV \nameV}: para {\nameV} \newline
+  \bCoeffVirial{\nameG \nameV}: es la constante de interacción que depende de la temperatura, pero no de la composición molar.
+}
+
+% Expresion de triple sumatoria del tercer coeficiente virial
+\def\eqThirdVirialCoeffSum{\ensuremath{ \cCoeffVirialMixture{} = \sum_{i=1}^{\symNumOfCmpnts} \sum_{j=1}^{\symNumOfCmpnts} \sum_{k=1}^{\symNumOfCmpnts} x_i x_j x_k \cCoeffVirial{ijk}  }}
+
+
+
+% Tercer coefficiente virial
+\def\thirdVirialCoeffDevelop{\ensuremath{  \cCoeffVirialMixture{} = {\symCompGV{\nameG}}^3 \cCoeffVirial{\nameG \nameG \nameG} + 3{\symCompGV{\nameG}}^2 {\symCompGV{}_{\nameV}} \cCoeffVirial{\nameG \nameG \nameV} + 3 {\symCompGV{\nameG}} {\symCompGV{}_{\nameV}}^2 \cCoeffVirial{\nameG \nameV \nameV} + {\symCompGV{}_\nameV}^3 \cCoeffVirial{\nameV \nameV \nameV}}}
+
+\def\eqThirdVirialCoeffNaming{
+    Donde:\newline
+  {\symCompGV{\nameV}}: denota la composición molar del componente V \newline
+  {\symCompGV{\nameG}}: es la composición molar del componente G \newline
+  {\cCoeffVirial{\nameG \nameG \nameG}} y {\cCoeffVirial{\nameV \nameV \nameV}}: son los coeficientes viriales para la sustancia pura de la mezcla y \newline
+  {\cCoeffVirial{\nameG \nameG \nameV}} y {\cCoeffVirial{\nameG \nameV \nameV}}: son los parámetros de interacción virial. Todos los coeficientes viriales que dependen de la temperatura.
+}
+
+% Fraccion mol del componente G en el punto de saturación
+\def\symCompGsat{\ensuremath{\symCompG{g_s}}}
+
+
+%% Equación virial desarrollada pra V
+\def\eqVirialForVDevelop{\ensuremath{
+    \label{eq:virialB}
+    \eqVirialB{\P{}}{Vm}{\T{}}
+}}
+\def\eqVirialForVDevelopNaming{{Donde, \newline 
+    $\P{}$: es la presión total, \newline
+    $\Vm$: es el volumen molar, \newline
+    $\R$: es la constante universal de los gases, \newline
+    $\T{}$: corresponde a la temperatura absoluta, \newline
+    $B$, $C$: son el 2do y 3er coeficiente virial  que dependen de la temperatura, y para las mezclas también de su composición.
+}}
+
+
+\def\eqVirialForVDevelopForMixture{\ensuremath{
+    \label{eq:virialBMixture}  
+    \eqVirialB{\P{}}{\symMolarVolumeForMixture}{\T{}}
+}}
+\def\eqVirialForVDevelopMixtureNaming{{Donde, \newline 
+    $\P{}$ : es la presión total, \newline
+    ${\symMolarVolumeForMixture}$: es el volumen molar, \newline
+    $\R$: es la constante universal de los gases, \newline
+    $\T{}$: corresponde a la temperatura absoluta, \newline
+    $B$, $C$: son el 2do y 3er coeficiente virial  que dependen de la temperatura, y para las mezclas también de su composición.
+}}
+
+
+
+\def\bCoeffDependentOfT{\ensuremath{a =  \sum_{i=1}^{\symNumOfCmpnts} \bCoeffVirial{i} \T{a}^{-1}}}
+\def\cCoeffDependentOfT{\ensuremath{\cCoeffVirial{} =  \sum_{i=1}^{\symNumOfCmpnts} \cCoeffVirial{i} \T{}^{-1}}}
+
+% Coeficientes para la ecuación desarrollada del 2do coeficiente virial
+\def\bvv{\ensuremath{\bCoeffVirial{\nameV \nameV}}}
+\def\bgv{\ensuremath{\bCoeffVirial{\nameG \nameV}}}
+\def\bgg{\ensuremath{\bCoeffVirial{\nameG \nameG}}}
+
+% Coeficientes para la ecuación desarrollada del 3er coeficiente virial
+\def\cggv{\ensuremath{\cCoeffVirial{\nameG \nameG \nameV}}}
+\def\cgvv{\ensuremath{\cCoeffVirial{\nameG \nameV \nameV}}}
+\def\cvvv{\ensuremath{\cCoeffVirial{\nameV \nameV \nameV}}}
+\def\cggg{\ensuremath{\cCoeffVirial{\nameG \nameG \nameG}}}
+
+\def\eqVirialFactorCorrection{\ensuremath{
+  \begin{split}
+    \ln f &= \left[ \frac{(1 + \isothermalCompresibility \Pvap)(\Ptotal - \Pvap) - \frac{1}{2} \isothermalCompresibility (\Ptotal^2 - \Pvap^2)}{\R \T{}} \right] \molarVolumeSaturate \\
+          &+ \ln (1 - \henryLaw {\symCompGsat} \Ptotal) - \frac{2 {\symCompGsat}^3 (2 - 3 {\symCompGsat}) \Ptotal^2}{(\R \T{})^2} \bgg \bgv \\
+          &+ \frac{{\symCompGsat}^2}{\R \T{}} \bgg - \frac{2 {\symCompGsat}^2 \Ptotal}{\R \T{}} \bgv - \left[ \frac{ \Ptotal - \Pvap}{\R \T{}} - \frac{{\symCompGsat}^2 \Ptotal}{\R \T{}} \right] \bgg \\
+          &+ \frac{3 {\symCompGsat}^2}{2 (\R \T{})^2} (1 + 2 {\symCompGsat}) \Ptotal^2 \cggv - \frac{3 {\symCompGsat}^2 (1 - {\symCompGsat}) \Ptotal^2}{(\R \T{})^2} \cgvv \\
+          &- \left[ \frac{(1 + 2 {\symCompGsat})(1 - {\symCompGsat})^2 \Ptotal^2 - \Pvap^2}{2 (\R \T{})^2} \right] \cvvv - \frac{3 {\symCompGsat}^4 \Ptotal^2}{2 (\R \T{})^2} \bgg^2 \\
+          &- \frac{{\symCompGsat}^2 (1 - 3 {\symCompGsat})(1 - {\symCompGsat}) \Ptotal^2}{(\R \T{})^2} \bgg \bvv \\
+          &+ \frac{6 {\symCompGsat}^2 (1 - {\symCompGsat})^2 \Ptotal^2}{(\R \T{})^2} \bvv \bgv \\
+          &- \frac{2 {\symCompGsat}^2 (1 - {\symCompGsat})(1 - 3 {\symCompGsat}) \Ptotal^2}{(\R \T{})^2} \bgv^2 + \frac{{\symCompGsat}^3 \Ptotal^2}{(\R \T{})^2} \cggg \\
+          &- \left[ \frac{\Pvap^2 - (1 + 3 {\symCompGsat})(1 - {\symCompGsat})^3 \Ptotal^2}{2 (\R \T{})^2} \right] \bvv^2
+  \end{split}
+}}
+
+
+\def\factorCorrectionNaming{
+    Donde:\newline
+  {\molarVolumeSaturate}: Volumen molar del componente V condensado\newline
+  {\isothermalCompresibility}: denota la compresibilidad isotérmica\newline
+  {\henryLaw}: es la constante de la ley de Henrry \newline
+  {\Ptotal}: es la presión total\newline
+  {\R}: constante universal de los gases\newline
+  {\T{}}: es la termperatura absoluta\newline
+  {\symCompGV{\nameV}}: denota la composición molar del componente V \newline
+  {\symCompGV{\nameG}}: es la composición molar del componente G \newline
+  {\cCoeffVirial{\nameG \nameG \nameG}} y {\cCoeffVirial{\nameV \nameV \nameV}}: son los coeficientes viriales para la sustancia pura de la mezcla y \newline
+  {\cCoeffVirial{\nameG \nameG \nameV}} y {\cCoeffVirial{\nameG \nameV \nameV}}: son los parámetros de interacción virial. Todos los coeficientes viriales que dependen de la temperatura.
+}
+
+
+
+

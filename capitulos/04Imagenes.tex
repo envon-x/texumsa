@@ -1,0 +1,604 @@
+%---------------------------------------------------------------------
+%
+%                          Capítulo 4
+%
+%---------------------------------------------------------------------
+%
+% 04Imagenes.tex
+% Copyright 2009 Marco Antonio Gomez-Martin, Pedro Pablo Gomez-Martin
+%
+% This file belongs to the TeXiS manual, a LaTeX template for writting
+% Thesis and other documents. The complete last TeXiS package can
+% be obtained from http://gaia.fdi.ucm.es/projects/texis/
+%
+% Although the TeXiS template itself is distributed under the 
+% conditions of the LaTeX Project Public License
+% (http://www.latex-project.org/lppl.txt), the manual content
+% uses the CC-BY-SA license that stays that you are free:
+%
+%    - to share & to copy, distribute and transmit the work
+%    - to remix and to adapt the work
+%
+% under the following conditions:
+%
+%    - Attribution: you must attribute the work in the manner
+%      specified by the author or licensor (but not in any way that
+%      suggests that they endorse you or your use of the work).
+%    - Share Alike: if you alter, transform, or build upon this
+%      work, you may distribute the resulting work only under the
+%      same, similar or a compatible license.
+%
+% The complete license is available in
+% http://creativecommons.org/licenses/by-sa/3.0/legalcode
+%
+%---------------------------------------------------------------------
+
+\chapter{Gestión de las imágenes}
+\label{cap4}
+\label{cap:imagenes}
+
+
+\begin{FraseCelebre}
+\begin{Frase}
+El alma nunca piensa sin una imagen mental.
+\end{Frase}
+\begin{Fuente}
+Aristóteles
+\end{Fuente}
+\end{FraseCelebre}
+
+\begin{resumen}
+  Este capítulo describe todos los aspectos relacionados con las
+  imágenes de los documentos. En particular, describe la estructura de
+  directorios que \texis\ aconseja, así como los aspectos
+  relacionados con la diferencia entre los formatos esperados cuando
+  se genera el documento final con \texttt{latex} y \texttt{pdflatex}.
+\end{resumen}
+
+%-------------------------------------------------------------------
+\section{Introducción}
+%-------------------------------------------------------------------
+\label{cap4:sec:intro}
+
+En este capítulo tratamos todos los aspectos relacionados con añadir
+imágenes al documento. Aunque en principio es algo bastante sencillo
+(desde luego mucho más sencillo que añadir una tabla compleja),
+existen una serie de cosas a tener en cuenta que merecen un capítulo
+entero en el manual.
+
+En particular, lo que provoca que las imágenes requieran estas
+explicaciones detalladas es el hecho de que, como ya dijimos en las
+secciones~\ref{cap1:sec:que-es} y~\ref{cap2:sec:compilacion},
+\texis\ te permite generar el documento utilizando tanto
+\texttt{latex} como \texttt{pdflatex}.
+
+Idealmente, el usuario final de \LaTeX\ no debería verse influenciado
+por la aplicación utilizada para generar sus ficheros. Sin embargo, en
+cierto modo sí se ve afectado; no por el código en sí contenido en los
+\texttt{.tex} sino por los recursos a los que éstos hacen
+referencia\footnote{En ciertas ocasiones también puede verse afectado
+  el código, si se utilizan paquetes que únicamente funcionan con una
+  de ellas.}. En concreto, si se utiliza \texttt{latex}, las imágenes
+referenciadas con el comando \verb+\includegraphics+ se asume que
+tienen formato \texttt{.eps}, mientras que en cuanto se utiliza
+\texttt{pdflatex}, se admiten \texttt{.pdf}, \texttt{.png} y
+\texttt{.jpg} (pero no \texttt{.eps}).
+
+Por lo tanto, cuando utilizamos un código como el siguiente (similar
+al que hay en la portada para que aparezca el escudo):
+
+\begin{verbatim}
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=0.3\textwidth]%
+                {Imagenes/Vectorial/escudoUCM}
+\caption{Escudo de la Universidad Complutense}
+\end{center}
+\end{figure}
+\end{verbatim}
+
+\noindent cuando se genera con \texttt{latex}, se buscará el fichero
+\texttt{escudoUCM.eps} en el directorio \url{Imagenes/Vectorial},
+mientras que al generarlo con \texttt{pdflatex}, se buscará el fichero
+en ese mismo directorio, con el mismo nombre, pero con extensión
+\texttt{.pdf}, \texttt{.png} o \texttt{.jpg}.
+
+Esto provoca que el programa utilizado para generar el documento final
+es el que \emph{determina} qué tipo de formato debe usarse para
+almacenar las imágenes. Existen dos soluciones, que trataremos en las
+secciones~\ref{cap4:formatoimagenes} y \ref{cap4:solTeXiS}. Antes de
+eso, la siguiente sección explica la estructura de directorios que
+\texis\ espera que se utilice.
+
+%-------------------------------------------------------------------
+\section{Gestión de imágenes}
+%-------------------------------------------------------------------
+\label{cap4:sec:gestion}
+
+Los ficheros de imágenes pueden almacenarse donde el autor del
+documento desee; al añadir la referencia desde el \texttt{.tex},
+deberá simplemente indicar la ruta correcta del archivo.
+
+Sin embargo, \texis\ propone una estructura determinada que es la
+que usa este documento. La estructura está elegida de tal forma que
+facilita la solución del problema de la generación utilizando tanto
+\texttt{latex} como \texttt{pdflatex}, por lo que aunque pueda parecer
+arbitraria, tiene cierto sentido.\comp{En realidad se puede discutir
+  si tiene sentido la separación entre Vectorial y mapa de bits. La
+  separación tiene sentido para permitir, fácilmente, cambiar el tipo
+  de ficheros ``fuente'' que se utilizan. Si un usuario decide que
+  quiere guardar los ficheros \texttt{eps} y convertirlos con los
+  generadores respectivos al formato de \texttt{pdflatex}, es mejor
+  tenerlos separados; de esta forma los de mapas de bits se
+  transformarán a \texttt{.png} y los Vectoriales a \texttt{.pdf}.
+  Teniendolos separados por tipo facilita esta tarea.}
+
+La estructura que proponemos empieza con el directorio
+\url{./Imagenes}, donde aparecen los siguientes directorios:
+
+\begin{itemize}
+\item \url{./Vectorial}: contiene los ficheros correspondientes a
+  imágenes Vectoriales.
+
+\item \url{./Bitmap}: contiene los ficheros correspondientes a
+  imágenes de mapas de bits.
+
+\item \url{./Fuentes}: en este directorio aparecen los ``fuentes'' de
+  las imágenes. Así, si se crean imágenes con Microsoft Visio, Power
+  Point, o Corel, en este directorio irían los ficheros nativos de
+  esos programas. Estos ficheros \emph{no} serán leídos en el proceso
+  de creación del documento final.
+\end{itemize}
+
+Cada uno de los directorios anteriores, a su vez, contiene un
+directorio por capítulo. De esta forma es fácil encontrar los ficheros
+si se quieren modificar. En el directorio ``raíz'' se encuentran las
+imágenes que no pertenecen a ningún capítulo, como la del escudo de la
+portada. También pueden aparecer otras imágenes que se utilicen en
+otras partes del documento que no sean los capítulos. Por ejemplo,
+\texis\ proporciona una imagen que puede ser de utilidad, y que
+está colocada en ese directorio raiz por ser independiente del
+capítulo. Es una figura ``dummy'' que sirve para marcar el lugar en el
+que debería aparecer una figura o gráfico que aún está por hacer
+(figura~\ref{fig:todo}).
+
+\figura{Vectorial/Todo}{width=.5\textwidth}{fig:todo}%
+       {Figura utilizada para marcar una imagen por hacer.}
+
+\texis\ incluye el comando \verb+\figura+ para facilitar la
+inclusión de imágenes. En particular, el comando tiene cuatro
+parámetros: el nombre del fichero (en el que no hay que indicar el
+directorio \url{./Imagenes}), los argumentos pasados al
+\verb+\includegraphics+ que suele tener información sobre el tamaño
+deseado, la etiqueta con la que luego podrá referenciarse la
+ilustración, y por último el título que aparecerá en la parte
+inferior.
+
+Para incluir la figura~\ref{fig:todo} por lo tanto, el comando
+es\footnote{Como se ha mencionado, observa que el primer parámetro
+  donde se indica el nombre del fichero \emph{no incluye} ni el nombre
+  del directorio \url{Imagenes} ni la extensión del fichero.}:
+
+\begin{verbatim}
+\figura{Vectorial/Todo}{width=.5\textwidth}{fig:todo}%
+       {Figura utilizada para marcar una imagen por hacer.}
+\end{verbatim}
+
+que gracias al \verb+{fig:todo}+, luego puede citarse en el código
+\LaTeX\ con:
+
+\begin{example}
+La figura~\ref{fig:todo}
+muestra\ldots
+\end{example}
+
+La figura se añade automáticamente al índice de figuras que aparece al
+principio del documento, en el que se indica el número de la figura,
+el texto inferior y la página en la que aparece. Es posible que el
+texto sea lo suficientemente largo como para que ocupe más de una
+línea en la entrada en el índice. Si se desea utilizar un texto más
+corto para evitarlo, se puede utilizar el comando \verb+\figuraEx+ que
+recibe un parámetro más con el ``título corto'' o lo que es lo mismo,
+con el texto alternativo que aparecerá en el índice.
+
+%-------------------------------------------------------------------
+\section{Formato de las imágenes}
+%-------------------------------------------------------------------
+\label{cap4:formatoimagenes}
+
+Recuperamos en esta sección el problema anteriormente comentado sobre
+los formatos de las imágenes. Como ya dijimos en la sección de
+introducción, el uso de \texttt{latex} o \texttt{pdflatex} determina
+los formatos de los ficheros que deben utilizarse para las imágenes,
+según la tabla~\ref{cap4:tab:formatoImagenes}.
+
+\begin{table}[t]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+Programa & Mapa de bits & Vectoriales \\
+\hline
+\texttt{latex} & \texttt{.eps} & \texttt{.eps} \\
+\hline
+\texttt{pdflatex} & \texttt{.png} | \texttt{.jpg} & \texttt{.pdf} \\
+\hline
+\end{tabular}
+\caption{Formatos de imágenes para \texttt{latex} y \texttt{pdflatex}
+   \label{cap4:tab:formatoImagenes}}
+\end{table}
+
+Esto significa que, en principio, en el momento de añadir la primera
+imagen al documento, se debe decidir qué programa se utilizará para
+generarlo, y utilizar el formato de imagen adecuado a él. Si tienes
+claro qué programa utilizarás, la solución es así de simple. Almacena
+las imágenes en el formato adecuado según la
+tabla~\ref{cap4:tab:formatoImagenes}.
+
+Desgraciadamente, lo habitual es no encontrarse en esa situación.
+Normalmente cuando se comienza a escribir, es muy difícil pronosticar
+cuál de los dos se utilizará, y por lo tanto no quieres decantarte por
+ninguno. No estás seguro de cuál quieres, o puede que quieras poder
+generarlo de las dos formas, debido a alguna restricción del servicio
+de publicaciones.
+
+Por lo tanto, la mejor solución es, simplemente, permitir ambas
+alternativas. Para eso lo más fácil es \emph{duplicar} las imágenes,
+es decir, mantener tanto la copia que será leída por \texttt{latex}
+como la que utilizará \texttt{pdflatex}.
+
+Esta duplicación, no obstante, no suele ser aconsejable, pues (además
+de consumir más espacio) es propensa a errores: si hay que cambiar una
+imagen, lo habitual será abrir el fichero de \url{./Imagenes/Fuentes},
+y luego ``exportarlo'' al formato nativo. En ese momento, es fácil
+olvidar generar \emph{los dos} ficheros.
+
+Por lo tanto, hay dos soluciones rápidas y fáciles:
+
+\begin{itemize}
+\item Decidir al principio qué programa se utilizará y utilizar
+  siempre los formatos que éste espera, según la
+  tabla~\ref{cap4:tab:formatoImagenes}. Tiene la desventaja de que no
+  se podrá (fácilmente) cambiar el programa generador, pues se
+  necesitará crear las imágenes en el formato esperado por la nueva
+  aplicación.
+
+\item No atarse al uso de ninguno de los dos, y duplicar los ficheros
+  de forma que todas las imágenes se guardan dos veces, en cada uno de
+  los formatos esperados por ambos programas. Su desventaja es la
+  duplicación de los ficheros, con los problemas de coherencia que eso
+  puede provocar.
+\end{itemize}
+
+Ninguna de las dos alternativas es óptima, por lo que \texis\
+proporciona la solución alternativa descrita en la sección siguiente.
+Si decides utilizar alguna de las opciones fáciles anteriores, puedes
+omitir la lectura de la misma.
+
+%-------------------------------------------------------------------
+\section{Imágenes independientes del programa generador}
+%-------------------------------------------------------------------
+\label{cap4:solTeXiS}
+
+En general conviene evitar duplicar los datos almacenados en disco
+para evitar problemas de incoherencias. Por eso, cuando no se quiere
+limitar la generación del documento final a sólo uno de los dos
+programas, \texttt{latex} o \texttt{pdflatex}, \texis\ desaconseja
+almacenar en disco cada imagen en los dos formatos exigidos por ellas.
+
+\texis\ está preparada para que se almacene en el directorio de
+las imágenes únicamente las soportadas por \texttt{pdflatex} (es
+decir, ficheros \texttt{.pdf} para imágenes Vectoriales y
+\texttt{.png} o \texttt{.jpg} para mapas de bits). Obviamente, si se
+hace así, al utilizar \texttt{latex} para generar, dará error al no
+encontrar los ficheros de imágenes correspondientes. Y aquí es donde
+entra en acción el fichero \texttt{Makefile} incluido (que se explica
+ampliamente en el capítulo~\ref{cap:makefile}) cuando se ejecuta con
+el objetivo \texttt{latex}:
+
+\begin{verbatim}
+$ make latex
+\end{verbatim}
+
+\noindent antes de invocar a \texttt{latex}, convierte todos los
+ficheros \texttt{.pdf} que hay en el directorio
+\url{./Imagenes/Vectorial} a ficheros \texttt{.eps}, y todos los
+\texttt{.jpg}  y \texttt{.png} de \url{./Imagenes/Bitmap} a
+\texttt{.eps}, para que \texttt{latex} los encuentre.
+
+Para realizar la conversión, se utilizan las aplicaciones
+\texttt{pdftops} y \texttt{sam2p} que deben estar
+accesibles en el PATH. Esa es la razón por la que, como mencionábamos
+en la sección~\ref{cap1:sec:que-es}, \texis\ anima al uso de
+sistemas Linux: las aplicaciones anteriores están disponibles en este
+sistema operativo (aunque puede que no se instalen directamente en
+algunas distribuciones), mientras que en Windows normalmente no están.
+
+%-------------------------------------------------------------------
+\section{Gestión de imágenes y control de versiones}
+%-------------------------------------------------------------------
+\label{cap4:variaciones}
+
+La solución propuesta en la sección anterior hace que la plantilla
+espere que dentro del directorio \url{./Imagenes/Vectorial} aparezcan
+ficheros \texttt{.pdf} y en \url{./Imagenes/Bitmap} se encuentren
+ficheros con extensión \texttt{.png} o \texttt{.jpg}.
+
+En el proceso de generación cuando se utiliza \texttt{latex}, se
+convierten todos esos ficheros a \texttt{.eps} para que el programa
+encuentre las imágenes en el formato que éste espera, por lo que en
+los directorios anteriores aparecerán ficheros \texttt{.eps}
+\emph{generados automáticamente}.
+
+\texis\ está configurado para que, en caso de utilizar un sistema
+de control de versiones, éste \emph{ignore} esos ficheros generados
+(ver una explicación detallada en la
+sección~\ref{cap3:sec:control-versiones}). De esta forma, el usuario
+no es ``molestado'' en los momentos de las actualizaciones con
+mensajes indicando que hay nuevos ficheros en el directorio de las
+imágenes que no han sido subidos al servidor.
+
+Sin embargo, esta característica debe \emph{anularse} si se utiliza
+una solución distinta a la indicada en el apartado anterior. En
+particular, se debe \emph{eliminar} el fichero
+\texttt{.cvsignore}\footnote{O no establecer la propiedad
+  \texttt{svn:ignore} con él si se utiliza Subversion.} si:
+
+\begin{itemize}
+\item Se decide al principio de la redacción del documento que se va a
+  utilizar \texttt{latex} para su generación (y nunca
+  \texttt{pdflatex}), y por lo tanto se usarán siempre ficheros con
+extensión \texttt{.eps}.
+
+\item Se decide no utilizar la característica de conversión automática
+  de imágenes, y se duplican los ficheros, guardando siempre tanto la
+  copia leída por \texttt{latex} como por \texttt{pdflatex}.
+
+\item Se decide que las imágenes se guardarán siempre en \texttt{.eps}
+  y se cambia el \texttt{Makefile} para que, en caso de utilizar
+  \texttt{pdflatex} las convierta al formato utilizado por éste
+  (consulta la sección~\ref{cap6:subsec:compilacionImagenes} si estás
+  en este caso).
+\end{itemize}
+
+%-------------------------------------------------------------------
+\section{Imágenes divididas}
+%-------------------------------------------------------------------
+\label{cap4:subfloat}
+
+Somos conscientes de que esta sección incumple lo que comentamos al
+principio del manual de lo que \texis\ \emph{no era}. Decíamos en
+la sección~\ref{cap1:sec:que-no-es} que esto \emph{no} era un manual
+de \LaTeX, y lo seguimos manteniendo. Sin embargo, en este apartado
+incumplimos momentáneamente esa promesa para explicar brevemente cómo
+incluir varias figuras dentro de un entorno flotante (típicamente otra
+figura).
+
+En este manual ya ha aparecido un ejemplo. La
+figura~\ref{cap2:fig:pdf} de la página \pageref{cap2:fig:pdf} mostraba
+en realidad dos capturas distintas, cada una de ellas con un subtítulo
+distinto.
+
+El código \LaTeX\ de esa figura era:
+
+\begin{verbatim}
+\begin{figure}[t]
+  \centering
+  %
+  \subfloat[][Propiedades del documento]{
+     \includegraphics[width=0.42\textwidth]%
+                     {Imagenes/Bitmap/02/PropiedadesPDF}
+     \label{cap2:fig:PropiedadesPDF}
+  }
+  \qquad
+  \subfloat[][Tabla de contenidos]{
+     \includegraphics[width=0.42\textwidth]%
+                     {Imagenes/Bitmap/02/IndicePDF}
+     \label{cap2:fig:TocPDF}
+  }
+ \caption{Capturas del visor de PDF\label{cap2:fig:pdf}}
+\end{figure}
+\end{verbatim}
+
+
+La idea general es crear un entorno figura tradicional, pero no poner
+en ella directamente el \verb+\includegraphics+, sino subdividir ese
+entorno figura en varias partes. A cada una de ellas se le da una
+etiqueta diferente para poder referenciarlas, una descripción,
+etcétera.  Un esquema general sería:
+
+\begin{verbatim}
+\begin{figure}[t]
+  \centering
+  %
+  \subfloat[<ParaElIndice1>][<Caption1>]{ 
+     % Contenido para este "subelemento" (podrá ser una
+     % figura, una tabla, o cualquier otra cosa).
+     \includegraphics[width=5cm]{ficheroSinExtension}
+     \label{fig:etiqueta1}
+  }
+  \subfloat[<ParaElIndice2>][<Caption2>]{
+     % Contenido para este "subelemento" (podrá ser una
+     % figura, una tabla, o cualquier otra cosa).
+     \includegraphics[width=5cm]{ficheroSinExtension}
+     \label{fig:etiqueta2}
+  }
+ \caption{Descripción global para la figura}
+ \label{Etiqueta para toda la figura}
+\end{figure}
+\end{verbatim}
+
+El sistema automáticamente decide cuándo poner la siguiente figura al
+lado, o en otra línea, en base a si entra o no. Es posible forzar a
+que se ponga en una línea nueva si se deja una línea en blanco en el
+\texttt{.tex}. Esto tiene la repercusión de que no deberías dejar
+líneas en blanco en ningún momento dentro del entorno flotante, para
+evitar que se ``salte de linea'' en las figuras. Si quieres por
+legilibidad dejar alguna línea, pon un comentario vacio (como hemos
+hecho con el ejemplo anterior después del \verb+\centering+).
+
+La separación entre dos figuras que se colocan en la misma fila puede
+ser demasiado pequeña. Para separarlas un poco más, puedes poner
+\verb+\qquad+ entre el cierre llaves de un \verb+\subfloat+ y el
+siguiente. Ese era el cometido del \verb+\qquad+ que aparecía en el
+ejemplo de las figuras visto anteriormente.
+
+Por otro lado, el \verb+\subfloat+ tiene dos ``parámetros'', que se
+colocan entre corchetes justo después. En realidad ambos son
+opcionales. Podríamos poner directamente:
+
+\begin{verbatim}
+\subfloat{ <comandos para el subelemento> }
+\end{verbatim}
+
+pero en ese caso no se etiquetará con una letra.
+
+El texto que se pone entre los primeros corchetes se utiliza para el
+índice de figuras. En teoría, se mostrará en dicho índice primero la
+descripción global de la figura, y luego la de cada subelemento. Si
+no quieres que ocurra, deja en blanco el contenido del primer
+corchete. En la práctica, el índice de figuras no tiene ``niveles'',
+por lo que si se ponde la descripción de la subfigura, ésta no
+aparecerá en el mismo.
+
+El segundo corchete recibe el texto con la descripción del
+subelemento, es decir lo que aparecerá junto a la letra
+identificativa. Si lo dejas vacío (pero poniendo los corchetes),
+saldrá la letra, sin texto. Si ni siquieras pones los corchetes, no
+saldrá tampoco la letra.
+
+Por último, debes saber que puedes referenciar de forma independiente
+cada uno de los subelementos. Para eso, basta con
+\verb+\ref{etiqueta}+, siendo la etiqueta una definida mediante
+\verb+\label+ \emph{dentro} del \verb+\subfloat+. Se puede entonces
+referenciar utilizando el comando \verb+\ref+ tradicional (que hará
+que aparezca la letra correspondiente junto con el número de figura),
+o el comando \verb+\subref+:
+
+\begin{example}
+La figura~\ref{cap2:fig:pdf}
+tiene dos partes. La
+parte izquierda es la figura~
+\ref{cap2:fig:PropiedadesPDF}
+y a la derecha está la
+\subref{cap2:fig:TocPDF}.
+\end{example}
+
+Como ya hemos dicho, se pueden poner varias ``filas'' de imágenes en
+la misma figura. Se puede forzar este comportamiento añadiendo líneas
+en blanco dentro del entorno \verb+\figure+ (lo que será interpretado
+por \LaTeX\ como un nuevo párrafo), aunque también se añadirán
+automáticamente si \LaTeX\ detecta que no entra todo en una única
+línea. La figura~\ref{fig:cap4:javy1} \citep[extraída
+de][]{GomezMartinMA2008PhD} es un ejemplo de esto. Como se ve en su
+código \LaTeX\ que se muestra a continuación, cada una de las imágenes
+ocupa el 45\% del ancho de la página, por lo que únicamente entran dos
+figuras por fila. A pesar de que no existe ninguna línea en blanco en
+el código, las imágenes se colocan en dos filas distintas.
+
+\begin{figure}[t]
+  \centering
+%
+  \begin{SubFloat}
+    {\label{fig:cap4:barrioclases}%
+     Estudiante y Javy dirigiéndose al barrio de clases}%
+    \includegraphics[width=0.45\textwidth]%
+                    {Imagenes/Bitmap/04/Javy1BarrioClases}%
+  \end{SubFloat}
+\qquad
+  \begin{SubFloat}
+    {\label{fig:cap4:framauro}%
+     Estudiante enfrente de Framauro}%
+    \includegraphics[width=0.45\textwidth]%
+                    {Imagenes/Bitmap/04/Javy1Framauro}%
+  \end{SubFloat}
+  % La siguiente no entra; ira en otra 'linea'
+  \begin{SubFloat}
+    {\label{fig:cap4:pilaops}%
+     Estudiante interactuando con la pila de operandos}%
+    \includegraphics[width=0.45\textwidth]%
+                    {Imagenes/Bitmap/04/Javy1PilaOperandos}%
+  \end{SubFloat}
+\qquad
+  \begin{SubFloat}
+    {\label{fig:cap4:estudianteyjavy}%
+     Estudiante hablando con Javy}%
+    \includegraphics[width=0.45\textwidth]%
+                    {Imagenes/Bitmap/04/Javy1Javy}%
+  \end{SubFloat}
+\caption{Ejemplo de uso de \texttt{subfloat}.%
+         \label{fig:cap4:javy1}}
+\end{figure}
+
+
+\begin{verbatim}
+\begin{figure}[t]
+  \centering
+%
+  \begin{SubFloat}
+    {\label{fig:cap4:barrioclases}%
+     Estudiante y Javy dirigiéndose al barrio de clases}%
+    \includegraphics[width=0.45\textwidth]%
+                    {Imagenes/Bitmap/04/Javy1BarrioClases}%
+  \end{SubFloat}
+\qquad
+  \begin{SubFloat}
+    {\label{fig:cap4:framauro}%
+     Estudiante enfrente de Framauro}%
+    \includegraphics[width=0.45\textwidth]%
+                    {Imagenes/Bitmap/04/Javy1Framauro}%
+  \end{SubFloat}
+  % La siguiente no entra; ira en otra 'linea'
+  \begin{SubFloat}
+    {\label{fig:cap4:pilaops}%
+     Estudiante interactuando con la pila de operandos}%
+    \includegraphics[width=0.45\textwidth]%
+                    {Imagenes/Bitmap/04/Javy1PilaOperandos}%
+  \end{SubFloat}
+\qquad
+  \begin{SubFloat}
+    {\label{fig:cap4:estudianteyjavy}%
+     Estudiante hablando con Javy}%
+    \includegraphics[width=0.45\textwidth]%
+                    {Imagenes/Bitmap/04/Javy1Javy}%
+  \end{SubFloat}
+\caption{Ejemplo de uso de \texttt{subfloat}.%
+         \label{fig:cap4:javy1}}
+\end{figure}
+\end{verbatim}
+
+%-------------------------------------------------------------------
+\section*{\NotasBibliograficas}
+%-------------------------------------------------------------------
+\TocNotasBibliograficas
+
+En este capítulo hemos descrito cómo se gestionan las imágenes en
+\texis\, por lo que no existe ninguna fuente relacionada adicional
+de consulta.
+
+Conviene, eso sí, indicar que las explicaciones al respecto del
+entorno \verb+\subfloat+ dadas en la sección~\ref{cap4:subfloat}
+distan mucho de estar completas, aunque es cierto que deberían ser
+suficientes para la mayoría de los casos. El entorno, no obstante,
+permite hacer muchas más cosas. Se puede consultar el manual oficial
+para más información\footnote{Disponible en
+  \url{ftp://tug.ctan.org/pub/tex-archive/macros/latex/contrib/subfig/subfig.pdf}.}.
+
+%-------------------------------------------------------------------
+\section*{\ProximoCapitulo}
+%-------------------------------------------------------------------
+\TocProximoCapitulo
+
+El próximo capítulo pasa a describir algunos aspectos sobre la
+bibliografía. En concreto, veremos que \texis\ define un estilo de
+bibliografía propio que, si bien no introduce demasiadas diferencias
+con respecto al habitual, permite añadir algún campo nuevo a las
+citas, como por ejemplo la dirección Web y la fecha de la última vez
+que se visitó (o comprobó su existencia).
+
+% Variable local para emacs, para  que encuentre el fichero maestro de
+% compilación y funcionen mejor algunas teclas rápidas de AucTeX
+%%%
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../ManualTeXiS.tex"
+%%% End:
