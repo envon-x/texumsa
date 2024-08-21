@@ -1,20 +1,34 @@
 \ProvidesPackage{resources/physics/styles/impl-equations}
 \RequirePackage{resources/physics/styles/variables}
 \RequirePackage{resources/physics/styles/abs-equations}
-% \RequirePackage{verbatim}  % Se necesita para el comando "example".
-% \RequirePackage{layouts}
-% \RequirePackage{pslatex}
-% \RequirePackage{mathpazo}
-\RequirePackage{mathptmx} % This package defines Adobe Times Roman (or equivalent)
-\RequirePackage{accents}
-\RequirePackage{amssymb}  %% barras sobre las letras o variables
 
-% \RequirePackage{bookman}
-% \RequirePackage{newcent}
-% \RequirePackage{tgbonum}
-% \RequirePackage{tgadventor}
-% \usepackage[none]{hyphenat} % para no corte las palabras. trabaja con \sloppy
 
+
+
+%% definicion de presion
+\def\eqPressure{\ensuremath{
+  \symPressure{}{} = \frac{\symForce{}{}}{\symArea{}{}}
+}}
+
+\def\eqGasCompositionFromPressure{\ensuremath{
+  \label{eq:thermo:GasCompositionFromPressure}
+  \symCompGV{i} = \frac{\partialPressure}{\sum{\partialPressure}}
+}}
+
+% definicion de la composición gaseosa en base a la presión total
+\def\eqGasCompositionFromTotalPressure{\ensuremath{
+  \label{eq:thermo:GasCompositionFromTotalPressure}
+  \symCompGV{i} = \frac{\partialPressure}{\totalPressure}
+}}
+
+\def\eqRaoultLaw{\ensuremath{
+  \label{eq:thermo:RaoultLaw}
+  \RaoultLaw{i}
+}}
+
+\def\eqIdealGas{\ensuremath{
+  \idealGasEos{\zFactor} = 1
+}}
 
 
 % phase rule of Lewis gibbs
@@ -56,12 +70,12 @@
 %% Equación virial desarrollada pra V
 \def\eqVirialForVDevelop{\ensuremath{
     \label{eq:virialB}
-    \eqVirialB{\P{}}{Vm}{\T{}}
+    \eqVirialB{\pressure{}}{\Vmolar}{\T{}}
 }}
 \def\eqVirialForVDevelopNaming{{Donde, \newline 
-    $\P{}$: es la presión total, \newline
-    $\Vm$: es el volumen molar, \newline
-    $\R$: es la constante universal de los gases, \newline
+    $\pressure$: es la presión total, \newline
+    $\Vmolar$: es el volumen molar, \newline
+    $\univConstGasEos$: es la constante universal de los gases, \newline
     $\T{}$: corresponde a la temperatura absoluta, \newline
     $B$, $C$: son el 2do y 3er coeficiente virial  que dependen de la temperatura, y para las mezclas también de su composición.
 }}
@@ -69,12 +83,12 @@
 
 \def\eqVirialForVDevelopForMixture{\ensuremath{
     \label{eq:virialBMixture}  
-    \eqVirialB{\P{}}{\symMolarVolumeForMixture}{\T{}}
+    \eqVirialB{\pressure}{\symMolarVolumeForMixture}{\T{}}
 }}
 \def\eqVirialForVDevelopMixtureNaming{{Donde, \newline 
-    $\P{}$ : es la presión total, \newline
+    $\pressure$ : es la presión total, \newline
     ${\symMolarVolumeForMixture}$: es el volumen molar, \newline
-    $\R$: es la constante universal de los gases, \newline
+    $\univConstGasEos$: es la constante universal de los gases, \newline
     $\T{}$: corresponde a la temperatura absoluta, \newline
     $B$, $C$: son el 2do y 3er coeficiente virial  que dependen de la temperatura, y para las mezclas también de su composición.
 }}
@@ -97,15 +111,15 @@
 
 \def\eqVirialFactorCorrection{\ensuremath{
   \begin{split}
-    \ln f &= \left[ \frac{(1 + \isothermalCompresibility \Pvap)(\Ptotal - \Pvap) - \frac{1}{2} \isothermalCompresibility (\Ptotal^2 - \Pvap^2)}{\R \T{}} \right] \molarVolumeSaturate \\
-          &+ \ln (1 - \henryLaw {\symCompGsat} \Ptotal) - \frac{2 {\symCompGsat}^3 (2 - 3 {\symCompGsat}) \Ptotal^2}{(\R \T{})^2} \bgg \bgv \\
-          &+ \frac{{\symCompGsat}^2}{\R \T{}} \bgg - \frac{2 {\symCompGsat}^2 \Ptotal}{\R \T{}} \bgv - \left[ \frac{ \Ptotal - \Pvap}{\R \T{}} - \frac{{\symCompGsat}^2 \Ptotal}{\R \T{}} \right] \bgg \\
-          &+ \frac{3 {\symCompGsat}^2}{2 (\R \T{})^2} (1 + 2 {\symCompGsat}) \Ptotal^2 \cggv - \frac{3 {\symCompGsat}^2 (1 - {\symCompGsat}) \Ptotal^2}{(\R \T{})^2} \cgvv \\
-          &- \left[ \frac{(1 + 2 {\symCompGsat})(1 - {\symCompGsat})^2 \Ptotal^2 - \Pvap^2}{2 (\R \T{})^2} \right] \cvvv - \frac{3 {\symCompGsat}^4 \Ptotal^2}{2 (\R \T{})^2} \bgg^2 \\
-          &- \frac{{\symCompGsat}^2 (1 - 3 {\symCompGsat})(1 - {\symCompGsat}) \Ptotal^2}{(\R \T{})^2} \bgg \bvv \\
-          &+ \frac{6 {\symCompGsat}^2 (1 - {\symCompGsat})^2 \Ptotal^2}{(\R \T{})^2} \bvv \bgv \\
-          &- \frac{2 {\symCompGsat}^2 (1 - {\symCompGsat})(1 - 3 {\symCompGsat}) \Ptotal^2}{(\R \T{})^2} \bgv^2 + \frac{{\symCompGsat}^3 \Ptotal^2}{(\R \T{})^2} \cggg \\
-          &- \left[ \frac{\Pvap^2 - (1 + 3 {\symCompGsat})(1 - {\symCompGsat})^3 \Ptotal^2}{2 (\R \T{})^2} \right] \bvv^2
+    \ln f &= \left[ \frac{(1 + \isothermalCompresibility \Pvap)(\Ptotal - \Pvap) - \frac{1}{2} \isothermalCompresibility (\Ptotal^2 - \Pvap^2)}{\univConstGasEos \T{}} \right] \molarVolumeSaturate \\
+          &+ \ln (1 - \henryLaw {\symCompGsat} \Ptotal) - \frac{2 {\symCompGsat}^3 (2 - 3 {\symCompGsat}) \Ptotal^2}{(\univConstGasEos \T{})^2} \bgg \bgv \\
+          &+ \frac{{\symCompGsat}^2}{\univConstGasEos \T{}} \bgg - \frac{2 {\symCompGsat}^2 \Ptotal}{\univConstGasEos \T{}} \bgv - \left[ \frac{ \Ptotal - \Pvap}{\univConstGasEos \T{}} - \frac{{\symCompGsat}^2 \Ptotal}{\univConstGasEos \T{}} \right] \bgg \\
+          &+ \frac{3 {\symCompGsat}^2}{2 (\univConstGasEos \T{})^2} (1 + 2 {\symCompGsat}) \Ptotal^2 \cggv - \frac{3 {\symCompGsat}^2 (1 - {\symCompGsat}) \Ptotal^2}{(\univConstGasEos \T{})^2} \cgvv \\
+          &- \left[ \frac{(1 + 2 {\symCompGsat})(1 - {\symCompGsat})^2 \Ptotal^2 - \Pvap^2}{2 (\univConstGasEos \T{})^2} \right] \cvvv - \frac{3 {\symCompGsat}^4 \Ptotal^2}{2 (\univConstGasEos \T{})^2} \bgg^2 \\
+          &- \frac{{\symCompGsat}^2 (1 - 3 {\symCompGsat})(1 - {\symCompGsat}) \Ptotal^2}{(\univConstGasEos \T{})^2} \bgg \bvv \\
+          &+ \frac{6 {\symCompGsat}^2 (1 - {\symCompGsat})^2 \Ptotal^2}{(\univConstGasEos \T{})^2} \bvv \bgv \\
+          &- \frac{2 {\symCompGsat}^2 (1 - {\symCompGsat})(1 - 3 {\symCompGsat}) \Ptotal^2}{(\univConstGasEos \T{})^2} \bgv^2 + \frac{{\symCompGsat}^3 \Ptotal^2}{(\univConstGasEos \T{})^2} \cggg \\
+          &- \left[ \frac{\Pvap^2 - (1 + 3 {\symCompGsat})(1 - {\symCompGsat})^3 \Ptotal^2}{2 (\univConstGasEos \T{})^2} \right] \bvv^2
   \end{split}
 }}
 
@@ -116,7 +130,7 @@
   {\isothermalCompresibility}: denota la compresibilidad isotérmica\newline
   {\henryLaw}: es la constante de la ley de Henrry \newline
   {\Ptotal}: es la presión total\newline
-  {\R}: constante universal de los gases\newline
+  {\univConstGasEos}: constante universal de los gases\newline
   {\T{}}: es la termperatura absoluta\newline
   {\symCompGV{\nameV}}: denota la composición molar del componente V \newline
   {\symCompGV{\nameG}}: es la composición molar del componente G \newline

@@ -1,4 +1,5 @@
 \ProvidesPackage{resources/physics/styles/variables}
+\RequirePackage{resources/physics/styles/symbols}
 \RequirePackage{gensymb} %degree symbol
 \RequirePackage{mathptmx}
 \RequirePackage{chemformula}
@@ -8,8 +9,6 @@
 \RequirePackage{amssymb}  %% barras sobre las letras o variables
 
 % Número de componentes
-\def\symNumOfCmpnts{\ensuremath{n}}
-\def\numOfCmpnt{\ensuremath{n}}
 
 %%%%%%%%%%%%%%%%%%%%% Definicion de las variable que se usarán en las ecuaciones
 %%%%%%%%%%%%%%%%%%%%% Aquí deben estar todas las personalizaciones a los caracteresmatemáticoa
@@ -27,30 +26,10 @@
 % nombre del 2do componente - vapor
 \def\nameV{\ensuremath{{\text{v}}}} % Sin text{}, \ce{v} crea una flecha hacia abajo, cuando este no es la intención
 
-% composición del componente para la fase líquido
-\def\symCompL#1{\ensuremath{{x_{#1}}}} % Siempre encerrar en corchetes; sino usar \usepackage{accents}
-
-% composición del componente para la fase vapor
-\def\symCompV#1{\ensuremath{{y_{#1}}}} % Siempre encerrar en corchetes; sino usar \usepackage{accents}
-
-% composición del componente para la fase gaseosa
-\def\symCompG#1{\ensuremath{{y_{#1}}}} % Siempre encerrar en corchetes; sino usar \usepackage{accents}
-
-% composición del componente para la fase gaseosa (vapor y/o gas)
-\def\symCompGV#1{\ensuremath{{y_{#1}}}}
-
-
-% Fuerza
-\def\F#1{\ensuremath{{F}_{#1}}}
-
-% Area
-\def\A#1{\ensuremath{{A}_{#1}}}
-
-% temperatura absoluta
-\def\T#1{\ensuremath{T#1}}
-
-% presión absoluta
-\def\P#1{\ensuremath{P_{#1}}}
+% Representacion para la presión
+\def\pressure{\ensuremath{\symPressure{}{}}}
+\def\partialPressure{\ensuremath{\symPressure{i}{}}}
+\def\totalPressure{\ensuremath{\symPressure{tot}{}}}
 
 % presión de vapor
 \def\Pvap{\ensuremath{P_{\ce{vap}}}}
@@ -61,17 +40,9 @@
 %presión de vapor saturado
 \def\PvapSat{\ensuremath{P_{\ce{vap}}^{\degree}}}
 
-% Constante universal de los gases
-\def\UnivConstantGas{\ensuremath{R}}
 
-% Universal constant
-\def\R{\ensuremath{{R}}}
 
-% volumen
-\def\V{\ensuremath{{V}}}
 
-% volumen molar
-\def\Vm{\ensuremath{V_m}}%\overline V}}
 
 % factor de compresibilidad
 \def\zFactor{\ensuremath{z}}

@@ -1,0 +1,49 @@
+\ProvidesPackage{resources/physics/styles/symbols}
+  
+\def\vapor{\ensuremath{\text{vapor}}}
+\def\gas{\ensuremath{\text{gas}}}
+\def\mixture{\ensuremath{\text{mixture}}}
+
+% Constante universal de los gases
+\def\univConstGasEos{\ensuremath{R}}
+
+% volumen
+\def\V{\ensuremath{{V}}}
+
+% volumen molar
+\def\Vmolar{\ensuremath{V_m}}%\overline V}}
+
+\def\symNumOfCmpnts{\ensuremath{n}}
+\def\numOfCmpnt{\ensuremath{n}}
+
+
+
+
+% composición del componente para la fase líquido
+\def\symCompL#1{\ensuremath{{x_{#1}}}} % Siempre encerrar en corchetes; sino usar \usepackage{accents}
+
+% composición del componente para la fase vapor
+\def\symCompV#1{\ensuremath{{y_{#1}}}} % Siempre encerrar en corchetes; sino usar \usepackage{accents}
+
+% composición del componente para la fase gaseosa
+\def\symCompG#1{\ensuremath{{y_{#1}}}} % Siempre encerrar en corchetes; sino usar \usepackage{accents}
+
+% composición del componente para la fase gaseosa (vapor y/o gas)
+\def\symCompGV#1{\ensuremath{{y_{#1}}}}
+
+
+
+
+% Fuerza
+\def\symForce#1#2{\ensuremath{{F}_{#1}^{#2}}}
+
+% Area
+\def\symArea#1#2{\ensuremath{{A}_{#1}^{#2}}}
+
+% temperatura absoluta
+\def\T#1{\ensuremath{T#1}}
+% \def\symT#1#2{\ensuremath{T#1^{#2}}}
+
+% presión absoluta
+\def\symPressure#1#2{\ensuremath{P_{#1}^{#2}}}
+

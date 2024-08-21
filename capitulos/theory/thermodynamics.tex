@@ -130,7 +130,7 @@ En la actualidad se define en función a la constante de Boltzmann\footnote{Gene
 En general, la presión se define como la fuerza normal ejercida sobre una unidad de area. Se habla de presión cuando el sistema consiste de fluidos (gas o líquido); pero cuando este es sólido, se usa el término \textit{esfuerzo normal} \textcite{YunusA.Cengel2015}
 
 \begin{equation}
-  \P{} = \frac{\F{}}{\A{}}
+  \eqPressure
 \end{equation}
 
 \figMolecularColissions
@@ -144,20 +144,12 @@ de un sistema en fase gaseosa, es la presión que aporta uno de los componentes
 \subsubsection{Presión Parcial}
 como la fracción de uno de los componentes respecto a la suma de cada una de ellas, denominado presión total.
 
-\begin{equation}
-  \label{eq:thermo:partialPressureV1}
-  \symCompGV{i} = \frac{\P{i}}{\sum{\P{i}}}
-\end{equation}
-
+\eqGasCompositionFromPressure
 Donde \symCompGV{i} es la composición molar, {\P{i}} es la presión del componente {${i}$}.
 
-la expresión \eqref{eq:thermo:partialPressureV1}, también puede expresarse de la siguiente forma:
+la expresión \eqref{eq:thermo:GasCompositionFromPressure}, también puede expresarse de la siguiente forma:
 
-\begin{equation}
-  \label{eq:thermo:partialPressureV2}
-  \symCompGV{i} = \frac{\P{i}}{\P{t}}
-\end{equation}
-
+\eqGasCompositionFromTotalPressure
 Donde
 
 \subsubsection*{Ley de Raoult}
@@ -170,11 +162,10 @@ Se requiere hacer las siguientes suposiciones para las consideraciones para la l
 En base a las suposiciones mencionadas se deduce la siguiente expresión matemática
 
 \begin{equation}
-  \label{eq:thermo:RaoultLaw}
-  \P{i} = \RaoultLaw{i}
+  \eqRaoultLaw
 \end{equation}
 
-Donde {$\symCompGV{}_{i}$} es la composición molar de la fase vapor,  {\P{}} es la presión total de la mezcla, {$\symCompL{}_{i}$} representa a la composición molar de la fase líquida del sistema y
+Donde {$\symCompGV{}_{i}$} es la composición molar de la fase vapor,  {\pressure{}{}} es la presión total de la mezcla, {$\symCompL{}_{i}$} representa a la composición molar de la fase líquida del sistema y
 
 % obs
 De la ecuación \eqref{eq:thermo:RaoultLaw}, la expresión del lado izquierdo se conoce como, presión parcial del componente ${i}$
@@ -182,12 +173,12 @@ De la ecuación \eqref{eq:thermo:RaoultLaw}, la expresión del lado izquierdo se
 
 
 \begin{align}
-  f_{i}^{\degree, \text{ fase vap}} & = \hat{\phi_{i}} \symCompGV{i} \P{} \\
+  f_{i}^{\degree, \text{ fase vap}} & = \hat{\phi_{i}} \symCompGV{i} \pressure{}{} \\
   f_{i}^{\degree, \text{ fase liq}} & = \hat{\phi_{i}} \symCompL{i} p_{i}
 \end{align}
 
 \begin{flalign}
-  f_{i}^{\degree, \text{ fase vap}} & = \hat{\phi_{i}} \symCompGV{i} \P{} \\
+  f_{i}^{\degree, \text{ fase vap}} & = \hat{\phi_{i}} \symCompGV{i} \pressure{}{} \\
   f_{i}^{\degree, \text{ fase liq}} & = \hat{\phi_{i}} \symCompL{i} p_{i}
 \end{flalign}
 
@@ -201,7 +192,7 @@ De la ecuación \eqref{eq:thermo:RaoultLaw}, la expresión del lado izquierdo se
     \hline
     $\hat{\phi_{i}}$                     & 1.00                                             & 1.00                                                         \\
     \symCompGV{i}                        & \symCompGV{i}                                    & \symCompGV{i}                                                \\
-    $f_{i}^{\degree \text{, fase vap}}$  & \P{}                                             & \P{}                                                         \\
+    $f_{i}^{\degree \text{, fase vap}}$  & \pressure{}{}                                             & \pressure{}{}                                                         \\
     ${\gamma}_{i}$                       & 1.00                                             & ${{\gamma}_{i}}$                                             \\
     $f_{i}^{\degree, \text{ fase liq}}$  & $p_{i}$                                          & $p_{i}$                                                      \\
     Ec. resultante                       & $\symCompGV{i} = \frac{\symCompL{i} {P_{i}}}{P}$ & $\symCompGV{i} = \frac{ \gamma_{i} \symCompL{i} {P_{i}}}{P}$ \\ \hline
@@ -224,11 +215,11 @@ Según \parencite{Engel2019}, una limitación de la ley de los gases ideales es 
 \subsection{ECUACIÓN DE GAS IDEAL}
     El comportamiento ideal de un gas, se expresa mediante la siguiente ecuación de estado:
 
-    \begin{align}
-      \eqIdealGas{\zFactor} = 1
-    \end{align}
+    \begin{equation}
+      \eqIdealGas
+    \end{equation}
 
-    Donde {\zFactor} es el coeficiente de compresibilidad, {\P{}} es la presión absoluta, {\Vm} es el volumen molar, {\T{}} temperatura y {\UnivConstantGas} es la constante universal de los gases.
+    Donde {\zFactor} es el coeficiente de compresibilidad, {\pressure{}{}} es la presión absoluta, {\Vmolar} es el volumen molar, {\T{}} temperatura y {\univConstGasEos} es la constante universal de los gases.
 
 \subsection{ECUACIÓN VIRIAL GENERAL}
     \label{cap2:subsec:tagEqnvirial}
@@ -236,7 +227,7 @@ Según \parencite{Engel2019}, una limitación de la ley de los gases ideales es 
 
     Una ventaja del uso de la ecuación virial es la existencia amplia de información experimental \Parencite[p. 38]{Sengers1987equations}, 
 
-    La ecuación virial puede ser apreciada como una serie de Maclaurin\footnotetext{También llamado serie de Taylor}, donde ${\P{}}/{\R{} \T{}}$; en vista de su naturaleza polinomial, puede escribirse como serie de potencias de $1/\Vm$, el cual se muestra a continuación:
+    La ecuación virial puede ser apreciada como una serie de Maclaurin\footnotetext{También llamado serie de Taylor}, donde ${\pressure{}{}}/{\univConstGasEos \T{}}$; en vista de su naturaleza polinomial, puede escribirse como serie de potencias de $1/\Vmolar$, el cual se muestra a continuación:
 
     \begin{equation}
       \eqVirialForVDevelop{}
@@ -283,7 +274,7 @@ Según \parencite{Engel2019}, una limitación de la ley de los gases ideales es 
     para \parencite{Dymond2002}, los métodos para la determinación de los coeficientes viriales pueden clasificarse de la siguiente manera:
 
     \begin{itemize}
-      \item Medidas de {\P{}-\Vm-\T{}},
+      \item Medidas de {\pressure{}{}-\Vmolar-\T{}},
       \item Medidas de la velocidad del sonido
       \item Medidas de Joule-Thomson
       \item Medidas de índice de refractividad y permitividad relativa
@@ -301,13 +292,13 @@ Son diversos los trabajos que se han realizado para determinar el segundo coefic
 
 
 
-Para la temperatura $\T{}$ y composición molar $\symCompGV{}$, ambos constantes; de la ecuación \eqref{eq:virialB}, cuando $1 / \Vm\ \to 0$,  el segundo coeficiente virial $\bCoeffVirial{}$, puede escribirse como:
+Para la temperatura $\T{}$ y composición molar $\symCompGV{}$, ambos constantes; de la ecuación \eqref{eq:virialB}, cuando $1 / \Vmolar\ \to 0$,  el segundo coeficiente virial $\bCoeffVirial{}$, puede escribirse como:
 
 \begin{equation}
-  \bCoeffVirial{} = \lim_{\frac{1}{\Vm}\ \to {0}} \Vm \left(\frac{\P{} \Vm} {\UnivConstantGas \T{}} - 1 \right)
+  \bCoeffVirial{} = \lim_{\frac{1}{\Vmolar}\ \to {0}} \Vmolar \left(\frac{\pressure{}{} \Vmolar} {\univConstGasEos \T{}} - 1 \right)
 \end{equation}
 
-Para \parencite[p. 473]{beattie1942second}, la expresión $\Vm \left(\frac{\P{} \Vm} {\UnivConstantGas \T{}} - 1 \right)$, puede ser calculado a partir de las mediciones de la compresibilidad isotérmica de un gas puro; en caso de una mezcla, debe ser de composición molar constante; la compresibilidad isotérmica debe establecerse frente a $1 / \V$. El valor de la constante queda establecido en la intersección de la función con el eje $1/ \V$.
+Para \parencite[p. 473]{beattie1942second}, la expresión $\Vmolar \left(\frac{\pressure{}{} \Vmolar} {\univConstGasEos \T{}} - 1 \right)$, puede ser calculado a partir de las mediciones de la compresibilidad isotérmica de un gas puro; en caso de una mezcla, debe ser de composición molar constante; la compresibilidad isotérmica debe establecerse frente a $1 / \V$. El valor de la constante queda establecido en la intersección de la función con el eje $1/ \V$.
 
 Para una mezcla binaria, $\bCoeffVirial{}$ está relacionado con los coeficientes viriales de los componentes puros y sus composiciones, de la siguiente manera:
 
@@ -329,7 +320,7 @@ Conociendo los coeficientes viriales para los componentes puros, hace falta esta
 Para \parencite{Dymond2002}, los valores son preferentemente determinados mediante la información de compresibilidad de gases 
 
 \begin{equation}
-  \cCoeffVirial{} = \lim_{\frac{1}{\Vm}\ \to {0}} \left[ \Vm \left(\frac{\P{} \Vm} {\UnivConstantGas \T{}} - 1 \right) - \bCoeffVirial{} \right] \Vm
+  \cCoeffVirial{} = \lim_{\frac{1}{\Vmolar}\ \to {0}} \left[ \Vmolar \left(\frac{\pressure{}{} \Vmolar} {\univConstGasEos \T{}} - 1 \right) - \bCoeffVirial{} \right] \Vmolar
 \end{equation}
 
 
@@ -365,7 +356,7 @@ Desarrollando para un sistema de dos componentes:
   \SoundSpeed{}
 \end{align}
 
-Donde $\P{}$  es la presión, $\Density$ es la densidad, $\Entropy$ es la entropía
+Donde $\pressure{}{}$  es la presión, $\Density$ es la densidad, $\Entropy$ es la entropía
 
 \subsection{Correlación, predicción y estimación de los coeficientes viriales}
 \label{cap2:subsec:tagEqnPredict}
