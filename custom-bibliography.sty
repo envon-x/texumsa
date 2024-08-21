@@ -1,0 +1,23 @@
+\RequirePackage{custom-bibliography}
+
+    % % \usepackage[style=apa]{biblatex} %Imports biblatex package
+    % \usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
+    \usepackage[%
+      style=apa,
+      sortcites=true,
+      sorting=nyt,
+      backend=biber,
+      natbib=true,
+      ]{biblatex} 
+    \DefineBibliographyStrings{spanish}{andothers={et al\adddot}} % Resuelve et col.
+    \DeclareLanguageMapping{spanish}{spanish-apa}
+    \addbibresource{biblio.bib} %Import the bibliography file, with extension
+    \usepackage[labelsep=newline,labelfont=bf]{caption} % black font para el numero de los cuadros y figuras
+    % \usepackage[format=plain, labelfont=it, textfont=it]{caption}                 
+
+    % \usepackage[natbibapa]{apacite} % https://tex.stackexchange.com/questions/390338/footcite-command-generates-errors
+    % \NewDocumentCommand\footcite{ O{} O{} m }{%
+    %   \footnote{\citet[#1][#2]{#3}.}%
+    % }
+    % \usepackage{natbib} % Paquete para citas de autor-año
+

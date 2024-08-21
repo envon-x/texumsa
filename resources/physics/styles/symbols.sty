@@ -2,22 +2,33 @@
   
 \def\vapor{\ensuremath{\text{vapor}}}
 \def\gas{\ensuremath{\text{gas}}}
+
+\def\symVapor{\ensuremath{\text{v}}}
+\def\symGas{\ensuremath{\text{g}}}
+
 \def\mixture{\ensuremath{\text{mixture}}}
+
+\def\symResidual{\ensuremath{\text{r}}}
+\def\symIdeal{\ensuremath{\text{ig}}}
+\def\symMolar{\ensuremath{\text{m}}}
+
+\def\symTotal{\ensuremath{\text{t}}}
+
+% símbolo asignado para representar la masa
+\def\symMass{\ensuremath{{m}}}
+
+% Simbolo del peso molecular
+\def\symMolecularWeight#1#2{\ensuremath{M_{#1}^{#2}}}
 
 % Constante universal de los gases
 \def\univConstGasEos{\ensuremath{R}}
 
-% volumen
-\def\V{\ensuremath{{V}}}
+% Representacion para la presión
+\def\pressure{\ensuremath{\symPressure{}{}}}
 
-% volumen molar
-\def\Vmolar{\ensuremath{V_m}}%\overline V}}
-
+% Número de componentes en la mezcla
 \def\symNumOfCmpnts{\ensuremath{n}}
 \def\numOfCmpnt{\ensuremath{n}}
-
-
-
 
 % composición del componente para la fase líquido
 \def\symCompL#1{\ensuremath{{x_{#1}}}} % Siempre encerrar en corchetes; sino usar \usepackage{accents}
@@ -30,9 +41,6 @@
 
 % composición del componente para la fase gaseosa (vapor y/o gas)
 \def\symCompGV#1{\ensuremath{{y_{#1}}}}
-
-
-
 
 % Fuerza
 \def\symForce#1#2{\ensuremath{{F}_{#1}^{#2}}}
@@ -47,3 +55,10 @@
 % presión absoluta
 \def\symPressure#1#2{\ensuremath{P_{#1}^{#2}}}
 
+\def\symVolumex#1#2{\ensuremath{V_{#1}^{#2}}}
+
+\def\symVolume#1#2{\ensuremath{V_{#1}^{#2}}}
+\def\symEnthalpy#1#2{\ensuremath{H_{#1}^{#2}}}
+\def\symEntropy#1#2{\ensuremath{S_{#1}^{#2}}}
+\def\symGibbsEnergy#1#2{\ensuremath{G_{#1}^{#2}}}
+\def\symHelmholtzEnergy#1#2{\ensuremath{H_{#1}^{#2}}}

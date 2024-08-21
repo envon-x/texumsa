@@ -17,28 +17,7 @@
     \usepackage{csquotes}
     \usepackage{threeparttable}
     
-    % % \usepackage[style=apa]{biblatex} %Imports biblatex package
-    % \usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
-    \usepackage[%
-      style=apa,
-      sortcites=true,
-      sorting=nyt,
-      backend=biber,
-      natbib=true,
-      ]{biblatex} 
-    \DefineBibliographyStrings{spanish}{andothers={et al\adddot}} % Resuelve et col.
-    \DeclareLanguageMapping{spanish}{spanish-apa}
-    \addbibresource{biblio.bib} %Import the bibliography file, with extension
-    \usepackage[labelsep=newline,labelfont=bf]{caption} % black font para el numero de los cuadros y figuras
-    % \usepackage[format=plain, labelfont=it, textfont=it]{caption}                 
-
-    % \usepackage[natbibapa]{apacite} % https://tex.stackexchange.com/questions/390338/footcite-command-generates-errors
-    % \NewDocumentCommand\footcite{ O{} O{} m }{%
-    %   \footnote{\citet[#1][#2]{#3}.}%
-    % }
-    % \usepackage{natbib} % Paquete para citas de autor-año
-
-
+    \usepackage{custom-bibliography}
 
     % Para tabla y figuras formato apa
     \usepackage{multirow,booktabs,setspace,caption}
@@ -74,6 +53,7 @@
 
     \urlstyle{same}
 
+    \usepackage{glossaries}
     % \usepackage[xindy, nonumberlist, toc, nopostdot, style=altlist, nogroupskip]{glossaries} % para gloasarios y acronimos
     \usepackage[record,acronym,postdot]{glossaries-extra}%para abreviaturas % https://tex.stackexchange.com/questions/473744/manage-multiple-glossaries-in-one-bib-file
 
@@ -92,9 +72,6 @@
     \usepackage{appendix}
     \renewcommand{\appendixpagename}{Apéndices}
     \renewcommand{\appendixtocname}{Apéndices} % Nombre que aparece para los apendices en el índice
-
-    \usepackage{fancyhdr}
-    \pagestyle{fancy}
 
     % https://ondiz.github.io/cursoLatex/Contenido/10.DocumentoCientifico.html
     \usepackage[draft]{listofsymbols} % cambiar 'draft' por 'final' en el definitivo
@@ -121,8 +98,8 @@
     
     \loadglsentries{db_glossary}
     \loadglsentries{db_acronyms}
-    \GlsXtrLoadResources[src={db_abreviations.bib
-    }] 
+    \GlsXtrLoadResources[src={db_abreviations.bib}]
+     
     %ver documentacion glossaries=extra-manual.pdf page 193
     % \GlsXtrLoadResources[src={db_abreviations.bib, biblio}] %ver documentacion glossaries=extra-manual.pdf page 193
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -176,6 +153,8 @@
   %     &\text{(e)}\qquad &                   &    &p &= 2                     &\implies &l_{p}(n\wr)=\sigma_{2}(\lfloor n/2\rfloor)
   % \end{alignat*}
 \end{document}
+
+
 
 % https://tex.meta.stackexchange.com/questions/228/ive-just-been-asked-to-write-a-minimal-working-example-mwe-what-is-that/3225#3225
 % https://tex.stackexchange.com/questions/147502/how-can-i-include-subfiles-in-to-a-subfiles

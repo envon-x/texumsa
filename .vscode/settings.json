@@ -1,4 +1,6 @@
 {
+	"workbench.colorTheme": "Black++ Dark Ula",
+	"workbench.iconTheme": "eq-material-theme-icons",
 	"files.autoSave": "off",
 	"files.autoSaveDelay": 3000,
 	"editor.wordWrapColumn": 80,
@@ -88,7 +90,6 @@
 
 
 	"latex-workshop.latex.autoBuild.run": "onSave",
-	"workbench.colorTheme": "Best Themes - Brogrammer", // Menú contextual
 	"latex-workshop.synctex.path": "synctex",
 	"latex-workshop.synctex.indicator": "circle",
 	// "latex-workshop.view.pdf.color.dark.backgroundColor": "#fffff",

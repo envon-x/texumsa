@@ -14,35 +14,30 @@
 %%%%%%%%%%%%%%%%%%%%% Aquí deben estar todas las personalizaciones a los caracteresmatemáticoa
 % nombre del componente gaseoso %%%%%%%%%%%%%%%%%%%%%
 
-% símbolo asignado para representar la masa
-\def\symMass{\ensuremath{{m}}}
+\def\volume{\ensuremath{{\symVolume{}{}}}}
 
-% Simbolo del peso molecular
-\def\symMolecularWeight{\ensuremath{M}}
+% volumen molar
+\def\Vmolar{\ensuremath{
+  {\symVolume{\symMolar}{}}
+}}
 
-% nombre del 1er componente - gas
-\def\nameG{\ensuremath{{\text{g}}}}
-
-% nombre del 2do componente - vapor
-\def\nameV{\ensuremath{{\text{v}}}} % Sin text{}, \ce{v} crea una flecha hacia abajo, cuando este no es la intención
-
-% Representacion para la presión
-\def\pressure{\ensuremath{\symPressure{}{}}}
 \def\partialPressure{\ensuremath{\symPressure{i}{}}}
-\def\totalPressure{\ensuremath{\symPressure{tot}{}}}
+\def\totalPressure{\ensuremath{\symPressure{\symTotal}{}}}
 
 % presión de vapor
-\def\Pvap{\ensuremath{P_{\ce{vap}}}}
+\def\Pvap{\ensuremath{\pressure{\ce{\symVapor}{}}}}
 
 % presión total
-\def\Ptotal{\ensuremath{P_{\ce{tot}}}}
+\def\Ptotal{\ensuremath{\pressure{\ce{\symTotal}{}}}}
 
 %presión de vapor saturado
-\def\PvapSat{\ensuremath{P_{\ce{vap}}^{\degree}}}
+\def\PvapSat{\ensuremath{\pressure{\ce{\symVapor}}{\degree}}}
 
+% nombre del 2do componente - vapor
+\def\nameV{\ensuremath{{\text{\symVapor}}}} % Sin text{}, \ce{\symVapor} crea una flecha hacia abajo, cuando este no es la intención
 
-
-
+% nombre del 1er componente - gas
+\def\nameG{\ensuremath{{\text{\symGas}}}}
 
 % factor de compresibilidad
 \def\zFactor{\ensuremath{z}}
@@ -68,14 +63,14 @@
 
 
 %Coeficientes viriales para la mezcla de componentes
-\def\bCoeffVirialMixture{\ensuremath{B_{\text{mix}}}}
-\def\cCoeffVirialMixture{\ensuremath{C_{\text{mix}}}}
+\def\bCoeffVirialMixture{\ensuremath{B_{\mixture}}}
+\def\cCoeffVirialMixture{\ensuremath{C_{\mixture}}}
 
 
-\def\molarVolumeSaturate{\ensuremath{\hat{V}_{\text{Ve}}}}
+\def\molarVolumeSaturate{\ensuremath{\hat{\symVapor}_{\text{Ve}}}}
 
 %% Volumen molar para la mezcla
-\def\symMolarVolumeForMixture{\ensuremath{{\bar V}_{\text{m}}}}
+\def\symMolarVolumeForMixture{\ensuremath{{\bar V}_{\mixture}}}
 
 \def\isothermalCompresibility{\ensuremath{\kappa}}
 \def\henryLaw{\ensuremath{k_H}}
@@ -83,11 +78,11 @@
 
 
 %%% ECUACIONES DE PSICROMETRIA
-\newcommand{\symVaporMass}{\ensuremath{m_{v}}}                                      % Símbolo de la masa del vapor
+\newcommand{\symVaporMass}{\ensuremath{m_{\symVapor}}}                                      % Símbolo de la masa del vapor
 % \newcommand{\eqnVaporMass}{\ensuremath{\symVaporMass &= \frac{a}{b}}}         % Fórmula de la masa del vapor
 % \newcommand{\unitVaporMass}{\unit}                                                    % Unidad de la masa del vapor
 
-\newcommand{\symGasMass}{\ensuremath{m_{g}}}                                        % Símbolo del gas
+\newcommand{\symGasMass}{\ensuremath{m_{\symGas}}}                                        % Símbolo del gas
 % \newcommand{\eqnGasMass}{\ensuremath{\symGasMass &= \frac{a}{b}}}         % Fórmula del gas
 % \newcommand{\uniGasMass}{\unit}                                                   % Unidad del gas
 
@@ -104,3 +99,25 @@
 % \newcommand{\unitSpecificHumidity}{\unit}                                                                         % Unidad de la Humedad específica
 
 \input{resources/physics/physical_constants}
+
+\def\varResidualEnthalpy{\ensuremath{\symEnthalpy{}{\symResidual}}}
+
+\def\varResidualVolume#1#2{\ensuremath{\symResidualVolume{}{\symResidual}}}
+\def\varResidualEnthalpy#1#2{\ensuremath{\symResidualEnthalpy{}{\symResidual}}}
+\def\varResidualEntropy#1#2{\ensuremath{\symResidualEntropy{}{\symResidual}}}
+\def\varResidualGibbsEnergy#1#2{\ensuremath{\symResidualGibbsEnergy{}{\symResidual}}}
+\def\varResidualHelmholtzEnergy#1#2{\ensuremath{\symResidualHelmholtzEnergy{}{\symResidual}}}
+
+
+\def\varRealVolume#1#2{\ensuremath{\symRealVolume{}{}}}
+\def\varRealEnthalpy#1#2{\ensuremath{\symRealEnthalpy{}{}}}
+\def\varRealEntropy#1#2{\ensuremath{\symRealEntropy{}{}}}
+\def\varRealGibbsEnergy#1#2{\ensuremath{\symRealGibbsEnergy{}{}}}
+\def\varRealHelmholtzEnergy#1#2{\ensuremath{\symRealHelmholtzEnergy{}{}}}
+
+
+\def\varIdealVolume#1#2{\ensuremath{\symIdealVolume{}{\symIdeal}}}
+\def\varIdealEnthalpy#1#2{\ensuremath{\symIdealEnthalpy{}{\symIdeal}}}
+\def\varIdealEntropy#1#2{\ensuremath{\symIdealEntropy{}{\symIdeal}}}
+\def\varIdealGibbsEnergy#1#2{\ensuremath{\symIdealGibbsEnergy{}{\symIdeal}}}
+\def\varIdealHelmholtzEnergy#1#2{\ensuremath{\symIdealHelmholtzEnergy{}{\symIdeal}}}

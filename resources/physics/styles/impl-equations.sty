@@ -53,7 +53,12 @@
 
 
 % Tercer coefficiente virial
-\def\thirdVirialCoeffDevelop{\ensuremath{  \cCoeffVirialMixture{} = {\symCompGV{\nameG}}^3 \cCoeffVirial{\nameG \nameG \nameG} + 3{\symCompGV{\nameG}}^2 {\symCompGV{}_{\nameV}} \cCoeffVirial{\nameG \nameG \nameV} + 3 {\symCompGV{\nameG}} {\symCompGV{}_{\nameV}}^2 \cCoeffVirial{\nameG \nameV \nameV} + {\symCompGV{}_\nameV}^3 \cCoeffVirial{\nameV \nameV \nameV}}}
+\def\thirdVirialCoeffDevelop{\ensuremath{  
+  \begin{split}
+    \cCoeffVirialMixture{} &= 
+    {\symCompGV{\nameG}}^3 \cCoeffVirial{\nameG \nameG \nameG} + 3{\symCompGV{\nameG}}^2 {\symCompGV{}_{\nameV}} \cCoeffVirial{\nameG \nameG \nameV} + 3 {\symCompGV{\nameG}} {\symCompGV{}_{\nameV}}^2 \cCoeffVirial{\nameG \nameV \nameV} + {\symCompGV{}_\nameV}^3 \cCoeffVirial{\nameV \nameV \nameV}
+  \end{split}  
+}}
 
 \def\eqThirdVirialCoeffNaming{
     Donde:\newline
@@ -65,6 +70,10 @@
 
 % Fraccion mol del componente G en el punto de saturación
 \def\symCompGsat{\ensuremath{\symCompG{g_s}}}
+
+\def\eqVanDerWaals{\ensuremath{
+  \vanDerWaals{\pressure}{\Vmolar}{\theta}
+}}
 
 
 %% Equación virial desarrollada pra V
