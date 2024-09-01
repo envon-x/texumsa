@@ -3,28 +3,38 @@
 \def\vapor{\ensuremath{\text{vapor}}}
 \def\gas{\ensuremath{\text{gas}}}
 
+% display: (V) and (gas) - with parhentesis
+\def\performVapor{\ensuremath{\text{(}\symVapor\text{)} }}
+\def\performGas{\ensuremath{\text{(} \symGas \text{)} }}
+
 \def\symVapor{\ensuremath{\text{v}}}
 \def\symGas{\ensuremath{\text{g}}}
 
 \def\mixture{\ensuremath{\text{mixture}}}
 
+% Símbolo para parámetros referenciales
+\def\symReference{\ensuremath{\text{o}}}
+
+
+% Símbolo para las propiedades químicas y termodinámicas
 \def\symResidual{\ensuremath{\text{r}}}
 \def\symIdeal{\ensuremath{\text{ig}}}
 \def\symMolar{\ensuremath{\text{m}}}
 
+% Símbolo que indica la saturación
+\def\symSaturation{\ensuremath{\text{\degree}}}
+\def\symSaturationTextVersion{\ensuremath{\text{s}}}
+
 \def\symTotal{\ensuremath{\text{t}}}
 
 % símbolo asignado para representar la masa
-\def\symMass{\ensuremath{{m}}}
+\def\symMass#1#2{\ensuremath{{m_{#1}^{#2}}}}
 
 % Simbolo del peso molecular
 \def\symMolecularWeight#1#2{\ensuremath{M_{#1}^{#2}}}
 
 % Constante universal de los gases
 \def\univConstGasEos{\ensuremath{R}}
-
-% Representacion para la presión
-\def\pressure{\ensuremath{\symPressure{}{}}}
 
 % Número de componentes en la mezcla
 \def\symNumOfCmpnts{\ensuremath{n}}
@@ -48,17 +58,33 @@
 % Area
 \def\symArea#1#2{\ensuremath{{A}_{#1}^{#2}}}
 
-% temperatura absoluta
-\def\T#1{\ensuremath{T#1}}
+% temperatura
+\def\symTemperature#1{\ensuremath{T_{#1}}}
 % \def\symT#1#2{\ensuremath{T#1^{#2}}}
 
 % presión absoluta
 \def\symPressure#1#2{\ensuremath{P_{#1}^{#2}}}
 
-\def\symVolumex#1#2{\ensuremath{V_{#1}^{#2}}}
+% Coeficientes viriales para los compuestos puros
+\def\symBcoeffVirial#1{\ensuremath{B_{#1}}}
+\def\symCcoeffVirial#1{\ensuremath{C_{#1}}}
 
+% Propiedades termodinámicas prra una sustancia pura
 \def\symVolume#1#2{\ensuremath{V_{#1}^{#2}}}
+\def\symInternalEnergy#1#2{\ensuremath{U_{#1}^{#2}}}
 \def\symEnthalpy#1#2{\ensuremath{H_{#1}^{#2}}}
 \def\symEntropy#1#2{\ensuremath{S_{#1}^{#2}}}
 \def\symGibbsEnergy#1#2{\ensuremath{G_{#1}^{#2}}}
-\def\symHelmholtzEnergy#1#2{\ensuremath{H_{#1}^{#2}}}
+\def\symHelmholtzEnergy#1#2{\ensuremath{A_{#1}^{#2}}}
+
+% Propiedades termodinámicas prra una mezcla
+\def\symVolumeMolarMixture#1#2{\ensuremath{\bar V_{#1}^{#2}}}
+\def\symEnthalpyMolarMixture#1#2{\ensuremath{\bar H_{#1}^{#2}}}
+\def\symEntropyMolarMixture#1#2{\ensuremath{\bar S_{#1}^{#2}}}
+\def\symGibbsEnergyMolarMixture#1#2{\ensuremath{\bar G_{#1}^{#2}}}
+\def\symHelmholtzEnergyMolarMixture#1#2{\ensuremath{\bar A_{#1}^{#2}}}
+
+% Calor específico a presión constante
+\def\symSpecificHeat#1#2{\ensuremath{C_{p_{#1}}^{#2}}}
+
+\def\symAbsoluteHumidity#1#2{\ensuremath{Y_{{#1}}^{#2}}}

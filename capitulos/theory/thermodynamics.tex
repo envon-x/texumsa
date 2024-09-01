@@ -28,10 +28,20 @@ Las variables de estado definen el estado de un sistema termodinámico. Para \pa
 
 % antes cambio de estado: No se puede hablar de equilibrio sin antes definir el concepto de estado termodinámico
 \subsection{EQUILIBRIO}
-Según \parencite[p. 29]{Smith.VanNess.Abbott2007}, es la ausencia de cambio, lo cual denota una condición estática; bajo esta condición no puede ocurrir ningún cambio de estado e indica la ausencia de fuerzas impulsoras hacia un cambio de estado.
+  Según \parencite[p. 29]{Smith.VanNess.Abbott2007}, el equilibrio es la ausencia de cambio, lo cual denota una condición estática; bajo esta condición no puede ocurrir ningún cambio de estado en ausencia de fuerzas que pueden promover un cambio de estado.
+
+\subsubsection{FASE}
+    De acuerdo a \parencite[p. 30]{Smith.VanNess.Abbott2007}, una fase es una región homogénea de la materia; por ejemplo: una mezcla de gases, una solución líquida y un sólido cristalino son algunos ejemplos de fases. Para \parencite[p. 461]{ChangQmc2010}, una fase es una parte homogénea de un sistema, y aunque está en contacto con otras partes del sistema, está separada de esas partes por un límite bien definido.
+    
+    Pueden coexistir varias fases con la condición de que deben estar en equilibrio. A los líquidos y sólidos también se les conoce como fases condensadas o (estados condensados) \parencite[p. 430]{SilberberglQmcGeneral}. 
+
 
 \subsection{EQUILIBRIO TERMODINÁMICO}
-El equilibrio se como el estado de balance donde las fuerzas se cancelan mutuamente. Existen diferentes tipos de fuerzas, de los cuales se mencionan a continuación:
+Para \parencite{Reisel2021} y \parencite{YunusA.Cengel2015}, el equilibrio termodinámico sucede cuando un sistema alcanza el equilibrio mecánico, térmico, químico y el equilibrio de fases.
+Un sistema en equilibrio termodinámico es incapaz de realizar un cambio espontaneo de su estado; cualquier cambio de estado recibe el nombre de proceso \parencite[p. 39]{YunusA.Cengel2015}.
+
+El equilibrio termodinámico es el estado de balance donde todas las fuerzas del sistema termodinámico se cancelan mutuamente. \newline
+Existen diferentes tipos de fuerzas, de los cuales se mencionan a continuación:
 \begin{itemize}
   \item Equilibrio mecánico,
   \item equilibrio térmico,
@@ -40,16 +50,13 @@ El equilibrio se como el estado de balance donde las fuerzas se cancelan mutuame
   \item equilibrio termodinámico.
 \end{itemize}
 
-Para \parencite{Reisel2021} y \parencite{YunusA.Cengel2015}, el equilibrio termodinámico sucede cuando un sistema alcanza el equilibrio mecánico, térmico, químico y el equilibrio de fases.
-Un sistema en equilibrio termodinámico es incapaz de realizar un cambio espontaneo de su estado; cualquier cambio de estado recibe el nombre de proceso \parencite[p. 39]{YunusA.Cengel2015}.
+\subsubsection*{Equilibrio mecánico}
+\subsubsection*{Equilibrio térmico}
+\subsubsection*{Equilibrio químico}
+\subsubsection*{Equilibrio de fases}
+\subsubsection*{Equilibrio termodinámico}
 
 
-
-
-\subsubsection{FASE}
-    De acuerdo a \parencite[p. 30]{Smith.VanNess.Abbott2007}, una fase es una región homogénea de la materia; es decir, un gas, una mezcla de gases, un líquido, una solución de líquidos, un sólido cristalino son algunos ejemplos de fases. Para \parencite[p. 461]{ChangQmc2010}, una fase es una parte homogénea de un sistema, y aunque está en contacto con otras partes del sistema, está separada de esas partes por un límite bien definido.
-    
-    Pueden coexistir varias fases con la condición de que deben estar en equilibrio. A los líquidos y sólidos también se les conoce como fases condensadas o (estados condensados) \parencite[p. 430]{SilberberglQmcGeneral}. 
 
 \subsection{CAMBIOS DE FASE}
     También conocido como transformaciones de fase, ocurre cuando se agrega o quita energía, generalmente en forma de calor. Los cambios de fase son cambios físicos que se distinguen porque  cambia el orden molecular, y en la fase gaseosa las moléculas presentan un mayor desorden \parencite[p. 489]{ChangQmc2010}. Los cambios entre los diferentes estados de agregación, según \parencite{ReyesChumacero2012}, se debe a las interacciones a nivel atómico y molecular de las sustancias y se manifiestan a nivel macroscópico como fuerza de {\it cohesión}, el cual sucede entre moléculas idénticas y las fuerzas de {\it adhesión} que se dan entre moléculas diferentes.
@@ -100,17 +107,6 @@ Las mezclas debajo de la temperatura crítica
 \subsection{Propiedades de los Fluidos}
 
 
-\subsubsection{Regla de Fase}
-    \begin{equation}
-    \label{eq:thermo:phase_rule}
-      \eqPhaseRule
-    \end{equation}
-
-    Donde,\newline 
-    \freeDegree : es el número de grados de libertad o las variables que se tienen que especificar, \newline 
-    \componentNumber : representa al número de componentes y \newline
-    \phaseNumber : es el número de fases (sólido, líquido o gaseoso) en el sistema.
-    % \includesvg[width=4.0in]{Imagenes/Vectorial/thermo/coord_P_V.svg}
 
   \figCoordinatePV
 
@@ -138,7 +134,9 @@ En general, la presión se define como la fuerza normal ejercida sobre una unida
 de un sistema en fase gaseosa, es la presión que aporta uno de los componentes
 
 
-\subsubsection{Presión Parcial}
+\subsubsection{Fugacidad}
+    La fugacidad de un componente en una mezcla depende de la temperatura, presión y la composición de la mezcla \parencite[p. 248]{ReidPrausnitzPoling1987}
+
 \subsubsection{Presión Parcial}
 
 \subsubsection{Presión Parcial}
@@ -165,7 +163,7 @@ En base a las suposiciones mencionadas se deduce la siguiente expresión matemá
   \eqRaoultLaw
 \end{equation}
 
-Donde {$\symCompGV{}_{i}$} es la composición molar de la fase vapor,  {\pressure{}{}} es la presión total de la mezcla, {$\symCompL{}_{i}$} representa a la composición molar de la fase líquida del sistema y
+Donde {$\symCompGV{}_{i}$} es la composición molar de la fase vapor,  {\pressure} es la presión total de la mezcla, {$\symCompL{}_{i}$} representa a la composición molar de la fase líquida del sistema y
 
 % obs
 De la ecuación \eqref{eq:thermo:RaoultLaw}, la expresión del lado izquierdo se conoce como, presión parcial del componente ${i}$
@@ -173,12 +171,12 @@ De la ecuación \eqref{eq:thermo:RaoultLaw}, la expresión del lado izquierdo se
 
 
 \begin{align}
-  f_{i}^{\degree, \text{ fase vap}} & = \hat{\phi_{i}} \symCompGV{i} \pressure{}{} \\
+  f_{i}^{\degree, \text{ fase vap}} & = \hat{\phi_{i}} \symCompGV{i} \pressure \\
   f_{i}^{\degree, \text{ fase liq}} & = \hat{\phi_{i}} \symCompL{i} p_{i}
 \end{align}
 
 \begin{flalign}
-  f_{i}^{\degree, \text{ fase vap}} & = \hat{\phi_{i}} \symCompGV{i} \pressure{}{} \\
+  f_{i}^{\degree, \text{ fase vap}} & = \hat{\phi_{i}} \symCompGV{i} \pressure \\
   f_{i}^{\degree, \text{ fase liq}} & = \hat{\phi_{i}} \symCompL{i} p_{i}
 \end{flalign}
 
@@ -192,7 +190,7 @@ De la ecuación \eqref{eq:thermo:RaoultLaw}, la expresión del lado izquierdo se
     \hline
     $\hat{\phi_{i}}$                     & 1.00                                             & 1.00                                                         \\
     \symCompGV{i}                        & \symCompGV{i}                                    & \symCompGV{i}                                                \\
-    $f_{i}^{\degree \text{, fase vap}}$  & \pressure{}{}                                             & \pressure{}{}                                                         \\
+    $f_{i}^{\degree \text{, fase vap}}$  & \pressure                                             & \pressure                                                         \\
     ${\gamma}_{i}$                       & 1.00                                             & ${{\gamma}_{i}}$                                             \\
     $f_{i}^{\degree, \text{ fase liq}}$  & $p_{i}$                                          & $p_{i}$                                                      \\
     Ec. resultante                       & $\symCompGV{i} = \frac{\symCompL{i} {P_{i}}}{P}$ & $\symCompGV{i} = \frac{ \gamma_{i} \symCompL{i} {P_{i}}}{P}$ \\ \hline
@@ -219,27 +217,42 @@ Según \parencite{Engel2019}, una limitación de la ley de los gases ideales es 
       \eqIdealGas
     \end{equation}
 
-    Donde {\zFactor} es el coeficiente de compresibilidad, {\pressure{}{}} es la presión absoluta, {\Vmolar} es el volumen molar, {\T{}} temperatura y {\univConstGasEos} es la constante universal de los gases.
+    Donde {\zFactor} es el coeficiente de compresibilidad, {\pressure} es la presión absoluta, {\Vmolar} es el volumen molar, {\temperatureAbsolute} temperatura y {\univConstGasEos} es la constante universal de los gases.
 
 \subsection{ECUACIÓN VIRIAL GENERAL}
     \label{cap2:subsec:tagEqnvirial}
+
+    Según \parencite{Dymond2002}, muchas ecuaciones de estado han sido propuestas para representar el comportamiento $\pressure-\volume-\temperature$ de los gases reales desde el punto de vista teórico; de los cuales, la ecuación virial es el más satisfactorio.
+
     Para \parencite[p. 37]{Sengers1987equations}, la ecuación virial de estado de los gases, es una de las ecuaciones que intenta describir de manera exacta y precisa el comportamiento de los fluidos reales. 
 
     Una ventaja del uso de la ecuación virial es la existencia amplia de información experimental \Parencite[p. 38]{Sengers1987equations}, 
 
-    La ecuación virial puede ser apreciada como una serie de Maclaurin\footnotetext{También llamado serie de Taylor}, donde ${\pressure{}{}}/{\univConstGasEos \T{}}$; en vista de su naturaleza polinomial, puede escribirse como serie de potencias de $1/\Vmolar$, el cual se muestra a continuación:
+    La ecuación virial puede ser apreciada como una serie de Maclaurin\footnotetext{También llamado serie de Taylor}, de ${\pressure}/{\univConstGasEos \temperatureAbsolute}$; en vista de su naturaleza polinomial, puede escribirse como serie de potencias de $1/\Vmolar$, el cual se muestra a continuación:
 
     \begin{equation}
       \eqVirialForVDevelop{}
     \end{equation}
-    \eqVirialForVDevelopNaming
+    \namingEqVirialForVDevelop
     
     El 2do y el 3er coeficiente virial ha sido estudiado por más de 100 años, todos ellos muestran que no existe correlación \parencite{thirdVirialTing}
 
 
     % Se considera las siguientes suposiciones:
 
-  
+\subsubsection*{Regla de Fase}  
+    La regla de fases fue desarrollada por 
+    \begin{equation}
+    \label{eq:thermo:phase_rule}
+      \eqPhaseRule
+    \end{equation}
+
+    Donde,\newline 
+    \freeDegree : es el número de grados de libertad o las variables que se tienen que especificar, \newline 
+    \componentNumber : representa al número de componentes y \newline
+    \phaseNumber : es el número de fases (sólido, líquido o gaseoso) en el sistema.
+    % \includesvg[width=4.0in]{Imagenes/Vectorial/thermo/coord_P_V.svg}
+
 \subsubsection*{Dependencia de los coeficientes viriales de la temperatura}
     \begin{equation}
       \bCoeffDependentOfT{}
@@ -274,7 +287,7 @@ Según \parencite{Engel2019}, una limitación de la ley de los gases ideales es 
     para \parencite{Dymond2002}, los métodos para la determinación de los coeficientes viriales pueden clasificarse de la siguiente manera:
 
     \begin{itemize}
-      \item Medidas de {\pressure{}{}-\Vmolar-\T{}},
+      \item Medidas de {\pressure-\Vmolar-\temperatureAbsolute},
       \item Medidas de la velocidad del sonido
       \item Medidas de Joule-Thomson
       \item Medidas de índice de refractividad y permitividad relativa
@@ -292,13 +305,13 @@ Son diversos los trabajos que se han realizado para determinar el segundo coefic
 
 
 
-Para la temperatura $\T{}$ y composición molar $\symCompGV{}$, ambos constantes; de la ecuación \eqref{eq:virialB}, cuando $1 / \Vmolar\ \to 0$,  el segundo coeficiente virial $\bCoeffVirial{}$, puede escribirse como:
+Para la temperatura $\temperatureAbsolute$ y composición molar $\symCompGV{}$, ambos constantes; de la ecuación \eqref{eq:virialB}, cuando $1 / \Vmolar\ \to 0$,  el segundo coeficiente virial $\bCoeffVirial{}$, puede escribirse como:
 
 \begin{equation}
-  \bCoeffVirial{} = \lim_{\frac{1}{\Vmolar}\ \to {0}} \Vmolar \left(\frac{\pressure{}{} \Vmolar} {\univConstGasEos \T{}} - 1 \right)
+  \bCoeffVirial{} = \lim_{\frac{1}{\Vmolar}\ \to {0}} \Vmolar \left(\frac{\pressure \Vmolar} {\univConstGasEos \temperatureAbsolute} - 1 \right)
 \end{equation}
 
-Para \parencite[p. 473]{beattie1942second}, la expresión $\Vmolar \left(\frac{\pressure{}{} \Vmolar} {\univConstGasEos \T{}} - 1 \right)$, puede ser calculado a partir de las mediciones de la compresibilidad isotérmica de un gas puro; en caso de una mezcla, debe ser de composición molar constante; la compresibilidad isotérmica debe establecerse frente a $1 / \Vmolar$. El valor de la constante queda establecido en la intersección de la función con el eje $1/ \Vmolar$.
+Para \parencite[p. 473]{beattie1942second}, la expresión $\Vmolar \left({\pressure \Vmolar} / {\univConstGasEos \temperatureAbsolute} - 1 \right)$, puede ser calculado a partir de las mediciones de la compresibilidad isotérmica de la sustancia pura para su fase gaseosa; en caso de una mezcla, debe ser de composición molar constante; la compresibilidad isotérmica debe establecerse frente a $1 / \Vmolar$. El valor de la constante queda establecido en la intersección de la función con el eje $1/ \Vmolar$.
 
 Para una mezcla binaria, $\bCoeffVirial{}$ está relacionado con los coeficientes viriales de los componentes puros y sus composiciones, de la siguiente manera:
 
@@ -310,7 +323,7 @@ Para un sistema de dos componentes ($\symNumOfCmpnts = 2$),
 \begin{equation}
   \eqSecondVirialCoeffDevelop{}
 \end{equation}
-\eqSecondVirialCoeffNaming{}
+\namingEqSecondVirialCoeff{}
 
 Conociendo los coeficientes viriales para los componentes puros, hace falta establecer las relaciones matemáticas para {\bCoeffVirial{\nameG \nameV}}.
 
@@ -320,7 +333,7 @@ Conociendo los coeficientes viriales para los componentes puros, hace falta esta
 Para \parencite{Dymond2002}, los valores son preferentemente determinados mediante la información de compresibilidad de gases 
 
 \begin{equation}
-  \cCoeffVirial{} = \lim_{\frac{1}{\Vmolar}\ \to {0}} \left[ \Vmolar \left(\frac{\pressure{}{} \Vmolar} {\univConstGasEos \T{}} - 1 \right) - \bCoeffVirial{} \right] \Vmolar
+  \cCoeffVirial{} = \lim_{\frac{1}{\Vmolar}\ \to {0}} \left[ \Vmolar \left(\frac{\pressure \Vmolar} {\univConstGasEos \temperatureAbsolute} - 1 \right) - \bCoeffVirial{} \right] \Vmolar
 \end{equation}
 
 
@@ -334,15 +347,9 @@ Desarrollando para un sistema de dos componentes:
   \thirdVirialCoeffDevelop{}
 \end{equation}
 
-\eqThirdVirialCoeffNaming{}
+\namingEqThirdVirialCoeff{}
 
 \figVirialBCBehavior
-
-\begin{align}
-  \eqVirialFactorCorrection{}
-\end{align}
-
-\factorCorrectionNaming{}
 
 \subsection{Convergencia de la serie virial}
 
@@ -356,7 +363,7 @@ Desarrollando para un sistema de dos componentes:
   \SoundSpeed{}
 \end{align}
 
-Donde $\pressure{}{}$  es la presión, $\Density$ es la densidad, $\Entropy$ es la entropía
+Donde $\pressure$  es la presión, $\density$ es la densidad, $\entropy$ es la entropía
 
 \subsection{Correlación, predicción y estimación de los coeficientes viriales}
 \label{cap2:subsec:tagEqnPredict}
@@ -366,7 +373,7 @@ Donde $\pressure{}{}$  es la presión, $\Density$ es la densidad, $\Entropy$ es 
 
 Según \parencite[ p. 12]{Dymond2002}, el método basado en la teoría del sonido, es el método que mejor se acerca a los valores reales; de esta manera, el segundo coeficiente virial queda expresado de la siguiente forma:
 \begin{equation}
-  \eqSndVirialCoeff{1}{2}{\T{}}
+  \eqSndVirialCoeff{1}{2}{\temperatureAbsolute}
 \end{equation}
 
 
@@ -379,9 +386,30 @@ Desarrollo de las ecuaciones para el cálculo de los coeficientes viriales fluid
 
 
 \subsection{VOLUMEN MOLAR PARA UNA MEZCLA}
-    Para una mezcla el volumen molar
+    Para una mezcla gaseosa el volumen molar
+    \begin{equation}
+      \eqVirialForVDevelopForMixture
+    \end{equation}
+    \namingEqVirialForVDevelopMixture
+
+
+\begin{align}
+  \eqVirialFactorCorrection{}
+\end{align}
+\namingEqVirialFactorCorrection{}
+
+
+\subsection{ENERGÍA INTERNA}
+\parencite{Treybal.Mass.Transfer.1981} la energía interna $\internalEnergy$ de una sustancia es la energía total que reside en la sustancia debido a su movimiento y a la posición relativa de los átomos y moléculas que constituyen la sustancia. Los valores absolutos de la energía interna no son conocidas; sin embargo, su valor puede ser calculado respecto a un estado standard definido pra la sustancia.
+
+\subsection{ENTALPÍA PARA LA MEZCLA}
   \begin{equation}
-    \eqVirialForVDevelopForMixture
+    \eqEnthalpyForMixture
   \end{equation}
-    
-    \eqVirialForVDevelopMixtureNaming
+    \namingEqEnthalpyForMixture
+
+
+\subsection{ENTROPÍA PARA LA MEZCLA}
+  \begin{equation}
+    \eqEntropyForMixtureDiscrete
+  \end{equation}

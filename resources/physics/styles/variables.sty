@@ -22,39 +22,83 @@
 }}
 
 \def\partialPressure{\ensuremath{\symPressure{i}{}}}
+
 \def\totalPressure{\ensuremath{\symPressure{\symTotal}{}}}
 
 % presión de vapor
-\def\Pvap{\ensuremath{\pressure{\ce{\symVapor}{}}}}
+\def\pressureVapor{\ensuremath{\symPressure{\symVapor}{}}}
 
-% presión total
-\def\Ptotal{\ensuremath{\pressure{\ce{\symTotal}{}}}}
+% presión de gas
+\def\pressureGas{\ensuremath{\symPressure{\symGas}{}}}
+
+% Representacion para la presión
+\def\pressure{\ensuremath{\symPressure{}{}}}
 
 %presión de vapor saturado
-\def\PvapSat{\ensuremath{\pressure{\ce{\symVapor}}{\degree}}}
+\def\pressureSat{\ensuremath{\symPressure{\symVapor}{\symSaturation}}}
+
+% presión total
+% \def\Ptotal{\ensuremath{\pressure{\ce{\symTotal}{}}}}
+\def\pressureTotal{\ensuremath{\symPressure{\symTotal}{}}}
+
+% Representa la termperatura termodinámica
+\def\temperature{\ensuremath{\symTemperature{}}}
+
+% Representa la termperatura termodinámica
+\def\temperatureAbsolute{\ensuremath{\symTemperature{}}}
+
+% Termperatura referencial
+\def\temperatureReference{\ensuremath{\symTemperature{\symReference}}}
+
+% Límite inferior para la termperatura
+\def\limitInfTemperature{\ensuremath{\symTemperature{\symReference}}}
+
+% Límite superior para la termperatura
+\def\limitSupTemperature{\ensuremath{\symTemperature{}}}
 
 % nombre del 2do componente - vapor
 \def\nameV{\ensuremath{{\text{\symVapor}}}} % Sin text{}, \ce{\symVapor} crea una flecha hacia abajo, cuando este no es la intención
 
+\def\molecularWeightV{\ensuremath{\symMolecularWeight{\nameV}{}}}
+\def\molecularWeightG{\ensuremath{\symMolecularWeight{\nameG}{}}}
+
 % nombre del 1er componente - gas
 \def\nameG{\ensuremath{{\text{\symGas}}}}
+
+% Fracción molar para la fase vapor
+\def\compositionV{\ensuremath{\symCompV{\symVapor}}}
+
+% Fracción molar para la fase gaseosa
+\def\compositionG{\ensuremath{\symCompG{\symGas}}}
+
+% Fraccion mol del componente G en el punto de saturación (factor de corrección)
+\def\symCompGsat{\ensuremath{\symCompG{\symGas{\symSaturationTextVersion}{}}}}
+
 
 % factor de compresibilidad
 \def\zFactor{\ensuremath{z}}
 
 % la relacion de humedad o humedad absoluta
-\def\HumidityRatio{Y}
+\def\HumidityRatio{\symAbsoluteHumidity{}{}}
+
+% la relacion de humedad o humedad absoluta
+\def\absoluteHumidity{\symAbsoluteHumidity{}{}}
 
 % Humedad relativa
-\def\RelativeHumidity{\phi}
+\def\relativeHumidity{\ensuremath{\phi}}
+
+
+
 \def\DryBulbTemperature{\ensuremath{T_{\ce{db}}}} % Temperatura de bulbo seco (dry-bulb)
 \def\WetBulbTemperature{\ensuremath{T_{\ce{wb}}}} % emperatura de bulbo húmedo (wet-bulb) \\
 \def\DewPoint{\ensuremath{T_{\ce{dp}}}} % Punto de Rocío (dew point)
 
 
-\def\Velocity{\ensuremath{u}}
-\def\Density{\ensuremath{\rho}}
-\def\Entropy{\ensuremath{S}}
+\def\velocity{\ensuremath{u}}
+\def\density{\ensuremath{\rho}}
+\def\internalEnergy{\ensuremath{\symInternalEnergy{}{}}}
+\def\enthalpy{\ensuremath{\symEnthalpy{}{}}}
+\def\entropy{\ensuremath{\symEntropy{}{}}}
 
 % Grados de libertad 
 \def\freeDegree{\ensuremath{F}}
@@ -62,15 +106,26 @@
 \def\phaseNumber{\ensuremath{P}}
 
 
+% #1: es el subindice  de la constante B, tambien puede dejarse vacío
+\def\bCoeffVirial{\ensuremath{\symBcoeffVirial{}}}
+\def\cCoeffVirial{\ensuremath{\symCcoeffVirial{}}}
+
+% Estos representa a lso coeficientes de interacción virial
+\def\cCoeffVirialGGG{\ensuremath{\symCcoeffVirial{\nameG \nameG \nameG}}} 
+\def\cCoeffVirialVVV{\ensuremath{\symCcoeffVirial{\nameV \nameV \nameV}}}
+\def\cCoeffVirialGGV{\ensuremath{\symCcoeffVirial{\nameG \nameG \nameV}}} 
+\def\cCoeffVirialGVV{\ensuremath{\symCcoeffVirial{\nameG \nameV \nameV}}}
+
+
 %Coeficientes viriales para la mezcla de componentes
-\def\bCoeffVirialMixture{\ensuremath{B_{\mixture}}}
-\def\cCoeffVirialMixture{\ensuremath{C_{\mixture}}}
+\def\bCoeffVirialMixture{\ensuremath{\bar{\symBcoeffVirial{}}}}
+\def\cCoeffVirialMixture{\ensuremath{\bar{\symCcoeffVirial{}}}}
 
 
 \def\molarVolumeSaturate{\ensuremath{\hat{\symVapor}_{\text{Ve}}}}
 
 %% Volumen molar para la mezcla
-\def\symMolarVolumeForMixture{\ensuremath{{\bar V}_{\mixture}}}
+\def\molarVolumeForMixture{\ensuremath{{\symVolumeMolarMixture{}{}}}}
 
 \def\isothermalCompresibility{\ensuremath{\kappa}}
 \def\henryLaw{\ensuremath{k_H}}
@@ -90,7 +145,6 @@
 \newcommand{\eqnRelativeHumidity}{\ensuremath{\symRelativeHumidity &= \frac{a}{b}}}         % Fórmula de la Humedad relativa
 % \newcommand{\unitRelativeHumidity}{\unit}                                                 % Unidad de la Humedad relativa
 
-\newcommand{\symAbsoluteHumidity}{\ensuremath{\rho_v}}                                      % Símbolo de la Humedad absoluta
 \newcommand{\eqnAbsoluteHumidity}{\ensuremath{\symAbsoluteHumidity &= \frac{\symVaporMass{}}{\symGasMass}}}         % Fórmula de la Humedad absoluta
 % \newcommand{\unitAbsoluteHumidity}{\unit}                                                 % Unidad de la Humedad absoluta
 
@@ -100,24 +154,34 @@
 
 \input{resources/physics/physical_constants}
 
+
+\def\varResidualVolume{\ensuremath{\symVolume{}{\symResidual}}}
 \def\varResidualEnthalpy{\ensuremath{\symEnthalpy{}{\symResidual}}}
-
-\def\varResidualVolume#1#2{\ensuremath{\symResidualVolume{}{\symResidual}}}
-\def\varResidualEnthalpy#1#2{\ensuremath{\symResidualEnthalpy{}{\symResidual}}}
-\def\varResidualEntropy#1#2{\ensuremath{\symResidualEntropy{}{\symResidual}}}
-\def\varResidualGibbsEnergy#1#2{\ensuremath{\symResidualGibbsEnergy{}{\symResidual}}}
-\def\varResidualHelmholtzEnergy#1#2{\ensuremath{\symResidualHelmholtzEnergy{}{\symResidual}}}
+\def\varResidualEntropy{\ensuremath{\symEntropy{}{\symResidual}}}
+\def\varResidualGibbsEnergy{\ensuremath{\symGibbsEnergy{}{\symResidual}}}
+\def\varResidualHelmholtzEnergy{\ensuremath{\symHelmholtzEnergy{}{\symResidual}}}
 
 
-\def\varRealVolume#1#2{\ensuremath{\symRealVolume{}{}}}
-\def\varRealEnthalpy#1#2{\ensuremath{\symRealEnthalpy{}{}}}
-\def\varRealEntropy#1#2{\ensuremath{\symRealEntropy{}{}}}
-\def\varRealGibbsEnergy#1#2{\ensuremath{\symRealGibbsEnergy{}{}}}
-\def\varRealHelmholtzEnergy#1#2{\ensuremath{\symRealHelmholtzEnergy{}{}}}
+\def\varRealVolume{\ensuremath{\symVolume{}{}}}
+\def\varRealEnthalpy{\ensuremath{\symEnthalpy{}{}}}
+\def\varRealEntropy{\ensuremath{\symEntropy{}{}}}
+\def\varRealGibbsEnergy{\ensuremath{\symGibbsEnergy{}{}}}
+\def\varRealHelmholtzEnergy{\ensuremath{\symHelmholtzEnergy{}{}}}
+
+\def\varRealVolumeForMixture{\ensuremath{\symVolumeMolarMixture{}{}}}
+\def\varRealEnthalpyForMixture{\ensuremath{\symEnthalpyMolarMixture{}{}}}
+\def\varRealEntropyForMixture{\ensuremath{\symEntropyMolarMixture{}{}}}
+\def\varRealGibbsEnergyForMixture{\ensuremath{\symGibbsEnergyMolarMixture{}{}}}
+\def\varRealHelmholtzEnergyForMixture{\ensuremath{\symHelmholtzEnergyMolarMixture{}{}}}
 
 
-\def\varIdealVolume#1#2{\ensuremath{\symIdealVolume{}{\symIdeal}}}
-\def\varIdealEnthalpy#1#2{\ensuremath{\symIdealEnthalpy{}{\symIdeal}}}
-\def\varIdealEntropy#1#2{\ensuremath{\symIdealEntropy{}{\symIdeal}}}
-\def\varIdealGibbsEnergy#1#2{\ensuremath{\symIdealGibbsEnergy{}{\symIdeal}}}
-\def\varIdealHelmholtzEnergy#1#2{\ensuremath{\symIdealHelmholtzEnergy{}{\symIdeal}}}
+\def\varIdealVolume{\ensuremath{\symVolume{}{\symIdeal}}}
+\def\varIdealEnthalpy{\ensuremath{\symEnthalpy{}{\symIdeal}}}
+\def\varIdealEntropy{\ensuremath{\symEntropy{}{\symIdeal}}}
+\def\varIdealGibbsEnergy{\ensuremath{\symGibbsEnergy{}{\symIdeal}}}
+\def\varIdealHelmholtzEnergy{\ensuremath{\symHelmholtzEnergy{}{\symIdeal}}}
+
+
+% Calor específico
+\def\specificHeatV{\symSpecificHeat{\symVapor}{}}
+\def\specificHeatG{\symSpecificHeat{\symGas}{}}

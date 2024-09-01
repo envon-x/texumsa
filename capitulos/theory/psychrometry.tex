@@ -1,43 +1,58 @@
-\section{PSICROMETR\'IA}
+\section{PSICROMETRÍA}
 
-Para el estudio de la psicrometr\'ia mediante la ecuaci\'on de gases ideales, seg\'un (), se hacen las siguientes suposici\'ones ():
+  El grupo Europeo de Investigadores (GERG, por sus siglas en francés)  Algorithms Psychrometry, Bell, Harvey
+
+Para el estudio de la psicrometría mediante la ecuación de gases ideales, según (), se hacen las siguientes suposiciones ():
 
 \begin{itemize}
-  \item La fase s\'olida o l\'iquida no contiene gases disueltos,
+  \item La fase sólida o líquida no contiene gases disueltos,
   \item la fase gaseosa puede ser tratado como una mezcla de gases ideales,
-  \item cuando la mezcla y la fase condensada est\'an dadas a una presi\'on y temperatura, el equilibrio entre la fase condensada y la mezcla gaseosa, no est\'a influenciada por la presencia de otros componentes; significa que cuando se alcanza el equilibrio, la presi\'on parcial del vapor ser\'a igual a la presi\'on de saturaci\'on dada a la temperatura de la mezcla.
+  \item cuando la mezcla y la fase condensada están dadas a una presión y temperatura, el equilibrio entre la fase condensada y la mezcla gaseosa, no está influenciada por la presencia de otros componentes; significa que cuando se alcanza el equilibrio, la presión parcial del vapor ser\'a igual a la presión de saturaci\'on dada a la temperatura de la mezcla.
 \end{itemize}
 
-La relaci\'on psicrométrica viene dada por:
+La relación psicrométrica viene dada por:
 \begin{equation}
   \frac{h_{c}}{k_{c_s}^{'}} = r
 \end{equation}
 
 \eqVanDerWaals
 
-\subsection{Relación de humedad o humedad absoluta}
-\begin{align}
-  \eqHumidityRatioFst{\HumidityRatio}
-\end{align}
+\subsection{Humedad Absoluta o Relación de Humedad}
+  La humedad absoluta se define como la relación de la masa del vapor \performVapor{} y la masa del gas \performGas{}:
+  \begin{align}
+    \eqHumidityRatioFst{\HumidityRatio}
+  \end{align}
 
+  Mediante el modelo de ecuación de estado del gas ideal (\eqIdealGasEosForMass{}):
 \begin{align}
   \label{eq:psy:HumidityRatio2form}
   \eqHumidityRatioSnd{\HumidityRatio}
 \end{align}
 
-Si se conoce la humedad absoluta $\HumidityRatio$, la composición de la cantidad de vapor puede calcularse a partir de la ecuación \eqref{eq:psy:HumidityRatio2form}, quedando la expresión de la siguiente manera:
+Si se conoce la humedad absoluta $\left(\HumidityRatio \right)$, la composición de la cantidad de vapor puede calcularse a partir de la ecuación \eqref{eq:psy:HumidityRatio2form}, quedando la expresión de la siguiente manera:
 \begin{equation}
   \eqCompVapor{}
 \end{equation}
 
+\subsection{Mezcla Saturada Vapor-Gas}
+  Cuando un gas seco entra en contacto con un líquido de un vapor, el líquido se evaporará hacia el gas hasta alcanzar el equilibrio, la presión parcial del vapor \performVapor{} en la mezcla vapor-gas alcanza su valor de saturación. la presión de vapor $\symPressure{\symVapor{}{}}{}$. El gas puede ser considerado como isoluble  en el líquido la naturaleza de la presión de vapor en la mezcla saturada es independiente de la naturaleza del gas y la presión total (excepto a altas presiones )  parencite{Treybal.Mass.Transfer.1981},   
+
+\subsection{Mezcla Insaturada Vapor-Gas}
+
 \subsection{Humedad Relativa}
-Son diversas las definiciones que se ha establecido; la definición termodinámica de acuerdo a (), es la relación de la fugacidad del vapor en la mezcla respecto a la fugacidad de la mezcla gaseosa.
+    Representado mediante (\symRelativeHumidity), algunas de las {\color{blue!40!green} interpretaciones} que se ha establecido; para \parencite{Cusi.William} es un indicador del grado de saturación de un gas seco con un vapor,
+    la definición termodinámica de acuerdo a (), es la relación de la fugacidad del vapor en la mezcla respecto a la fugacidad de la mezcla gaseosa.
 
-Se define como la relación de la presión parcial de vapor del agua respecto a la presión saturada a una temperatura dada.
+    Se define como la relación de la presión parcial de vapor del agua respecto a la presión saturada a una temperatura dada.
 
-\begin{equation}
-  \eqRelativeHumidityFst{\RelativeHumidity}
-\end{equation}
+    \begin{equation}
+      \eqRelativeHumidityFst{\relativeHumidity}
+    \end{equation}
+
+    \begin{equation}
+      \eqAbsoluteHumidityDevelop
+    \end{equation}
+    \namingEqAbsoluteHumidityDevelop
 
 \subsection{Punto de Rocío}
 \subsection{Temperatura de Bulbo Húmedo}
@@ -45,7 +60,7 @@ Se define como la relación de la presión parcial de vapor del agua respecto a 
 
 
 
-\subsection{Retos y deventajas}
+\subsection{Retos y desventajas}
 Para \parencite[p. 8]{Bell2017}, puede ocurrir la formación potencial de hidratos de gas seco; estos son, moléculas de gas atrapados en una red de moléculas de vapor; este fenómeno suele suceder a xxx presiónes.
 \subsection{Otras ecuaciones}
 

@@ -17,7 +17,7 @@
 
 
 %Ecuaciones de estado de los gases
-\def\idealGasEos#1{\ensuremath{#1 = \frac{\symPressure{}{} \Vmolar}{\univConstGasEos \T{}}}}
+\def\idealGasEos#1{\ensuremath{#1 = \frac{\symPressure{}{} \Vmolar}{\univConstGasEos \symTemperature{}}}}
 % \DeclareRobustCommand\sqrt{\@ifnextchar[{true statement}{false statement}}
 % from llama AI
 \DeclareRobustCommand\sqrt{\@ifnextchar[{\@sqrt}{\@sqrt[0pt]}}
@@ -27,10 +27,6 @@
 \def\vanDerWaals#1#2#3{\ensuremath{#1 = \frac{\univConstGasEos #3}{#2 - b} - \frac{a}{#2^2}}}
 \def\eqDieterici#1#2#3{\ensuremath{#1 = \displaystyle{{\univConstGasEos #3} e^{-a/#2 \univConstGasEos  #3}  \over #2 - b} }}
 \def\eqBerthelot#1#2#3{\ensuremath{#1 = \frac{\univConstGasEos #3}{#2 - b - \frac{a}{#3 #2^2}}}}
-
-% #1: es el subindice  de la constante B, tambien puede dejarse vacío
-\def\bCoeffVirial#1{\ensuremath{B_{#1}}}
-\def\cCoeffVirial#1{\ensuremath{C_{#1}}}
 
 % arg #1: Volumen
 \def\zVirial#1{\ensuremath{{1}+{\frac {\bCoeffVirial{}}{#1}}+{\frac {\cCoeffVirial{}}{#1^{2}}} + \cdots}} % la expresión z para la EOF virial
@@ -45,7 +41,7 @@
 \def\RaoultLaw#1{\ensuremath{{\symCompGV{}_{#1} \symPressure{}{}} = {\symCompL{}_{#1} {\symPressure{}{}}_{#1}^{\degree}}}}
 
 % Relación de humedad
-\def\eqHumidityRatioFst#1{\ensuremath{#1 &= \frac{\symMass_\nameV}{\symMass_{\nameG}}}} % #2 corresponde al gas y 3 a vapor
+\def\eqHumidityRatioFst#1{\ensuremath{#1 &= \frac{\symMass{\nameV}{}}{\symMass{\nameG}{}}}} % #2 corresponde al gas y 3 a vapor
 % \def\eqHumidityRatioSnd#1{\ensuremath{#1 &= \frac{\symMolecularWeight{\nameV}{}}{\symMolecularWeight{\nameG}{}}   \frac{\symCompL{}_}{1-{\symCompL{}}}}} % #1 nombre variable independiente, #2 M = peso molecular
 \def\eqHumidityRatioSnd#1{\ensuremath{#1 &= \frac{\symMolecularWeight{\nameV}{}}{\symMolecularWeight{\nameG}{}}   \frac{\symCompL{}_\nameV}{1-{\symCompL{}_\nameV}}}} % #1 nombre variable independiente, #2 M = peso molecular
 
@@ -53,7 +49,8 @@
 % como usar: \eqCompVapor{}
 
 % Humedad relativa
-\def\eqRelativeHumidityFst#1{\ensuremath{#1 = \frac{\Pvap}{\PvapSat}}}
+\def\eqRelativeHumidityFst#1{\ensuremath{#1 = \frac{\symPressure{\symVapor}{}}{\pressureSat}}}
 
 
-\def\SoundSpeed#1{\ensuremath{{\Velocity}^2 = \left(\frac{\partial \symPressure{}{}}{\partial \Density}\right)_{\Entropy}}}
+
+\def\SoundSpeed#1{\ensuremath{{\velocity}^2 = \left(\frac{\partial \symPressure{}{}}{\partial \density}\right)_{\entropy}}}

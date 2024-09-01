@@ -30,6 +30,9 @@
   \idealGasEos{\zFactor} = 1
 }}
 
+\def\eqIdealGasEosForMass{\ensuremath{
+  \symMass{i}{} = \bar{\symMolecularWeight{i}{}} \frac{\symPressure{i}{} \Vmolar}{\univConstGasEos \symTemperature{}}
+  }}
 
 % phase rule of Lewis gibbs
 \def\eqPhaseRule{\ensuremath{ \freeDegree = \componentNumber + 2 - \phaseNumber}}
@@ -40,7 +43,7 @@
 % Desarrollo del segundo Coeficiente virial
 \def\eqSecondVirialCoeffDevelop{\ensuremath{  \bCoeffVirialMixture{} = {\symCompGV{\nameG}}^2 \bCoeffVirial{\nameG \nameG} + 2 {\symCompGV{\nameG}} \symCompGV{}_{\nameV} \bCoeffVirial{\nameG \nameV} + {\symCompGV{}_\nameV}^2 \bCoeffVirial{\nameV \nameV}}}
 
-\def\eqSecondVirialCoeffNaming{
+\def\namingEqSecondVirialCoeff{
     Donde:\newline
   \bCoeffVirial{\nameG \nameG}: es el coeficiente virial para el componente puro de {\nameG} y  \newline
   \bCoeffVirial{\nameV \nameV}: para {\nameV} \newline
@@ -48,28 +51,26 @@
 }
 
 % Expresion de triple sumatoria del tercer coeficiente virial
-\def\eqThirdVirialCoeffSum{\ensuremath{ \cCoeffVirialMixture{} = \sum_{i=1}^{\symNumOfCmpnts} \sum_{j=1}^{\symNumOfCmpnts} \sum_{k=1}^{\symNumOfCmpnts} x_i x_j x_k \cCoeffVirial{ijk}  }}
+\def\eqThirdVirialCoeffSum{\ensuremath{ \cCoeffVirialMixture = \sum_{i=1}^{\symNumOfCmpnts} \sum_{j=1}^{\symNumOfCmpnts} \sum_{k=1}^{\symNumOfCmpnts} x_i x_j x_k \cCoeffVirial{ijk}  }}
 
 
 
 % Tercer coefficiente virial
 \def\thirdVirialCoeffDevelop{\ensuremath{  
   \begin{split}
-    \cCoeffVirialMixture{} &= 
-    {\symCompGV{\nameG}}^3 \cCoeffVirial{\nameG \nameG \nameG} + 3{\symCompGV{\nameG}}^2 {\symCompGV{}_{\nameV}} \cCoeffVirial{\nameG \nameG \nameV} + 3 {\symCompGV{\nameG}} {\symCompGV{}_{\nameV}}^2 \cCoeffVirial{\nameG \nameV \nameV} + {\symCompGV{}_\nameV}^3 \cCoeffVirial{\nameV \nameV \nameV}
+    \cCoeffVirialMixture &= 
+    {\symCompGV{\nameG}}^3 \cCoeffVirialGGG + 3{\symCompGV{\nameG}}^2 {\symCompGV{}_{\nameV}} \cCoeffVirialGGV + 3 {\symCompGV{\nameG}} {\symCompGV{}_{\nameV}}^2 \cCoeffVirialGVV + {\symCompGV{}_\nameV}^3 \cCoeffVirialVVV
   \end{split}  
 }}
 
-\def\eqThirdVirialCoeffNaming{
+\def\namingEqThirdVirialCoeff{
     Donde:\newline
   {\symCompGV{\nameV}}: denota la composición molar del componente V \newline
   {\symCompGV{\nameG}}: es la composición molar del componente G \newline
-  {\cCoeffVirial{\nameG \nameG \nameG}} y {\cCoeffVirial{\nameV \nameV \nameV}}: son los coeficientes viriales para la sustancia pura de la mezcla y \newline
-  {\cCoeffVirial{\nameG \nameG \nameV}} y {\cCoeffVirial{\nameG \nameV \nameV}}: son los parámetros de interacción virial. Todos los coeficientes viriales que dependen de la temperatura.
+  {\cCoeffVirialGGG} y {\cCoeffVirialVVV}: son los coeficientes viriales para la sustancia pura de la mezcla y \newline
+  {\cCoeffVirialGGV} y {\cCoeffVirialGVV}: son los parámetros de interacción virial. Todos los coeficientes viriales que dependen de la temperatura.
 }
 
-% Fraccion mol del componente G en el punto de saturación
-\def\symCompGsat{\ensuremath{\symCompG{g_s}}}
 
 \def\eqVanDerWaals{\ensuremath{
   \vanDerWaals{\pressure}{\Vmolar}{\theta}
@@ -79,33 +80,33 @@
 %% Equación virial desarrollada pra V
 \def\eqVirialForVDevelop{\ensuremath{
     \label{eq:virialB}
-    \eqVirialB{\pressure{}}{\Vmolar}{\T{}}
+    \eqVirialB{\pressure{}}{\Vmolar}{\temperatureAbsolute}
 }}
-\def\eqVirialForVDevelopNaming{{Donde, \newline 
+\def\namingEqVirialForVDevelop{{Donde, \newline 
     $\pressure$: es la presión total, \newline
     $\Vmolar$: es el volumen molar, \newline
     $\univConstGasEos$: es la constante universal de los gases, \newline
-    $\T{}$: corresponde a la temperatura absoluta, \newline
+    $\temperatureAbsolute$: corresponde a la temperatura absoluta, \newline
     $B$, $C$: son el 2do y 3er coeficiente virial  que dependen de la temperatura, y para las mezclas también de su composición.
 }}
 
 
 \def\eqVirialForVDevelopForMixture{\ensuremath{
     \label{eq:virialBMixture}  
-    \eqVirialB{\pressure}{\symMolarVolumeForMixture}{\T{}}
+    \eqVirialB{\pressure}{\molarVolumeForMixture}{\temperatureAbsolute}
 }}
-\def\eqVirialForVDevelopMixtureNaming{{Donde, \newline 
-    $\pressure$ : es la presión total, \newline
-    ${\symMolarVolumeForMixture}$: es el volumen molar, \newline
+\def\namingEqVirialForVDevelopMixture{{Donde, \newline 
+    $\pressure$ : es la presión que ejerce la mezcla de gases sobre el recipiente que lo contiene, \newline
+    ${\molarVolumeForMixture}$: es el volumen molar para la mezcla gaseosa, \newline
     $\univConstGasEos$: es la constante universal de los gases, \newline
-    $\T{}$: corresponde a la temperatura absoluta, \newline
+    $\temperatureAbsolute$: corresponde a la temperatura absoluta, \newline
     $B$, $C$: son el 2do y 3er coeficiente virial  que dependen de la temperatura, y para las mezclas también de su composición.
 }}
 
 
 
-\def\bCoeffDependentOfT{\ensuremath{a =  \sum_{i=1}^{\symNumOfCmpnts} \bCoeffVirial{i} \T{a}^{-1}}}
-\def\cCoeffDependentOfT{\ensuremath{\cCoeffVirial{} =  \sum_{i=1}^{\symNumOfCmpnts} \cCoeffVirial{i} \T{}^{-1}}}
+\def\bCoeffDependentOfT{\ensuremath{a =  \sum_{i=1}^{\symNumOfCmpnts} \bCoeffVirial{i} \temperatureAbsolute^{-1}}}
+\def\cCoeffDependentOfT{\ensuremath{\cCoeffVirial{} =  \sum_{i=1}^{\symNumOfCmpnts} \cCoeffVirial{i} \temperatureAbsolute^{-1}}}
 
 % Coeficientes para la ecuación desarrollada del 2do coeficiente virial
 \def\bvv{\ensuremath{\bCoeffVirial{\nameV \nameV}}}
@@ -113,40 +114,94 @@
 \def\bgg{\ensuremath{\bCoeffVirial{\nameG \nameG}}}
 
 % Coeficientes para la ecuación desarrollada del 3er coeficiente virial
-\def\cggv{\ensuremath{\cCoeffVirial{\nameG \nameG \nameV}}}
-\def\cgvv{\ensuremath{\cCoeffVirial{\nameG \nameV \nameV}}}
-\def\cvvv{\ensuremath{\cCoeffVirial{\nameV \nameV \nameV}}}
-\def\cggg{\ensuremath{\cCoeffVirial{\nameG \nameG \nameG}}}
+\def\cggv{\ensuremath{\cCoeffVirialGGV}}
+\def\cgvv{\ensuremath{\cCoeffVirialGVV}}
+\def\cvvv{\ensuremath{\cCoeffVirialVVV}}
+\def\cggg{\ensuremath{\cCoeffVirialGGG}}
 
 \def\eqVirialFactorCorrection{\ensuremath{
   \begin{split}
-    \ln f &= \left[ \frac{(1 + \isothermalCompresibility \Pvap)(\Ptotal - \Pvap) - \frac{1}{2} \isothermalCompresibility (\Ptotal^2 - \Pvap^2)}{\univConstGasEos \T{}} \right] \molarVolumeSaturate \\
-          &+ \ln (1 - \henryLaw {\symCompGsat} \Ptotal) - \frac{2 {\symCompGsat}^3 (2 - 3 {\symCompGsat}) \Ptotal^2}{(\univConstGasEos \T{})^2} \bgg \bgv \\
-          &+ \frac{{\symCompGsat}^2}{\univConstGasEos \T{}} \bgg - \frac{2 {\symCompGsat}^2 \Ptotal}{\univConstGasEos \T{}} \bgv - \left[ \frac{ \Ptotal - \Pvap}{\univConstGasEos \T{}} - \frac{{\symCompGsat}^2 \Ptotal}{\univConstGasEos \T{}} \right] \bgg \\
-          &+ \frac{3 {\symCompGsat}^2}{2 (\univConstGasEos \T{})^2} (1 + 2 {\symCompGsat}) \Ptotal^2 \cggv - \frac{3 {\symCompGsat}^2 (1 - {\symCompGsat}) \Ptotal^2}{(\univConstGasEos \T{})^2} \cgvv \\
-          &- \left[ \frac{(1 + 2 {\symCompGsat})(1 - {\symCompGsat})^2 \Ptotal^2 - \Pvap^2}{2 (\univConstGasEos \T{})^2} \right] \cvvv - \frac{3 {\symCompGsat}^4 \Ptotal^2}{2 (\univConstGasEos \T{})^2} \bgg^2 \\
-          &- \frac{{\symCompGsat}^2 (1 - 3 {\symCompGsat})(1 - {\symCompGsat}) \Ptotal^2}{(\univConstGasEos \T{})^2} \bgg \bvv \\
-          &+ \frac{6 {\symCompGsat}^2 (1 - {\symCompGsat})^2 \Ptotal^2}{(\univConstGasEos \T{})^2} \bvv \bgv \\
-          &- \frac{2 {\symCompGsat}^2 (1 - {\symCompGsat})(1 - 3 {\symCompGsat}) \Ptotal^2}{(\univConstGasEos \T{})^2} \bgv^2 + \frac{{\symCompGsat}^3 \Ptotal^2}{(\univConstGasEos \T{})^2} \cggg \\
-          &- \left[ \frac{\Pvap^2 - (1 + 3 {\symCompGsat})(1 - {\symCompGsat})^3 \Ptotal^2}{2 (\univConstGasEos \T{})^2} \right] \bvv^2
+    \ln f &= \left[ \frac{(1 + \isothermalCompresibility {\pressureVapor})({\pressureTotal} - {\pressureVapor}) - \frac{1}{2} \isothermalCompresibility ({\pressureTotal}^2 - {\pressureVapor}^2)}{\univConstGasEos \temperatureAbsolute} \right] \molarVolumeSaturate \\
+          &+ \ln (1 - \henryLaw {\symCompGsat} {\pressureTotal}) - \frac{2 {\symCompGsat}^3 (2 - 3 {\symCompGsat}) {\pressureTotal}^2}{(\univConstGasEos \temperatureAbsolute)^2} \bgg \bgv \\
+          &+ \frac{{\symCompGsat}^2}{\univConstGasEos \temperatureAbsolute} \bgg - \frac{2 {\symCompGsat}^2 {\pressureTotal}}{\univConstGasEos \temperatureAbsolute} \bgv - \left[ \frac{ {\pressureTotal} - {\pressureVapor}}{\univConstGasEos \temperatureAbsolute} - \frac{{\symCompGsat}^2 {\pressureTotal}}{\univConstGasEos \temperatureAbsolute} \right] \bgg \\
+          &+ \frac{3 {\symCompGsat}^2}{2 (\univConstGasEos \temperatureAbsolute)^2} (1 + 2 {\symCompGsat}) {\pressureTotal}^2 \cggv - \frac{3 {\symCompGsat}^2 (1 - {\symCompGsat}) {\pressureTotal}^2}{(\univConstGasEos \temperatureAbsolute)^2} \cgvv \\
+          &- \left[ \frac{(1 + 2 {\symCompGsat})(1 - {\symCompGsat})^2 {\pressureTotal}^2 - {\pressureVapor}^2}{2 (\univConstGasEos \temperatureAbsolute)^2} \right] \cvvv - \frac{3 {\symCompGsat}^4 {\pressureTotal}^2}{2 (\univConstGasEos \temperatureAbsolute)^2} \bgg^2 \\
+          &- \frac{{\symCompGsat}^2 (1 - 3 {\symCompGsat})(1 - {\symCompGsat}) {\pressureTotal}^2}{(\univConstGasEos \temperatureAbsolute)^2} \bgg \bvv \\
+          &+ \frac{6 {\symCompGsat}^2 (1 - {\symCompGsat})^2 {\pressureTotal}^2}{(\univConstGasEos \temperatureAbsolute)^2} \bvv \bgv \\
+          &- \frac{2 {\symCompGsat}^2 (1 - {\symCompGsat})(1 - 3 {\symCompGsat}) {\pressureTotal}^2}{(\univConstGasEos \temperatureAbsolute)^2} \bgv^2 + \frac{{\symCompGsat}^3 {\pressureTotal}^2}{(\univConstGasEos \temperatureAbsolute)^2} \cggg \\
+          &- \left[ \frac{{\pressureVapor}^2 - (1 + 3 {\symCompGsat})(1 - {\symCompGsat})^3 {\pressureTotal}^2}{2 (\univConstGasEos \temperatureAbsolute)^2} \right] \bvv^2
   \end{split}
 }}
-
-
-\def\factorCorrectionNaming{
+\def\namingEqVirialFactorCorrection{
     Donde:\newline
   {\molarVolumeSaturate}: Volumen molar del componente V condensado\newline
   {\isothermalCompresibility}: denota la compresibilidad isotérmica\newline
   {\henryLaw}: es la constante de la ley de Henrry \newline
-  {\Ptotal}: es la presión total\newline
+  {{\pressureTotal}}: es la presión total\newline
   {\univConstGasEos}: constante universal de los gases\newline
-  {\T{}}: es la termperatura absoluta\newline
+  {\temperatureAbsolute}: es la termperatura absoluta\newline
   {\symCompGV{\nameV}}: denota la composición molar del componente V \newline
   {\symCompGV{\nameG}}: es la composición molar del componente G \newline
-  {\cCoeffVirial{\nameG \nameG \nameG}} y {\cCoeffVirial{\nameV \nameV \nameV}}: son los coeficientes viriales para la sustancia pura de la mezcla y \newline
-  {\cCoeffVirial{\nameG \nameG \nameV}} y {\cCoeffVirial{\nameG \nameV \nameV}}: son los parámetros de interacción virial. Todos los coeficientes viriales que dependen de la temperatura.
+  {\cCoeffVirialGGG} y {\cCoeffVirialVVV}: son los coeficientes viriales para la sustancia pura de la mezcla y \newline
+  {\cCoeffVirialGGV} y {\cCoeffVirialGVV}: son los parámetros de interacción virial. Todos los coeficientes viriales que dependen de la temperatura.
 }
 
 
+% Entalpía para la mezcla
+\def\eqEnthalpyForMixture{\ensuremath{
+  \begin{split}
+    \varRealEnthalpyForMixture &= \compositionG \left(\hat{h}_{oG} + \int_{\limitInfTemperature}^{\limitSupTemperature} \specificHeatG \, \mathrm{d \temperature} \right) \\
+        &+ \compositionV \left(\hat{h}_{oV} + \int_{\limitInfTemperature}^{\limitSupTemperature} \specificHeatV \, \mathrm{d\temperature} \right) \\
+        &+ \univConstGasEos \temperature \left[ \left( \temperature \frac{d \bCoeffVirialMixture}{d \temperature} - \bCoeffVirialMixture \right) \frac{1}{\molarVolumeForMixture} + \left( \frac{ \temperature}{2} \frac{d \cCoeffVirialMixture}{d \temperature} - \cCoeffVirialMixture \right) \frac{1}{{\molarVolumeForMixture}^2} \right]
+  \end{split}
+}}
+\def\namingEqEnthalpyForMixture{
+    Donde:\newline
+  {\specificHeatV}: Indica el calor específico para el componente vapor \newline
+  {\specificHeatG}: denota el calor específico para el componente gas \newline
+  {$\hat{h}_{oV}$}: \newline
+  {$\hat{h}_{oG}$}: \newline
+  {\univConstGasEos}: constante universal de los gases \newline
+  {\temperature}: representa a la termperatura \newline
+  {\compositionV}: denota la composición molar del componente \symVapor \newline
+  {\compositionG}: es la composición molar del componente \symGas \newline
+  {\bCoeffVirialMixture}: representa al segundo coeficiente virial para la mezcla \newline
+  {\cCoeffVirialMixture}: es el representación del tercer coeficiente virial de la mezcla \newline
+  {\molarVolumeForMixture}: representa al volumen de la mezcla.
+}
+
+\def\eqEntropyForMixtureDiscrete{\ensuremath{
+  \begin{split}
+    \overline{s}_m = X_a \left( \sum_{i=0}^{4} M_i \, T^i + M_5 \, \ln(T) + \overline{s}'_a \right) 
+    + X_w \left( \sum_{i=0}^{5} N_i \, T^i + N_6 \, \ln(T) + \overline{s}'_w \right) \\
+    - \mathbb{R} \ln\left(\frac{p}{101325}\right) 
+    + X_a \, \mathbb{R} \ln\left(\frac{p \, \overline{v}_m}{X_a \, \mathbb{R}_0 \, T}\right) 
+    + X_w \, \mathbb{R} \ln\left(\frac{p \, \overline{v}_m}{X_w \, \mathbb{R}_0 \, T}\right) \\
+    - \mathbb{R} \left[ \frac{B_m + T \frac{dB_m}{dT}}{\overline{v}_m} 
+    + \frac{C_m + T \frac{dC_m}{dT}}{\overline{v}_m^2} + 0.5 \right]
+  \end{split}
+}}
 
 
+
+
+%%%% ECUACIONES PSICROMËTRICAS
+\def\eqAbsoluteHumidityDevelop{\ensuremath{
+  \label{eq:AbsoluteHumidityDevelop}
+  \absoluteHumidity = \frac{\relativeHumidity \pressureSat}{\symPressure{\symTotal}{} - \relativeHumidity \pressureSat} \frac{\molecularWeightV}{\molecularWeightG}
+}}
+\def\namingEqAbsoluteHumidityDevelop{
+    Donde:\newline
+  {\relativeHumidity}: Representa a la humedad relativa \newline
+  {\pressureSat}: Presión de vapor saturado a la temperatura de operación \newline
+  {\molecularWeightV{} y \molecularWeightG{}}: Son el peso molecular de los componentes vapor y gas, respectivamente.
+}
+
+%% Rodriguez page 2 - Humedad- Para agua y aire
+\def\eqWaterAirSaturatedPressure{\ensuremath{
+  \ln \pressureSat = 19.016 - \frac{4064.95}{\temperature + 236.25}
+}}
+
+\def\eqWaterAirSaturatedPressure{\ensuremath{
+  \ln \frac{\pressureSat}{611.657} = 22.509 \left(1 -  \frac{273.16}{\temperature} \right)
+}}

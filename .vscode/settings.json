@@ -85,9 +85,9 @@
 	"latex-workshop.message.latexlog.exclude": [],
 	"latex-workshop.showContextMenu": true,
 	"latex-workshop.message.log.show": false,
-
-
-
+	"latex-workshop.intellisense.atSuggestion.trigger.latex": "@",
+	"latex-workshop.kpsewhich.bibtex.enabled": true,
+	"latex-workshop.message.warning.show": false,
 
 	"latex-workshop.latex.autoBuild.run": "onSave",
 	"latex-workshop.synctex.path": "synctex",
@@ -99,7 +99,10 @@
 	"latex-workshop.view.pdf.invertMode.hueRotate": 180,
 	"cSpell.language": "en,es-ES",
 	"cSpell.words": [
+		"PETROQUÍMICA",
 		"psicrométrica",
-		"viriales",
+		"PSICROMÉTRICO",
+		"UMSA",
+		"viriales"
 	],
 }

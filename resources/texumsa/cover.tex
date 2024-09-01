@@ -27,7 +27,7 @@
 %---------------------------------------------------------------------
 %
 % Fichero que  contiene la portada y  primera hoja de la  tesis, en la
-% que se vuelve a repetir el t\'itulo.
+% que se vuelve a repetir el título.
 %
 % El contenido  de la  portada se configura  en un fichero  externo en
 % extras/cover.tex
@@ -38,11 +38,6 @@
 % Gesti\'on de la configuraci\'on
 %%%
 
-% T\'itulo de la portada
-\def\tituloPortadaVal{\titulo}
-\newcommand{\tituloInvestigacion}[1]{
-  \def\tituloPortadaVal{#1}
-}
 
 \def\tituloAOptarVal{\gradoAcademico} % variable: tituloAOptarVal: para  usar denro de la macro
 \newcommand{\tituloAcademico}[1]{     % tituloAcademico: para introducir el valor de que se desea asignar a tituloAOptarVal.
@@ -54,15 +49,31 @@
   \def\nombreAsesorVal{#1}
 }
 
+
+% Institución
+\def\institucionVal{}
+\newcommand{\institucion}[1]{
+  \def\institucionVal{#1}
+}
+
+
 % Imagen de la portada (escudo)
 \def\imagenPortadaVal{resources/images/vectorial/todo}
 \newcommand{\imagenPortada}[1]{
   \def\imagenPortadaVal{#1}
 }
 
+% Título de la portada
+\def\tituloPortadaVal{\titulo}
+\newcommand{\tituloInvestigacion}[1]{
+  \def\tituloPortadaVal{
+    #1
+  }
+}
+
 \def\escalaImagenPortadaVal{1.0}
 \newcommand{\escalaImagenPortada}[1]{
-  \def\escalaImagenPortadaVal{#1}
+  \def\escalaImagenPortadaVal{#1}     %% Cuando se llama a \escalaImagenPortada{0.5}, el valor de \escalaImagenPortadaVal se establecerá en 0.5.
 }
 
 % Autor
@@ -96,22 +107,16 @@
   \def\tipoDocumentoVal{#1}
 }
 
-% Institución
-\def\institucionVal{}
-\newcommand{\institucion}[1]{
-  \def\institucionVal{#1}
-}
-
-% Primer subt\'itulo de la segunda portada
+% Primer subtítulo de la segunda portada
 \def\textoPrimerSubtituloPortadaVal{%
-\textit{Memoria que presenta para optar al t\'itulo de: Ingeniero Ambiental}  \\ [0.3em]%
+\textit{Memoria que presenta para optar al título de: Ingeniero Aeroespacial}  \\ [0.3em]%
   \textbf{\autorPortadaVal}%
 }
 \newcommand{\textoPrimerSubtituloPortada}[1]{
   \def\textoPrimerSubtituloPortadaVal{#1}
 }
 
-% Segundo subt\'itulo de la segunda portada
+% Segundo subtítulo de la segunda portada
 \def\textoSegundoSubtituloPortadaVal{%
 \textit{Tutor}  \\ [0.3em]
   \textbf{\directorPortadaVal}
@@ -130,7 +135,7 @@
   \def\copyrightInfoVal{#1}
 }
 
-% Cr\'editos a TeXiS
+% Créditos a TeXiS
 \newcommand{\noTeXiSCredits}{
   \def\noTeXiSCreditsVal{}
 }
@@ -152,7 +157,7 @@
 
   % Ponemos el marcador en el PDF
   \ifpdf
-  \pdfbookmark{P\'agina de T\'itulo}{titulo}
+    \pdfbookmark{P\'agina de Título}{titulo}
   \fi
 
   %
@@ -197,7 +202,7 @@
   %
   % En realidad, no s\'e de qu\'e manera pero todos los valores est\'an
   % relacionados de alg\'un modo, y un cambio en uno afecta a los dem\'as de
-  % maneras bastante inveros\'imiles. Adem\'as, _s\'olo_ pueden cambiarse en
+  % maneras bastante inverosímiles. Adem\'as, _s\'olo_ pueden cambiarse en
   % el pre\'ambulo (bueno... al menos \textwidth, \oddsidemargin se puede
   % cambiar en otros sitios, pero no se pueden hacer muchas cosas s\'olo
   % con aquellos que se pueden cambiar...).
@@ -205,11 +210,11 @@
   % En general se recomienda que NO cambies los m\'argenes. Est\'an elegidos
   % por especialistas que saben de maquetaci\'on y que han estudiado en
   % profundidad las mejores organizaciones. Por ejemplo, los cambios que
-  % hagas pueden alargar demasiado las l\'ineas, o dejarlas demasiado
-  % cortas. Pero bueno, si aun as\'i quieres cambiar los m\'argenes _a nivel
+  % hagas pueden alargar demasiado las líneas, o dejarlas demasiado
+  % cortas. Pero bueno, si aun así quieres cambiar los m\'argenes _a nivel
   % global_ es preferible que uses el paquete geometry, cuya inclusi\'on
-  % recibe los cent\'imetros de m\'argen que quieres en cada lado, y \'el se
-  % encarga de hacer las cuentas para que queden as\'i, porque tocar tanto
+  % recibe los centímetros de m\'argen que quieres en cada lado, y \'el se
+  % encarga de hacer las cuentas para que queden así, porque tocar tanto
   % valor es un infierno.
   %
   % Si quieres cambiar los m\'argenes moment\'aneamente, entonces lo mejor
@@ -245,7 +250,7 @@
 
   \newlength{\cambioIzquierdo}
   \setlength{\cambioIzquierdo}{1in + \hoffset + \oddsidemargin}
-  % Si te falla aqu\'i, incluye el paquete calc en el pre\'ambulo.
+  % Si te falla aquí, incluye el paquete calc en el pre\'ambulo.
   % 1in = 1 pulgada = 72.27 pt
 
   % En la parte derecha hay que restar el "margen" visible total, que es
@@ -272,6 +277,7 @@
   \setlength{\cambioDerecho}{\cambioDerecho - \margenPortada}
 
 
+
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   % Portada
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -294,10 +300,14 @@
 
       \vfill
 
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% DISEÑO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% DISEÑO DE LA PORTADA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       \begin{large}
         \begin{center}
-          
           \textbf{\institucionVal}%\\[1em]
         \end{center}
       \end{large}
@@ -306,10 +316,11 @@
 
       \begin{center}
         \vfill
-        \includegraphics[scale=\escalaImagenPortadaVal]{\imagenPortadaVal}\\[5mm]
-        
+        \includegraphics[width=3.5cm, height=8cm]{\imagenPortadaVal}
+        \\[5mm]
       \end{center}
 
+      %En virtud de los requerimientos de diseño para la UMSA, se ha deshabilitado
       \begin{Huge}
         \begin{center}
           {\textbf{\tipoDocumentoVal}}
@@ -335,7 +346,7 @@
 
     \begin{normalsize}
       \begin{center}
-        \textbf{POSTULANTE: \autorPortadaVal}\\[0.3cm]
+        \textbf{POR: \autorPortadaVal}\\[0.3cm]
         \textbf{TUTOR: \nombreAsesorVal}\\[0.3cm]
       \end{center}
     \end{normalsize}
